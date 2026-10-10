@@ -195,9 +195,9 @@ export default function App() {
                         )}
                       </dd>
                     </div>
-                    <div className="grid gap-3 sm:grid-cols-[7rem_minmax(0,1fr)] items-start">
-                      <dt className="role-tag">{t.projects.withAI}</dt>
-                      <dd className="m-0">{p.ai}</dd>
+                    <div className="grid gap-3 sm:grid-cols-[7rem_minmax(0,1fr)] items-start opacity-70">
+                      <dt className="text-xs font-bold uppercase tracking-widest pt-1">{t.projects.withAI}</dt>
+                      <dd className="m-0 text-sm">{p.ai}</dd>
                     </div>
                   </dl>
                   {'note' in p && p.note && (

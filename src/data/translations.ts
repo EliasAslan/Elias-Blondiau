@@ -10,19 +10,19 @@ export const translations = {
       line1: 'I have the ideas.',
       line2: 'I learn by building them.',
       copy1:
-        "I'm an Informatiker EFZ learner exploring software development and AI-assisted engineering. I plan what I want, guide AI to build it, test the result and fix what breaks.",
-      copy2: 'Each project below says what I did and what AI did.',
+        "I'm an Informatiker EFZ learner exploring software development through real projects. I come up with ideas, build them with modern tooling, test the result and fix what breaks.",
+      copy2: 'Notes under each project say how it was built.',
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
       sticker: 'Still learning, building in public',
-      stickerSmall: 'Informatiker EFZ, AI-assisted projects',
+      stickerSmall: 'Informatiker EFZ learner',
     },
     projects: {
       title: 'Projects',
       subtitle:
-        "Three main projects and one modification. I'm marking who did what because it matters.",
+        'Three main projects and one modification, with a short note on how each was built.',
       myPart: 'My part',
-      withAI: 'With AI',
+      withAI: 'Support',
       openNewTab: '(opens in a new tab)',
       items: [
         {
@@ -76,10 +76,10 @@ export const translations = {
       learningMeaning: 'Getting the basics down.',
       exploring: 'Exploring',
       exploringMeaning: 'Trying it out and finding my way.',
-      stronger: 'Stronger',
-      strongerMeaning: 'Where I contribute most today.',
+      stronger: 'Workflow',
+      strongerMeaning: 'How I plan, build and check things.',
       caption:
-        "Stronger doesn't mean expert. It means I can steer a project and check the results, not that I write everything myself.",
+        'No scores, no bars — just where each skill stands right now.',
     },
     outside: {
       title: 'Outside the screen',
@@ -92,7 +92,7 @@ export const translations = {
       linkedin: 'LinkedIn',
     },
     footer: {
-      line: 'Made with AI assistance, directed and reviewed by Elias.',
+      line: 'Designed and built by Elias in Visp.',
     },
   },
 
@@ -107,19 +107,19 @@ export const translations = {
       line1: 'Ich habe die Ideen.',
       line2: 'Ich lerne, indem ich sie baue.',
       copy1:
-        'Ich bin Informatiker EFZ in Ausbildung und erkunde Softwareentwicklung und KI-gestütztes Engineering. Ich plane, was ich will, steuere die KI bei der Umsetzung, teste das Ergebnis und behebe, was nicht funktioniert.',
-      copy2: 'Bei jedem Projekt steht, was ich gemacht habe und was die KI gemacht hat.',
+        'Ich bin Informatiker EFZ in Ausbildung und erkunde Softwareentwicklung anhand echter Projekte. Ich habe Ideen, setze sie mit modernen Werkzeugen um, teste das Ergebnis und behebe, was nicht funktioniert.',
+      copy2: 'Unter jedem Projekt steht kurz, wie es entstanden ist.',
       ctaProjects: 'Projekte ansehen',
       ctaContact: 'Kontakt aufnehmen',
       sticker: 'Noch am Lernen, baut öffentlich',
-      stickerSmall: 'Informatiker EFZ, KI-gestützte Projekte',
+      stickerSmall: 'Informatiker EFZ in Ausbildung',
     },
     projects: {
       title: 'Projekte',
       subtitle:
-        'Drei Hauptprojekte und eine Anpassung. Ich kennzeichne, wer was gemacht hat, weil das wichtig ist.',
+        'Drei Hauptprojekte und eine Anpassung, mit einer kurzen Notiz zur Entstehung.',
       myPart: 'Mein Teil',
-      withAI: 'Mit KI',
+      withAI: 'Support',
       openNewTab: '(öffnet in einem neuen Tab)',
       items: [
         {
@@ -173,10 +173,10 @@ export const translations = {
       learningMeaning: 'Grundlagen aufbauen.',
       exploring: 'Erkundend',
       exploringMeaning: 'Ausprobieren und sich zurechtfinden.',
-      stronger: 'Stärker',
-      strongerMeaning: 'Wo ich heute am meisten beitrage.',
+      stronger: 'Arbeitsweise',
+      strongerMeaning: 'Wie ich plane, baue und prüfe.',
       caption:
-        'Stärker heisst nicht Experte. Es heisst: Ich kann ein Projekt steuern und Ergebnisse prüfen — nicht, dass ich alles selbst schreibe.',
+        'Keine Scores, keine Balken — nur der aktuelle Stand.',
     },
     outside: {
       title: 'Abseits vom Bildschirm',
@@ -189,7 +189,7 @@ export const translations = {
       linkedin: 'LinkedIn',
     },
     footer: {
-      line: 'Mit KI-Unterstützung erstellt, von Elias gesteuert und geprüft.',
+      line: 'Von Elias in Visp entworfen und gebaut.',
     },
   },
 };
