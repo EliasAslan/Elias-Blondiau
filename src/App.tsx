@@ -65,12 +65,14 @@ function EggKey() {
 
 function ConsoleGreeting() {
   const { lang, t } = useLanguage();
-  const logged = useRef(false);
   useEffect(() => {
-    if (logged.current) return;
-    logged.current = true;
     try {
-      for (const line of t.eggs.console) console.log(line);
+      const [headline, ...rest] = t.eggs.console;
+      console.log(
+        `%c ${headline} `,
+        'background:#FFD84A;color:#0E1A40;font-weight:bold;padding:.3rem .6rem;',
+      );
+      for (const line of rest) console.log(line);
     } catch {
       /* console unavailable — nothing to greet */
     }
