@@ -352,6 +352,7 @@ export const translations = {
       footerNotes: [
         'Built in the open, still learning.',
         'No cookies, no trackers — just markup with ambitions.',
+        'Built with React, Vite and stubbornness.',
       ],
       footerRestBefore: 'Psst: this portfolio takes',
       footerRestLink: 'rest days',
@@ -367,6 +368,9 @@ export const translations = {
         '0 skipped leg days — there are no legs here',
       ],
       restBack: 'Back to training',
+      restSession: 'Today’s session — check off as you go',
+      restDone: 'Session complete. Recovery: 100%.',
+      notFoundAt: 'No page at this address:',
     },
   },
 
@@ -725,6 +729,7 @@ export const translations = {
       footerNotes: [
         'Offen gebaut, noch am Lernen.',
         'Keine Cookies, keine Tracker — nur Markup mit Ambitionen.',
+        'Mit React, Vite und Sturheit gebaut.',
       ],
       footerRestBefore: 'Psst: Dieses Portfolio macht',
       footerRestLink: 'Ruhetage',
@@ -740,6 +745,9 @@ export const translations = {
         '0 ausgelassene Leg Days — hier gibt es keine Beine',
       ],
       restBack: 'Zurück zum Training',
+      restSession: 'Heutige Einheit — abhaken nicht vergessen',
+      restDone: 'Einheit geschafft. Erholung: 100 %.',
+      notFoundAt: 'Keine Seite unter dieser Adresse:',
     },
   },
 };

@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { PROJECT_SLUGS, type ProjectSlug } from '../data/site';
 import { getProjectEntry } from '../data/projects';
 import { useLanguage } from '../i18n/LanguageContext';
-import { CopyButton, ProjectCard } from '../components/layout';
+import { CopyButton, ProjectCard, RoutePalette } from '../components/layout';
 
 const DETAIL_KEYS = {
   'pfadi-siders': 'pfadi',
@@ -30,11 +30,15 @@ export default function ProjectDetail() {
           </p>
           <h1 id="missing-h">{t.detail.notFoundTitle}</h1>
           <p>{t.detail.notFoundBody}</p>
+          <p className="muted">
+            {t.eggs.notFoundAt} <code className="code-chip">{slug}</code>
+          </p>
           <p className="hero-links">
             <Link className="btn primary" to="/projects">
               {t.detail.notFoundCta}
             </Link>
           </p>
+          <RoutePalette />
         </div>
       </section>
     );
