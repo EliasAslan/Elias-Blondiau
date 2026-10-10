@@ -378,9 +378,9 @@ export const portfolioData: PortfolioData = {
   ],
 
   contact: {
-    email: '',
+    email: 'e3953s@duck.com',
     github: 'https://github.com/EliasAslan',
-    linkedin: 'https://www.linkedin.com/in/elias-blondiau',
+    linkedin: 'https://www.linkedin.com/in/elias-blondiau-172b6a442/',
     locationNote: {
       en: 'Visp, Valais, Switzerland (UTC+1/UTC+2)',
       de: 'Visp, Wallis, Schweiz (UTC+1/UTC+2)',
