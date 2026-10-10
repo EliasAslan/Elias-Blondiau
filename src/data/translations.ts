@@ -147,7 +147,7 @@ export const translations = {
           challenges: [
             'Scope discipline: a group website can grow forever — I kept it to the pages the group actually needs.',
             'Writing for two audiences at once: kids who want adventure, parents who want facts.',
-            'Lesson: reviewing AI-generated layouts against the real content caught mismatches early, before they became structure problems.',
+            'Reviewing AI-generated layouts against the real content caught mismatches before they became bigger structure problems.',
           ],
           limits: [
             'No public source repository — only the live site can be reviewed.',
@@ -178,7 +178,7 @@ export const translations = {
           ],
           challenges: [
             'The hardest part was deciding what not to build: a personal tool has to stay fast and simple.',
-            'Lesson: testing against my own workouts found usability problems no checklist would have caught.',
+            'Testing the app during my own workouts revealed usability problems a checklist would have missed.',
           ],
           limits: [
             'The demo is a client-rendered app, so its interface could not be verified from the outside — details above come from my own build notes.',
@@ -317,7 +317,7 @@ export const translations = {
       intro2:
         'This page is the non-CV version: what I do when I’m not at the keyboard, and the ideas I carry back to it.',
       eduBody:
-        'Vocational training as an Informatiker EFZ plus Berufsmaturität classes — both still ahead of me, documented under these official programmes:',
+        'I’m doing an Informatiker EFZ apprenticeship in platform development alongside the Berufsmaturität TALS. Both are in progress. The official programmes are:',
       trainingTitle: 'Calisthenics: my other progression system',      trainingBody:
         'I train calisthenics regularly — it’s where I learned the mindset behind my skills section: you move up only when you’ve earned it. My own training is also the acceptance test for everything I build around it: if a workout feature doesn’t survive a real session, it doesn’t ship.',
       trainingGoals: 'Current focus: steady basics, honest form, showing up. Specific skills and goals get listed here once I write them down properly.',
@@ -540,7 +540,7 @@ export const translations = {
           challenges: [
             'Umfangsdisziplin: Eine Gruppen-Website kann ewig wachsen — ich habe mich auf die Seiten beschränkt, die die Abteilung wirklich braucht.',
             'Für zwei Publika gleichzeitig schreiben: Kinder wollen Abenteuer, Eltern wollen Fakten.',
-            'Lektion: KI-generierte Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten früh aufgedeckt, bevor sie zu Strukturproblemen wurden.',
+            'KI-generierte Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten aufgedeckt, bevor daraus grössere Strukturprobleme wurden.',
           ],
           limits: [
             'Kein öffentliches Quell-Repository — nur die Live-Seite ist einsehbar.',
@@ -571,7 +571,7 @@ export const translations = {
           ],
           challenges: [
             'Das Schwerste war zu entscheiden, was nicht gebaut wird: Ein persönliches Werkzeug muss schnell und einfach bleiben.',
-            'Lektion: Tests am eigenen Training haben Bedienprobleme gefunden, die keine Checkliste gefunden hätte.',
+            'Tests während meines eigenen Trainings haben Bedienprobleme gezeigt, die eine Checkliste übersehen hätte.',
           ],
           limits: [
             'Die Demo ist eine clientseitig gerenderte App, ihre Oberfläche war von aussen nicht prüfbar — Details oben stammen aus meinen Bau-Notizen.',
@@ -710,7 +710,7 @@ export const translations = {
       intro2:
         'Diese Seite ist die Nicht-CV-Version: was ich abseits der Tastatur tue und welche Ideen ich von dort mitbringe.',
       eduBody:
-        'Berufslehre als Informatiker EFZ plus Berufsmaturitätsklassen — beides noch vor mir, dokumentiert unter diesen offiziellen Programmen:',
+        'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und parallel die Berufsmaturität TALS. Beides läuft noch. Die offiziellen Programme sind:',
       trainingTitle: 'Calisthenics: mein anderes Progressionssystem',
       trainingBody:
         'Ich trainiere regelmässig Calisthenics — dort habe ich die Haltung hinter meiner Skills-Sektion gelernt: Man steigt erst auf, wenn man es sich verdient hat. Mein eigenes Training ist auch der Abnahmetest für alles, was ich darum baue: Was eine echte Einheit nicht übersteht, wird nicht ausgeliefert.',
