@@ -94,7 +94,7 @@ export const translations = {
         note: 'Local-first today: study data lives in the browser. Account sign-in exists but is not cloud sync yet.',
       },
       ben: {
-        status: 'Customized, not original',
+        status: 'Open-source adaptation',
         title: 'BEN.SUSTAIN',
         body: "I adapted an existing open-source fitness app toward a more personal, single-user setup. The original project isn't mine; the direction for this version is.",
       },
@@ -488,7 +488,7 @@ export const translations = {
         note: 'Heute local-first: Die Lerndaten leben im Browser. Konto-Login existiert, ist aber noch keine Cloud-Synchronisierung.',
       },
       ben: {
-        status: 'Angepasst, nicht original',
+        status: 'Open-Source-Anpassung',
         title: 'BEN.SUSTAIN',
         body: 'Ich habe eine bestehende Open-Source-Fitness-App auf eine persönlichere Nutzung für eine einzelne Person ausgerichtet. Das Original stammt nicht von mir; die Richtung dieser Version schon.',
       },
