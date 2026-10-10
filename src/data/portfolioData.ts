@@ -19,7 +19,7 @@ export const portfolioData: PortfolioData = {
       de: 'Neugierig werden. Etwas bauen. Herausfinden, was noch nicht funktioniert.',
     },
     heroSubheadline: {
-      en: 'I'm an Informatiker EFZ learner exploring software development and AI-assisted engineering through real projects.',
+      en: 'I am an Informatiker EFZ learner exploring software development and AI-assisted engineering through real projects.',
       de: 'Ich bin Informatiker EFZ in Ausbildung und erkunde Softwareentwicklung und KI-gestütztes Engineering anhand echter Projekte.',
     },
     bioParagraphs: {
