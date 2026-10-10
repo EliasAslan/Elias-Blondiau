@@ -277,7 +277,7 @@ export const translations = {
             'Clone the fork, copy .env.example to .env and adjust the hostname settings.',
             'Run “docker compose up -d” and open http://localhost:8080.',
             'First start downloads the exercise media (about 140 MB) once.',
-            'These are the original project's setup steps. I still need to check whether my fork needs anything different.',
+            'These are the original project’s setup steps. I still need to check whether my fork needs anything different.',
           ],
           techCommands: [
             'git clone https://github.com/EliasAslan/benOpenGym',
