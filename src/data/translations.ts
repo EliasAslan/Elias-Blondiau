@@ -8,12 +8,12 @@ export const translations = {
     },
     skip: 'Skip to content',
     hero: {
-      line1: 'I have the ideas.',
-      line2: 'I learn by building them.',
+      line1: 'I have ideas.',
+      line2: 'I build them until they work.',
       copy1:
-        'I’m an Informatiker EFZ learner who likes turning ideas into working projects. I plan what I want to build, experiment with code and modern tools, test the result, and keep improving it until it works.',
+        'I’m Elias, an Informatiker EFZ apprentice in platform development, working toward the Berufsmaturität TALS. I learn by turning my own ideas — a scout website, a training app, a study hub — into things that actually run.',
       copy2:
-        'Below are the projects that taught me the most — what I set out to build, what I contributed, and where each one stands.',
+        'I use AI as a tool along the way, but the ideas, the decisions and the stubborn testing are mine. Here is the proof so far.',
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
       sticker: 'Still learning, building in public',
@@ -39,6 +39,8 @@ export const translations = {
       beyondBody:
         'Calisthenics, scouts, and the habit of turning spare-time ideas into small working things. More about the person behind the projects.',
       beyondCta: 'More about me',
+      beyondPhotoLabel: 'Photo placeholder',
+      beyondPhotoBody: 'A personal photo will go here (4:3) once I add one.',
     },
     projects: {
       title: 'Projects',
@@ -46,6 +48,10 @@ export const translations = {
         'Three main projects and one modification, each with a note on how it was made.',
       openNewTab: '(opens in a new tab)',
       details: 'Project details',
+      demoLabel: 'Live demo',
+      repoLabel: 'Source code',
+      upstreamLabel: 'Upstream project',
+      noSource: 'No public source repository.',
       pfadi: {
         status: 'Live website',
         title: 'Pfadi Siders website',
@@ -64,7 +70,7 @@ export const translations = {
         status: 'In progress',
         title: 'EMVS Study Hub',
         body: 'A study app I came up with and keep working on. I planned the features and build it with AI assistance — it is ongoing and not finished.',
-        note: "Account-based cloud sync is still under development. There's no public demo yet.",
+        note: 'Local-first today: study data lives in the browser. Account sign-in exists but is not cloud sync yet.',
       },
       ben: {
         status: 'Customized, not original',
@@ -78,57 +84,176 @@ export const translations = {
       contribution: 'What I contributed',
       state: 'Where it stands',
       links: 'Links',
-      liveSite: 'Open the live site',
-      liveApp: 'Open the app',
-      comingTech: 'Technical details',
-      comingTechBody:
-        'Stack, structure and lessons learned will be added here in Phase 2.',
-      comingScreens: 'Screenshots',
-      comingScreensBody: 'Screenshots will be added here in Phase 2.',
+      tech: 'Technical details',
+      techVerified: 'Verified against the public repository and README.',
+      techUnverified:
+        'No public source to verify against — setup notes still need confirmation.',
+      shots: 'Screenshots',
+      shotPlaceholder: 'Screenshot placeholder',
       notFoundTitle: 'Project not found',
       notFoundBody: 'This project doesn’t exist. Here are the ones that do.',
       notFoundCta: 'See all projects',
-      pfadi: {
-        extra:
-          'It replaces the group’s previous website with a more consistent look and clearer navigation.',
-        points: [
-          'Designed the visual direction for the new site.',
-          'Reorganised the structure and navigation.',
-          'Made sure the layouts work on phones.',
-          'Built it with AI support, testing and improving until it worked.',
-        ],
-        stateBody: 'Live and in use by the group.',
-      },
-      cal: {
-        extra:
-          'It exists because I wanted a training app that fits exactly how I train.',
-        points: [
-          'Came up with the idea and defined the features.',
-          'Defined the behavior and feel of the app.',
-          'Built it with AI assistance.',
-          'Tested each version against my own training and improved what fell short.',
-        ],
-        stateBody: 'Live as a personal project; I keep using and improving it.',
-      },
-      emvs: {
-        extra: 'It is my ongoing study project, and it is not finished.',
-        points: [
-          'Came up with the idea for the app.',
-          'Planned the features.',
-          'Building it with AI assistance.',
-        ],
-        stateBody:
-          'In progress. Account-based cloud sync is still under development, and there is no public demo yet.',
-      },
-      ben: {
-        extra: 'An exercise in reshaping existing software to fit my own needs.',
-        points: [
-          'Chose an existing open-source app as the starting point.',
-          'Decided how it should differ for my own use.',
-          'Reshaped it with AI assistance.',
-        ],
-        stateBody:
-          'A customized version for personal use. The underlying project is not mine.',
+      whyT: 'Why it exists',
+      decisionsT: 'My ideas and decisions',
+      featuresT: 'What it does',
+      inheritedT: 'Inherited from upstream',
+      mineT: 'My modifications and ideas',
+      challengesT: 'Challenges and lessons',
+      limitsT: 'Known limitations',
+      sections: {
+        pfadi: {
+          tagline: 'A scout group’s front door, rebuilt from scratch.',
+          why: [
+            'Pfadi St. Christophorus Siders needed a website that shows what the group actually is: outdoor activities, clear age-group sections, a calendar people can find, and a way for newcomers to join. The old site no longer did that job, so I built a replacement.',
+            'The site is live and in use: four sections for Wölfe und Bienli, Pfadis, Pios and Rover, plus Abteilung, Kalender, Bilder, Mitmachen and Kontakt — all reachable from one clear navigation.',
+          ],
+          decisions: [
+            'Designed the visual direction myself: one expressive hero (“Gipfelpause”), one voice, one structure across every page.',
+            'Gave every age group its own section so parents and kids land directly where they belong.',
+            'Put the practical facts front and center: meeting place (Pfadilokal, Rue Saint-Georges 19, Sierre), Saturday hours, calendar, and contact.',
+            'Implemented it with AI support, reviewing and correcting the output until the result matched the design.',
+          ],
+          features: [
+            'Hero with headline, calls to action and links to the sections and Instagram.',
+            'Stufen pages for all four age groups with an overview of what to expect.',
+            'Calendar view for meetups, camps and events.',
+            'Meeting-place block with public-transport and map links.',
+            'Contact, error-reporting and legal pages (Impressum, Datenschutz), with a webmaster credit.',
+          ],
+          challenges: [
+            'Scope discipline: a group website can grow forever — I kept it to the pages the group actually needs.',
+            'Writing for two audiences at once: kids who want adventure, parents who want facts.',
+            'Lesson: reviewing AI-generated layouts against the real content caught mismatches early, before they became structure problems.',
+          ],
+          limits: [
+            'No public source repository — only the live site can be reviewed.',
+            'I have not measured usage or collected feedback; there are no metrics or testimonials to show.',
+          ],
+          stateBody:
+            'Live and in use by the group. Content updates happen as the group needs them.',
+          shots: [
+            'Homepage hero “Gipfelpause” — desktop, 1600×900',
+            'Stufen overview — mobile, 390×844',
+          ],
+        },
+        cal: {
+          tagline: 'A training app shaped by actual training.',
+          why: [
+            'I train calisthenics regularly, and I wanted an app that fits exactly how I train — my exercises, my structure, my feel. Since nothing off the shelf matched, I specified and built my own.',
+            'The published demo is live under the name FORM — Calisthenics Training.',
+          ],
+          decisions: [
+            'Started from my own workouts, not from a feature list: the app had to survive a real session.',
+            'Defined the behavior and feel myself, then guided the implementation with AI assistance.',
+            'Tested every version against my own training and fixed what fell short — the training log was the acceptance test.',
+          ],
+          features: [
+            'Live demo verified: the app loads as FORM — Calisthenics Training.',
+            'Beyond that I describe only what I know from building it: workout routines structured around my training, refined version by version.',
+            'A detailed feature tour with screenshots will be added once I document the current interface.',
+          ],
+          challenges: [
+            'The hardest part was deciding what not to build: a personal tool has to stay fast and simple.',
+            'Lesson: testing against my own workouts found usability problems no checklist would have caught.',
+          ],
+          limits: [
+            'The demo is a client-rendered app, so its interface could not be verified from the outside — details above come from my own build notes.',
+            'No public source repository — only the live demo can be reviewed.',
+          ],
+          stateBody:
+            'Live as a personal project. I keep using it in training and improving what annoys me.',
+          shots: [
+            'Workout session view — desktop, 1600×900',
+            'Workout session view — mobile, 390×844',
+          ],
+        },
+        emvs: {
+          tagline: 'A local-first dashboard for surviving vocational school.',
+          why: [
+            'Vocational school plus Berufsmaturität means modules, objectives, resources, exams and deadlines everywhere. I wanted one dashboard that holds all of it — so I designed and built the EMVS Study Hub.',
+            'It is local-first on purpose: your study data lives in the browser via localStorage, so the app works without an account or a server.',
+          ],
+          decisions: [
+            'Chose local-first storage so the app is useful from the first second, with no signup friction.',
+            'Structured it around real study workflows: today view, weak-spot tracking, capture, exams, weekly review, tools.',
+            'Added a command palette (⌘K) and undo, because a tool you use daily must be fast and forgiving.',
+            'Started a Supabase email/password foundation strictly for sign-in — deliberately not wired to study data yet.',
+          ],
+          features: [
+            'Module tracking with learning objectives, resources, sessions and exams.',
+            'Views for Heute, Schwachstellen, Erfassen, Prüfungen, Review, Werkzeuge and Einstellungen.',
+            'Command palette (⌘K) and undo support.',
+            'Weekly reviews to look back and plan ahead.',
+            'Settings with Supabase email/password sign-in, session restore and sign-out.',
+          ],
+          challenges: [
+            'Hardest lesson: authentication is not synchronization. Signing in changes nothing about the data — and saying so clearly in the README mattered more than the feature itself.',
+            'Splitting the work into phases (local app first, auth foundation, sync later) kept an ambitious project shippable.',
+            'Lesson: writing down what a phase explicitly does not do prevents the most dangerous misunderstandings.',
+          ],
+          limits: [
+            'No cloud sync: signing in does not upload, download, overwrite or delete study data — the README states this explicitly.',
+            'Data lives in one browser’s localStorage; switching devices or clearing site data loses it.',
+            'Supabase setup requires the user’s own publishable key; never a service_role key in browser code.',
+          ],
+          stateBody:
+            'In progress and usable locally. Auth foundation is done; cloud sync is a separate later phase.',
+          shots: [
+            'Dashboard “Heute” view — desktop, 1600×900',
+            'Schwachstellen view — mobile, 390×844',
+          ],
+          techStack: ['HTML', 'CSS', 'JavaScript (no build step)', 'localStorage', 'Supabase Auth (email/password)', 'Supabase JS client via esm.sh'],
+          techSetup: [
+            'Clone the repository and open the project folder.',
+            'Run “npm start”.',
+            'Open http://localhost:8080 in the browser.',
+            'For sign-in: paste your own Supabase publishable key into js/services/supabaseClient.js, serve over HTTP(S), then open Einstellungen → Konto / Supabase.',
+          ],
+        },
+        ben: {
+          tagline: 'One person. One pace. Keep going.',
+          why: [
+            'I wanted a fitness tracker shaped around one person training at their own pace — my pace. Instead of building a tracker from zero, I forked openGym, a self-hosted gym and body-weight tracker, and started reshaping it into BEN.SUSTAIN.',
+            'The brand idea is mine: “BEN.SUSTAIN — One person. One pace. Keep going.” The engine underneath is open-source work by others, and I present it as exactly that.',
+          ],
+          decisions: [
+            'Chose openGym as the base because it already solves the hard parts: routines, guided workouts, progression logic, offline use.',
+            'Kept the fork public on GitHub so the derivation from upstream stays visible.',
+            'Set the direction toward a calmer, personal single-user experience under the BEN.SUSTAIN name.',
+          ],
+          inherited: [
+            'Routine planning over a large exercise library with animated demos, searchable by muscle.',
+            'Guided workouts with pre-filled weights, rest timer and automatic PR detection.',
+            'Progression rules, estimated 1RM, activity heatmap and muscle maps.',
+            'Import from FitNotes, Strong and Hevy; full JSON export.',
+            'Passkey login, offline support, self-hosting with Docker.',
+          ],
+          mine: [
+            'The BEN.SUSTAIN brand concept and single-person direction.',
+            'Adaptation choices for my own use — the exact list of modifications is still being documented here.',
+          ],
+          challenges: [
+            'Lesson: forking a large, mature codebase is humbling — reading and understanding comes before changing.',
+            'Lesson: keeping the fork honest means naming what is inherited on every page that shows it.',
+          ],
+          limits: [
+            'My specific code modifications are not yet documented on this page — that section is a placeholder until verified.',
+            'There is no public live demo of my fork.',
+          ],
+          stateBody:
+            'Forked and public. Direction set; modification details to be documented.',
+          shots: [
+            'BEN.SUSTAIN home view — desktop, 1600×900',
+            'Guided workout view — mobile, 390×844',
+          ],
+          techStack: ['Upstream: React 19 + Vite frontend', 'Upstream: plain Node.js API', 'Docker Compose self-hosting', 'License: GNU AGPLv3'],
+          techSetup: [
+            'You need Docker with Compose.',
+            'Clone the fork, copy .env.example to .env and adjust the hostname settings.',
+            'Run “docker compose up -d” and open http://localhost:8080.',
+            'Note: these are the upstream quick-start steps; fork-specific setup notes still need verification.',
+          ],
+        },
       },
     },
     skills: {
@@ -155,22 +280,31 @@ export const translations = {
     about: {
       title: 'Beyond Code',
       intro1:
-        'I’m Elias, an Informatiker EFZ apprentice in platform development, working toward a Berufsmaturität in engineering, architecture and life sciences. I’m still at the start — curious, experimental, and learning by building things that actually work.',
+        'I’m Elias. By day I’m an Informatiker EFZ apprentice in platform development, heading toward the Berufsmaturität TALS. The rest of the time I’m the person who’d rather build the thing than talk about building the thing.',
       intro2:
-        'What drives me is independent thinking and practical problem-solving: having an idea, figuring out how to make it real, and improving it until it holds up in everyday use.',
-      pathTitle: 'Education',
-      pathBody:
-        'I’m currently in vocational training as an Informatiker EFZ and attending Berufsmaturität classes. Both qualifications are still ahead of me.',
-      interestsTitle: 'Away from the keyboard',
-      interests: [
-        'Calisthenics — training that rewards patience and honest self-assessment.',
-        'Scouts — I built a new website for my scout group, Pfadi Siders.',
-        'Side projects — small ideas I turn into working things in my spare time.',
+        'This page is the non-CV version: what I do when I’m not at the keyboard, and the ideas I carry back to it.',
+      eduBody:
+        'Vocational training as an Informatiker EFZ plus Berufsmaturität classes — both still ahead of me, documented under these official programmes:',
+      trainingTitle: 'Calisthenics: my other progression system',      trainingBody:
+        'I train calisthenics regularly — it’s where I learned the mindset behind my skills section: you move up only when you’ve earned it. My own training is also the acceptance test for everything I build around it: if a workout feature doesn’t survive a real session, it doesn’t ship.',
+      trainingGoals: 'Current focus: steady basics, honest form, showing up. Specific skills and goals get listed here once I write them down properly.',
+      scoutsTitle: 'Scouts',
+      scoutsBody:
+        'I’m part of Pfadi St. Christophorus Siders — and when the group needed a new website, I built it. Scouting taught me the practical side of responsibility early: plan the afternoon, cook over the fire, bring everyone home in one piece.',
+      tinkeringTitle: 'Spare-time tinkering',
+      tinkeringBody:
+        'Study hub, training apps, small experiments: my free time has a habit of turning into working software. I like tools that solve my own problems first — if they help someone else too, that’s a bonus.',
+      valuesTitle: 'What I’m aiming at',
+      values: [
+        'Curiosity over comfort — trying the unfamiliar thing on purpose.',
+        'Independent thinking — understanding before copying.',
+        'Practical problem-solving — done and working beats perfect and planned.',
+        'Honesty about my level — still learning, and saying so.',
       ],
-      nowTitle: 'Right now',
-      nowBody:
-        'I keep working on the EMVS Study Hub, train regularly, and document what I learn project by project.',
-      photoPlaceholder: 'Photo coming in Phase 2.',
+      readingTitle: 'Reading and ideas',
+      readingBody: 'A short list of books and ideas that influence me will go here.',
+      photoLabel: 'Photo placeholder',
+      photoBody: 'A personal photo goes here (4:3) once I provide one.',
       contactCta: 'Get in touch',
     },
     contact: {
@@ -194,12 +328,12 @@ export const translations = {
     },
     skip: 'Zum Inhalt springen',
     hero: {
-      line1: 'Ich habe die Ideen.',
-      line2: 'Ich lerne, indem ich sie baue.',
+      line1: 'Ich habe Ideen.',
+      line2: 'Ich baue sie, bis sie laufen.',
       copy1:
-        'Ich bin Informatiker EFZ in Ausbildung und verwandle gerne Ideen in funktionierende Projekte. Ich plane, was ich bauen will, experimentiere mit Code und modernen Werkzeugen, teste das Ergebnis und verbessere es, bis es funktioniert.',
+        'Ich bin Elias, Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität TALS. Ich lerne, indem ich eigene Ideen — eine Pfadi-Website, eine Trainings-App, einen Study Hub — in Dinge verwandle, die wirklich laufen.',
       copy2:
-        'Unten stehen die Projekte, bei denen ich am meisten gelernt habe — was ich vorhatte, was ich beigetragen habe und wo jedes steht.',
+        'KI nutze ich dabei als Werkzeug, aber Ideen, Entscheidungen und hartnäckiges Testen sind meine. Hier der bisherige Beweis.',
       ctaProjects: 'Projekte ansehen',
       ctaContact: 'Kontakt aufnehmen',
       sticker: 'Noch am Lernen, baut öffentlich',
@@ -226,6 +360,8 @@ export const translations = {
       beyondBody:
         'Calisthenics, Pfadi und die Gewohnheit, Ideen aus der Freizeit in kleine funktionierende Dinge zu verwandeln. Mehr über die Person hinter den Projekten.',
       beyondCta: 'Mehr über mich',
+      beyondPhotoLabel: 'Foto-Platzhalter',
+      beyondPhotoBody: 'Hier kommt ein persönliches Foto hin (4:3), sobald ich eines habe.',
     },
     projects: {
       title: 'Projekte',
@@ -233,6 +369,10 @@ export const translations = {
         'Drei Hauptprojekte und eine Anpassung, jeweils mit einer Notiz zur Entstehung.',
       openNewTab: '(öffnet in einem neuen Tab)',
       details: 'Projektdetails',
+      demoLabel: 'Live-Demo',
+      repoLabel: 'Quellcode',
+      upstreamLabel: 'Ursprungsprojekt',
+      noSource: 'Kein öffentliches Quell-Repository.',
       pfadi: {
         status: 'Live-Website',
         title: 'Pfadi Siders Website',
@@ -251,7 +391,7 @@ export const translations = {
         status: 'In Arbeit',
         title: 'EMVS Study Hub',
         body: 'Eine Lern-App nach meiner Idee, an der ich weiterarbeite. Die Features habe ich geplant, die Umsetzung läuft mit KI-Unterstützung — das Projekt ist noch nicht fertig.',
-        note: 'Die kontobasierte Cloud-Synchronisierung ist noch in Entwicklung. Es gibt noch keine öffentliche Demo.',
+        note: 'Heute local-first: Die Lerndaten leben im Browser. Konto-Login existiert, ist aber noch keine Cloud-Synchronisierung.',
       },
       ben: {
         status: 'Angepasst, nicht original',
@@ -265,58 +405,176 @@ export const translations = {
       contribution: 'Mein Beitrag',
       state: 'Aktueller Stand',
       links: 'Links',
-      liveSite: 'Live-Website öffnen',
-      liveApp: 'App öffnen',
-      comingTech: 'Technische Details',
-      comingTechBody:
-        'Stack, Aufbau und gelernte Lektionen werden hier in Phase 2 ergänzt.',
-      comingScreens: 'Screenshots',
-      comingScreensBody: 'Screenshots werden hier in Phase 2 ergänzt.',
+      tech: 'Technische Details',
+      techVerified: 'Gegen das öffentliche Repository und README geprüft.',
+      techUnverified:
+        'Keine öffentliche Quelle zum Prüfen — Setup-Angaben noch unbestätigt.',
+      shots: 'Screenshots',
+      shotPlaceholder: 'Screenshot-Platzhalter',
       notFoundTitle: 'Projekt nicht gefunden',
       notFoundBody: 'Dieses Projekt gibt es nicht. Hier sind die, die es gibt.',
       notFoundCta: 'Alle Projekte ansehen',
-      pfadi: {
-        extra:
-          'Sie ersetzt die bisherige Website der Abteilung durch einen einheitlicheren Auftritt und eine klarere Navigation.',
-        points: [
-          'Visuelle Richtung der neuen Website entworfen.',
-          'Struktur und Navigation neu organisiert.',
-          'Dafür gesorgt, dass die Layouts auf dem Handy funktionieren.',
-          'Mit KI-Unterstützung umgesetzt, getestet und verbessert, bis es passte.',
-        ],
-        stateBody: 'Live und bei der Abteilung im Einsatz.',
-      },
-      cal: {
-        extra:
-          'Sie existiert, weil ich eine Trainings-App wollte, die genau zu meinem Training passt.',
-        points: [
-          'Idee gehabt und Features definiert.',
-          'Verhalten und Anmutung der App festgelegt.',
-          'Mit KI-Unterstützung umgesetzt.',
-          'Jede Version am eigenen Training gemessen und Schwachstellen verbessert.',
-        ],
-        stateBody: 'Live als eigenes Projekt; ich nutze und verbessere sie weiter.',
-      },
-      emvs: {
-        extra: 'Es ist mein laufendes Lernprojekt und noch nicht fertig.',
-        points: [
-          'Idee für die App gehabt.',
-          'Features geplant.',
-          'Setze sie mit KI-Unterstützung um.',
-        ],
-        stateBody:
-          'In Arbeit. Die kontobasierte Cloud-Synchronisierung ist noch in Entwicklung, und es gibt noch keine öffentliche Demo.',
-      },
-      ben: {
-        extra:
-          'Eine Übung darin, bestehende Software an die eigenen Bedürfnisse anzupassen.',
-        points: [
-          'Bestehende Open-Source-App als Ausgangspunkt gewählt.',
-          'Festgelegt, wie sie für meinen Gebrauch anders sein soll.',
-          'Mit KI-Unterstützung umgeformt.',
-        ],
-        stateBody:
-          'Angepasste Version für den eigenen Gebrauch. Das Grundprojekt ist nicht meins.',
+      whyT: 'Warum es existiert',
+      decisionsT: 'Meine Ideen und Entscheidungen',
+      featuresT: 'Was es kann',
+      inheritedT: 'Vom Ursprungsprojekt übernommen',
+      mineT: 'Meine Anpassungen und Ideen',
+      challengesT: 'Herausforderungen und Lektionen',
+      limitsT: 'Bekannte Einschränkungen',
+      sections: {
+        pfadi: {
+          tagline: 'Die Haustür einer Pfadi-Abteilung, neu gebaut.',
+          why: [
+            'Die Pfadi St. Christophorus Siders brauchte eine Website, die zeigt, was die Abteilung wirklich ist: Aktivitäten draussen, klare Stufen, ein auffindbarer Kalender und ein Weg für Neue zum Mitmachen. Die alte Seite hat das nicht mehr geleistet, also habe ich einen Ersatz gebaut.',
+            'Die Seite ist live und im Einsatz: vier Stufen für Wölfe und Bienli, Pfadis, Pios und Rover, dazu Abteilung, Kalender, Bilder, Mitmachen und Kontakt — alles über eine klare Navigation erreichbar.',
+          ],
+          decisions: [
+            'Visuelle Richtung selbst entworfen: ein ausdrucksstarker Hero („Gipfelpause“), eine Sprache, eine Struktur auf jeder Seite.',
+            'Jede Stufe hat einen eigenen Bereich, damit Kinder und Eltern direkt dort landen, wo sie hingehören.',
+            'Das Praktische steht vorne: Treffpunkt (Pfadilokal, Rue Saint-Georges 19, Sierre), Samstag-Zeiten, Kalender und Kontakt.',
+            'Mit KI-Unterstützung umgesetzt und das Ergebnis geprüft und korrigiert, bis es zum Entwurf passte.',
+          ],
+          features: [
+            'Hero mit Titel, Handlungsaufrufen und Links zu Stufen und Instagram.',
+            'Stufen-Seiten für alle vier Altersgruppen mit Überblick zum Erwartbaren.',
+            'Kalenderansicht für Anlässe, Lager und Termine.',
+            'Treffpunkt-Block mit ÖV- und Karten-Links.',
+            'Kontakt-, Fehler-melden- und Rechtsseiten (Impressum, Datenschutz) mit Webmaster-Angabe.',
+          ],
+          challenges: [
+            'Umfangsdisziplin: Eine Gruppen-Website kann ewig wachsen — ich habe mich auf die Seiten beschränkt, die die Abteilung wirklich braucht.',
+            'Für zwei Publika gleichzeitig schreiben: Kinder wollen Abenteuer, Eltern wollen Fakten.',
+            'Lektion: KI-generierte Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten früh aufgedeckt, bevor sie zu Strukturproblemen wurden.',
+          ],
+          limits: [
+            'Kein öffentliches Quell-Repository — nur die Live-Seite ist einsehbar.',
+            'Keine Nutzungsmessung, kein gesammeltes Feedback; es gibt keine Kennzahlen oder Testimonials.',
+          ],
+          stateBody:
+            'Live und bei der Abteilung im Einsatz. Inhalte werden aktualisiert, wie die Abteilung sie braucht.',
+          shots: [
+            'Homepage-Hero „Gipfelpause“ — Desktop, 1600×900',
+            'Stufen-Übersicht — Mobil, 390×844',
+          ],
+        },
+        cal: {
+          tagline: 'Eine Trainings-App, geformt vom echten Training.',
+          why: [
+            'Ich trainiere regelmässig Calisthenics und wollte eine App, die genau zu meinem Training passt — meine Übungen, meine Struktur, meine Anmutung. Da nichts von der Stange passte, habe ich meine eigene spezifiziert und gebaut.',
+            'Die veröffentlichte Demo ist live unter dem Namen FORM — Calisthenics Training.',
+          ],
+          decisions: [
+            'Ausgangspunkt waren meine eigenen Workouts, keine Feature-Liste: Die App musste eine echte Einheit überstehen.',
+            'Verhalten und Anmutung selbst festgelegt, dann die Umsetzung mit KI-Unterstützung gesteuert.',
+            'Jede Version am eigenen Training getestet und Schwachstellen behoben — das Trainingslog war der Abnahmetest.',
+          ],
+          features: [
+            'Live-Demo verifiziert: Die App lädt als FORM — Calisthenics Training.',
+            'Darüber hinaus beschreibe ich nur, was ich vom Bauen weiss: Workout-Routinen rund um mein Training, Version für Version verfeinert.',
+            'Eine ausführliche Feature-Tour mit Screenshots folgt, sobald ich die aktuelle Oberfläche dokumentiert habe.',
+          ],
+          challenges: [
+            'Das Schwerste war zu entscheiden, was nicht gebaut wird: Ein persönliches Werkzeug muss schnell und einfach bleiben.',
+            'Lektion: Tests am eigenen Training haben Bedienprobleme gefunden, die keine Checkliste gefunden hätte.',
+          ],
+          limits: [
+            'Die Demo ist eine clientseitig gerenderte App, ihre Oberfläche war von aussen nicht prüfbar — Details oben stammen aus meinen Bau-Notizen.',
+            'Kein öffentliches Quell-Repository — nur die Live-Demo ist einsehbar.',
+          ],
+          stateBody:
+            'Live als eigenes Projekt. Ich nutze sie weiter im Training und verbessere, was mich stört.',
+          shots: [
+            'Workout-Ansicht — Desktop, 1600×900',
+            'Workout-Ansicht — Mobil, 390×844',
+          ],
+        },
+        emvs: {
+          tagline: 'Ein local-first Dashboard fürs Überleben in der Berufsschule.',
+          why: [
+            'Berufslehre plus Berufsmaturität heisst Module, Ziele, Ressourcen, Prüfungen und Fristen überall. Ich wollte ein Dashboard, das alles hält — also habe ich den EMVS Study Hub entworfen und gebaut.',
+            'Local-first mit Absicht: Die Lerndaten leben über localStorage im Browser, die App funktioniert also ohne Konto und ohne Server.',
+          ],
+          decisions: [
+            'Local-first Speicher gewählt, damit die App ab der ersten Sekunde nützt, ohne Anmelde-Hürde.',
+            'An echten Lernabläufen strukturiert: Heute-Ansicht, Schwachstellen, Erfassen, Prüfungen, Wochen-Review, Werkzeuge.',
+            'Befehlspalette (⌘K) und Rückgängig eingebaut, weil ein täglich genutztes Werkzeug schnell und verzeihend sein muss.',
+            'Eine Supabase-E-Mail/Passwort-Basis strikt nur fürs Anmelden begonnen — bewusst noch nicht mit den Lerndaten verdrahtet.',
+          ],
+          features: [
+            'Modul-Tracking mit Lernzielen, Ressourcen, Sessions und Prüfungen.',
+            'Ansichten für Heute, Schwachstellen, Erfassen, Prüfungen, Review, Werkzeuge und Einstellungen.',
+            'Befehlspalette (⌘K) und Rückgängig-Unterstützung.',
+            'Wochen-Reviews zum Zurückschauen und Planen.',
+            'Einstellungen mit Supabase-E-Mail/Passwort-Login, Session-Wiederherstellung und Abmelden.',
+          ],
+          challenges: [
+            'Härteste Lektion: Anmeldung ist nicht Synchronisierung. Ein Login ändert nichts an den Daten — und das klar ins README zu schreiben war wichtiger als das Feature selbst.',
+            'Die Arbeit in Phasen zu teilen (erst lokale App, dann Auth-Basis, später Sync) hat ein ehrgeiziges Projekt auslieferbar gehalten.',
+            'Lektion: Festzuhalten, was eine Phase ausdrücklich nicht tut, verhindert die gefährlichsten Missverständnisse.',
+          ],
+          limits: [
+            'Keine Cloud-Synchronisierung: Anmelden lädt, speichert, überschreibt oder löscht keine Lerndaten — das README sagt das ausdrücklich.',
+            'Daten leben im localStorage eines Browsers; Gerätewechsel oder Löschen der Website-Daten verliert sie.',
+            'Das Supabase-Setup braucht den eigenen Publishable Key; niemals einen Service-Role-Key im Browser-Code.',
+          ],
+          stateBody:
+            'In Arbeit und lokal nutzbar. Auth-Basis fertig; Cloud-Sync ist eine separate spätere Phase.',
+          shots: [
+            'Dashboard-Ansicht „Heute“ — Desktop, 1600×900',
+            'Schwachstellen-Ansicht — Mobil, 390×844',
+          ],
+          techStack: ['HTML', 'CSS', 'JavaScript (ohne Build-Schritt)', 'localStorage', 'Supabase Auth (E-Mail/Passwort)', 'Supabase-JS-Client via esm.sh'],
+          techSetup: [
+            'Repository klonen und Projektordner öffnen.',
+            '„npm start“ ausführen.',
+            'http://localhost:8080 im Browser öffnen.',
+            'Fürs Anmelden: eigenen Supabase-Publishable-Key in js/services/supabaseClient.js eintragen, über HTTP(S) ausliefern, dann Einstellungen → Konto / Supabase öffnen.',
+          ],
+        },
+        ben: {
+          tagline: 'One person. One pace. Keep going.',
+          why: [
+            'Ich wollte einen Fitness-Tracker, der um eine einzelne Person in ihrem eigenen Tempo geformt ist — meinem Tempo. Statt einen Tracker bei null zu bauen, habe ich openGym geforkt, einen selbst-hostbaren Gym- und Bodyweight-Tracker, und forme ihn zu BEN.SUSTAIN um.',
+            'Die Markenidee ist meine: „BEN.SUSTAIN — One person. One pace. Keep going.“ Die Engine darunter ist Open-Source-Arbeit anderer, und genau so stelle ich sie dar.',
+          ],
+          decisions: [
+            'openGym als Basis gewählt, weil es die schwierigen Teile schon löst: Routinen, geführte Workouts, Progressionslogik, Offline-Nutzung.',
+            'Den Fork öffentlich auf GitHub gehalten, damit die Ableitung vom Upstream sichtbar bleibt.',
+            'Richtung gesetzt: ein ruhigeres, persönliches Einzelpersonen-Erlebnis unter dem Namen BEN.SUSTAIN.',
+          ],
+          inherited: [
+            'Routinenplanung über eine grosse Übungsbibliothek mit animierten Demos, durchsuchbar nach Muskel.',
+            'Geführte Workouts mit vorausgefüllten Gewichten, Pausen-Timer und automatischer PR-Erkennung.',
+            'Progressionsregeln, geschätztes 1RM, Aktivitäts-Heatmap und Muskelkarten.',
+            'Import aus FitNotes, Strong und Hevy; vollständiger JSON-Export.',
+            'Passkey-Login, Offline-Unterstützung, Self-Hosting mit Docker.',
+          ],
+          mine: [
+            'Das BEN.SUSTAIN-Markenkonzept und die Einzelpersonen-Ausrichtung.',
+            'Anpassungsentscheidungen für den eigenen Gebrauch — die genaue Änderungsliste wird hier noch dokumentiert.',
+          ],
+          challenges: [
+            'Lektion: Einen grossen, reifen Codebase zu forken demütigt — Lesen und Verstehen kommt vor dem Ändern.',
+            'Lektion: Den Fork ehrlich zu halten heisst, auf jeder Seite zu benennen, was übernommen ist.',
+          ],
+          limits: [
+            'Meine konkreten Code-Änderungen sind auf dieser Seite noch nicht dokumentiert — der Abschnitt ist ein Platzhalter bis zur Prüfung.',
+            'Es gibt keine öffentliche Live-Demo meines Forks.',
+          ],
+          stateBody:
+            'Geforkt und öffentlich. Richtung gesetzt; Änderungsdetails werden noch dokumentiert.',
+          shots: [
+            'BEN.SUSTAIN-Startansicht — Desktop, 1600×900',
+            'Geführte Workout-Ansicht — Mobil, 390×844',
+          ],
+          techStack: ['Upstream: React 19 + Vite Frontend', 'Upstream: schlichte Node.js API', 'Docker-Compose-Self-Hosting', 'Lizenz: GNU AGPLv3'],
+          techSetup: [
+            'Docker mit Compose wird benötigt.',
+            'Fork klonen, .env.example nach .env kopieren und Hostnamen-Einstellungen anpassen.',
+            '„docker compose up -d“ ausführen und http://localhost:8080 öffnen.',
+            'Hinweis: Das sind die Upstream-Kurzstart-Schritte; Fork-spezifische Setup-Angaben müssen noch geprüft werden.',
+          ],
+        },
       },
     },
     skills: {
@@ -343,22 +601,32 @@ export const translations = {
     about: {
       title: 'Abseits vom Code',
       intro1:
-        'Ich bin Elias, Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität in Technik, Architektur und Life Sciences. Ich stehe noch am Anfang — neugierig, experimentierfreudig, und ich lerne, indem ich Dinge baue, die wirklich funktionieren.',
+        'Ich bin Elias. Tagsüber bin ich Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität TALS. In der restlichen Zeit bin ich lieber die Person, die das Ding baut, statt über das Bauen zu reden.',
       intro2:
-        'Was mich antreibt, ist eigenständiges Denken und praktisches Problemlösen: eine Idee haben, herausfinden, wie sie echt wird, und sie verbessern, bis sie im Alltag hält.',
-      pathTitle: 'Ausbildung',
-      pathBody:
-        'Ich bin derzeit in der Berufslehre als Informatiker EFZ und besuche die Berufsmaturitätsklassen. Beide Abschlüsse liegen noch vor mir.',
-      interestsTitle: 'Abseits der Tastatur',
-      interests: [
-        'Calisthenics — Training, das Geduld und ehrliche Selbsteinschätzung belohnt.',
-        'Pfadi — für meine Pfadi-Abteilung Pfadi Siders habe ich eine neue Website gebaut.',
-        'Nebenprojekte — kleine Ideen, die ich in meiner Freizeit in funktionierende Dinge verwandle.',
+        'Diese Seite ist die Nicht-CV-Version: was ich abseits der Tastatur tue und welche Ideen ich von dort mitbringe.',
+      eduBody:
+        'Berufslehre als Informatiker EFZ plus Berufsmaturitätsklassen — beides noch vor mir, dokumentiert unter diesen offiziellen Programmen:',
+      trainingTitle: 'Calisthenics: mein anderes Progressionssystem',
+      trainingBody:
+        'Ich trainiere regelmässig Calisthenics — dort habe ich die Haltung hinter meiner Skills-Sektion gelernt: Man steigt erst auf, wenn man es sich verdient hat. Mein eigenes Training ist auch der Abnahmetest für alles, was ich darum baue: Was eine echte Einheit nicht übersteht, wird nicht ausgeliefert.',
+      trainingGoals: 'Aktueller Fokus: solide Basics, ehrliche Form, Dranbleiben. Konkrete Skills und Ziele liste ich hier, sobald ich sie sauber aufgeschrieben habe.',
+      scoutsTitle: 'Pfadi',
+      scoutsBody:
+        'Ich bin bei der Pfadi St. Christophorus Siders dabei — und als die Abteilung eine neue Website brauchte, habe ich sie gebaut. Die Pfadi hat mir die praktische Seite von Verantwortung früh beigebracht: Nachmittag planen, über dem Feuer kochen, alle heil nach Hause bringen.',
+      tinkeringTitle: 'Tüftelei in der Freizeit',
+      tinkeringBody:
+        'Study Hub, Trainings-Apps, kleine Experimente: Meine Freizeit verwandelt sich gerne in funktionierende Software. Ich mag Werkzeuge, die erst einmal meine eigenen Probleme lösen — helfen sie anderen auch, umso besser.',
+      valuesTitle: 'Worauf ich ziele',
+      values: [
+        'Neugier vor Komfort — das Unbekannte absichtlich ausprobieren.',
+        'Eigenständiges Denken — verstehen, bevor man kopiert.',
+        'Praktisches Problemlösen — fertig und funktionierend schlägt perfekt und geplant.',
+        'Ehrlichkeit zum eigenen Stand — noch am Lernen, und das auch sagen.',
       ],
-      nowTitle: 'Gerade jetzt',
-      nowBody:
-        'Ich arbeite weiter am EMVS Study Hub, trainiere regelmässig und halte fest, was ich Projekt für Projekt lerne.',
-      photoPlaceholder: 'Foto folgt in Phase 2.',
+      readingTitle: 'Lesen und Ideen',
+      readingBody: 'Hier kommt eine kurze Liste von Büchern und Ideen, die mich beeinflussen.',
+      photoLabel: 'Foto-Platzhalter',
+      photoBody: 'Hier kommt ein persönliches Foto hin (4:3), sobald ich eines liefere.',
       contactCta: 'Kontakt aufnehmen',
     },
     contact: {

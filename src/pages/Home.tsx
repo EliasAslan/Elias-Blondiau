@@ -153,9 +153,9 @@ export default function Home() {
               </Link>
             </p>
           </div>
-          <div className="sticker sticker-alt" aria-hidden="true">
-            {t.about.nowTitle}
-            <small>{t.about.nowBody}</small>
+          <div className="shot photo" role="note" aria-label={t.home.beyondPhotoLabel}>
+            <p className="placeholder-title">{t.home.beyondPhotoLabel}</p>
+            <p>{t.home.beyondPhotoBody}</p>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { PROJECT_SLUGS, type ProjectSlug } from '../data/site';
 import { getProjectEntry } from '../data/projects';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Placeholder, ProjectCard } from '../components/layout';
+import { ProjectCard } from '../components/layout';
 
 const DETAIL_KEYS = {
   'pfadi-siders': 'pfadi',
@@ -41,10 +41,11 @@ export default function ProjectDetail() {
   }
 
   const entry = getProjectEntry(t, slug)!;
-  const detail = t.detail[DETAIL_KEYS[slug]];
+  const story = t.detail.sections[DETAIL_KEYS[slug]];
   const statusClass =
     slug === 'emvs-study-hub' ? 'wip' : slug === 'ben-sustain' ? 'mod' : 'live';
   const others = PROJECT_SLUGS.filter((s) => s !== slug);
+  const hasTech = 'techStack' in story && 'techSetup' in story;
 
   return (
     <>
@@ -57,53 +58,148 @@ export default function ProjectDetail() {
           </p>
           <p className={`status ${statusClass}`}>{entry.status}</p>
           <h2 id="detail-h">{entry.title}</h2>
+          <p className="tagline">{story.tagline}</p>
           <p className="lead">{entry.body}</p>
-          <p>{detail.extra}</p>
         </div>
       </section>
 
-      <section aria-labelledby="contrib-h">
-        <div className="wrap narrow">
-          <div className="detail-grid">
-            <div className="card">
-              <h3 id="contrib-h">{t.detail.contribution}</h3>
+      <section aria-labelledby="why-h">
+        <div className="wrap narrow story">
+          <h3 id="why-h" className="plain-h">
+            {t.detail.whyT}
+          </h3>
+          {story.why.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+
+          <h3 className="plain-h">{t.detail.decisionsT}</h3>
+          <ul className="check-list">
+            {story.decisions.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
+
+          {'features' in story && (
+            <>
+              <h3 className="plain-h">{t.detail.featuresT}</h3>
               <ul className="check-list">
-                {detail.points.map((point) => (
+                {story.features.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
               </ul>
-            </div>
-            <div className="card card-state">
-              <h3>{t.detail.state}</h3>
-              <p>{detail.stateBody}</p>
-              {entry.note && <p className="note">{entry.note}</p>}
-              {entry.url && entry.cta && (
-                <>
-                  <h3 className="links-h">{t.detail.links}</h3>
-                  <p className="hero-links">
-                    <a
-                      className="btn primary"
-                      href={entry.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {entry.cta}
-                      <span className="sr-only"> {t.projects.openNewTab}</span>
-                    </a>
-                  </p>
-                </>
-              )}
-            </div>
+            </>
+          )}
+          {'inherited' in story && (
+            <>
+              <h3 className="plain-h">{t.detail.inheritedT}</h3>
+              <ul className="check-list">
+                {story.inherited.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+              <h3 className="plain-h">{t.detail.mineT}</h3>
+              <ul className="check-list">
+                {story.mine.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          <h3 className="plain-h">{t.detail.challengesT}</h3>
+          <ul className="plain-list">
+            {story.challenges.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
+
+          <div className="card card-state">
+            <h3>{t.detail.limitsT}</h3>
+            <ul className="plain-list">
+              {story.limits.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
           </div>
+
+          <div className="card">
+            <h3>{t.detail.state}</h3>
+            <p>{story.stateBody}</p>
+            {entry.note && <p className="note">{entry.note}</p>}
+            <h3 className="links-h">{t.detail.links}</h3>
+            <ul className="link-rows">
+              {entry.demoUrl && (
+                <li>
+                  <span>{t.projects.demoLabel}</span>
+                  <a
+                    href={entry.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {entry.demoUrl.replace('https://', '').replace(/\/$/, '')}
+                    <span className="sr-only"> {t.projects.openNewTab}</span>
+                  </a>
+                </li>
+              )}
+              {entry.repoUrl && (
+                <li>
+                  <span>{t.projects.repoLabel}</span>
+                  <a
+                    href={entry.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {entry.repoUrl.replace('https://', '').replace(/\/$/, '')}
+                    <span className="sr-only"> {t.projects.openNewTab}</span>
+                  </a>
+                </li>
+              )}
+              {entry.upstreamUrl && (
+                <li>
+                  <span>{t.projects.upstreamLabel}</span>
+                  <a
+                    href={entry.upstreamUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {entry.upstreamUrl.replace('https://', '').replace(/\/$/, '')}
+                    <span className="sr-only"> {t.projects.openNewTab}</span>
+                  </a>
+                </li>
+              )}
+              {!entry.repoUrl && <li className="muted">{t.projects.noSource}</li>}
+            </ul>
+          </div>
+
+          <details className="tech">
+            <summary>{t.detail.tech}</summary>
+            <p className="muted">
+              {hasTech ? t.detail.techVerified : t.detail.techUnverified}
+            </p>
+            {hasTech && (
+              <>
+                <ul className="tag-list">
+                  {(story.techStack as string[]).map((s) => (
+                    <li key={s}>{s}</li>
+                  ))}
+                </ul>
+                <ol className="plain-list ordered">
+                  {(story.techSetup as string[]).map((s) => (
+                    <li key={s}>{s}</li>
+                  ))}
+                </ol>
+              </>
+            )}
+          </details>
+
+          <h3 className="plain-h">{t.detail.shots}</h3>
           <div className="detail-grid">
-            <Placeholder
-              title={t.detail.comingScreens}
-              body={t.detail.comingScreensBody}
-            />
-            <Placeholder
-              title={t.detail.comingTech}
-              body={t.detail.comingTechBody}
-            />
+            {story.shots.map((shot) => (
+              <div key={shot} className="shot" role="note">
+                <p className="placeholder-title">{t.detail.shotPlaceholder}</p>
+                <p>{shot}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

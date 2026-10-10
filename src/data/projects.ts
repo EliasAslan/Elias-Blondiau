@@ -1,4 +1,5 @@
 import type { Translations } from '../i18n/LanguageContext';
+import { DEMOS, REPOS, UPSTREAM } from './site';
 import type { ProjectSlug } from './site';
 
 export interface ProjectEntry {
@@ -10,6 +11,9 @@ export interface ProjectEntry {
   url?: string;
   cta?: string;
   cardClass: string;
+  demoUrl?: string;
+  repoUrl?: string;
+  upstreamUrl?: string;
 }
 
 const CARD_CLASSES: Record<ProjectSlug, string> = {
@@ -17,6 +21,13 @@ const CARD_CLASSES: Record<ProjectSlug, string> = {
   'calisthenics-app': 'p-cal',
   'emvs-study-hub': 'p-emvs',
   'ben-sustain': 'p-ben',
+};
+
+const LINKS: Record<ProjectSlug, Partial<Pick<ProjectEntry, 'demoUrl' | 'repoUrl' | 'upstreamUrl'>>> = {
+  'pfadi-siders': { demoUrl: DEMOS.pfadi },
+  'calisthenics-app': { demoUrl: DEMOS.calisthenics },
+  'emvs-study-hub': { demoUrl: DEMOS.emvs, repoUrl: REPOS.emvs },
+  'ben-sustain': { repoUrl: REPOS.benFork, upstreamUrl: UPSTREAM.repo },
 };
 
 export function getProjectEntries(t: Translations): ProjectEntry[] {
@@ -35,6 +46,7 @@ export function getProjectEntries(t: Translations): ProjectEntry[] {
     url: 'url' in data ? (data.url as string) : undefined,
     cta: 'cta' in data ? (data.cta as string) : undefined,
     cardClass: CARD_CLASSES[slug],
+    ...LINKS[slug],
   }));
 }
 

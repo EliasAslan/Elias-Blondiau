@@ -261,6 +261,45 @@
   .placeholder-title { font-family: var(--display); font-weight: 800; font-size: 1.25rem; color: var(--fg); margin-bottom: .5rem; }
   .placeholder p:last-child { margin-bottom: 0; }
 
+  /* Phase 2 story pages */
+  .tagline { font-family: var(--display); font-weight: 700; font-size: clamp(1.25rem, 3vw, 1.75rem); color: var(--muted); margin-bottom: 1.5rem; }
+  .story > * + * { margin-top: 0; }
+  .story p { margin-bottom: 1em; }
+  .story .plain-h { margin-top: 2.5rem; }
+  .story .card { margin-top: 2rem; }
+  .plain-list { display: grid; gap: .7rem; margin-bottom: 1em; }
+  .plain-list li { position: relative; padding-left: 1.4rem; }
+  .plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+  .plain-list.ordered { list-style: decimal; padding-left: 1.5rem; }
+  .plain-list.ordered li { padding-left: .25rem; }
+  .plain-list.ordered li::before { content: none; }
+  .muted { color: var(--muted); }
+  .link-rows { display: grid; gap: .8rem; margin-top: 1rem; }
+  .link-rows li { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1rem; align-items: baseline; border-top: 2px solid var(--edge); padding-top: .8rem; }
+  .link-rows span { font-weight: 700; color: var(--muted); }
+  .link-rows a { font-weight: 700; overflow-wrap: anywhere; }
+  @media (max-width: 30rem) {
+    .link-rows li { grid-template-columns: 1fr; gap: .25rem; }
+  }
+  .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.5rem; }
+  .tag-list li { border: 2px solid var(--edge); background: var(--card); color: var(--fg); padding: .25rem .75rem; font-weight: 700; font-size: .95rem; }
+  details.tech {
+    border: 2px solid var(--edge); background: var(--card); color: var(--fg);
+    box-shadow: var(--shadow) var(--shadow) 0 var(--edge);
+    padding: 1rem 1.25rem; margin-top: 2rem;
+  }
+  details.tech summary { font-family: var(--display); font-weight: 800; font-size: 1.35rem; cursor: pointer; }
+  details.tech summary:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: .2em; }
+  .shot {
+    border: 2px dashed var(--edge); background: var(--bg); color: var(--muted);
+    padding: clamp(1.25rem, 3vw, 2rem); aspect-ratio: 16 / 9;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .shot p:last-child { margin-bottom: 0; }
+  .shot.photo { aspect-ratio: 4 / 3; margin-top: 2rem; transform: rotate(-.6deg); }
+  .card-values { background: var(--marker); color: var(--on-marker); border-color: var(--on-marker); }
+  .card-values .check-list li::before { background: var(--on-marker); }
+
   /* Small screens: smoother type scale, full-width actions, calm sticker */
   @media (max-width: 40rem) {
     .hero h1 { font-size: clamp(2.5rem, 14vw, 4rem); }

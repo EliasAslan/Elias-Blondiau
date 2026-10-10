@@ -5,6 +5,27 @@ export const CONTACT = {
   linkedin: 'https://www.linkedin.com/in/elias-blondiau-172b6a442/',
 } as const;
 
+/** Verified live demos (checked Oct 2026 — all resolve). */
+export const DEMOS = {
+  pfadi: 'https://pfadi-siders-updated.vercel.app/',
+  calisthenics: 'https://refreshing-apex-form-flow.base44.app/',
+  emvs: 'https://em-vs-study-hub.vercel.app/',
+} as const;
+
+/** Verified public source repositories (github.com/EliasAslan). */
+export const REPOS = {
+  /** EMVS Study Hub source — public, JavaScript. */
+  emvs: 'https://github.com/EliasAslan/EMVs-studyHub',
+  /** BEN.SUSTAIN fork — public fork of upstream openGym. */
+  benFork: 'https://github.com/EliasAslan/benOpenGym',
+} as const;
+
+/** Verified upstream project for BEN.SUSTAIN (AGPL-3.0). */
+export const UPSTREAM = {
+  repo: 'https://github.com/DuarteSantos8/openGym',
+  site: 'https://opengym.ch',
+} as const;
+
 export const LANG_STORAGE_KEY = 'elias_portfolio_lang';
 
 export const EDUCATION_LINKS = {
