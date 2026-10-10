@@ -8,10 +8,10 @@ export const translations = {
       main: 'Main navigation',
     },
     meta: {
-      home: 'Elias Blondiau. Portfolio',
-      projects: 'Projects. Elias Blondiau',
-      about: 'Beyond Code. Elias Blondiau',
-      notFound: 'Page not found. Elias Blondiau',
+      home: 'Elias Blondiau | Portfolio',
+      projects: 'Projects | Elias Blondiau',
+      about: 'Beyond Code | Elias Blondiau',
+      notFound: 'Page not found | Elias Blondiau',
       projectSuffix:
         'a project by Elias Blondiau, Informatiker EFZ apprentice in platform development',
       descriptions: {
@@ -383,7 +383,7 @@ export const translations = {
         '3 × 10 relaxed scrolls',
         '1 × slow read of the About page',
         '60-second plank while the build runs (optional)',
-        '0 skipped leg days. there are no legs here',
+        '0 skipped leg days. There are no legs here.',
       ],
       restBack: 'Back to training',
       restSession: 'Today’s session. Check things off as you go.',
@@ -401,10 +401,10 @@ export const translations = {
       main: 'Hauptnavigation',
     },
     meta: {
-      home: 'Elias Blondiau. Portfolio',
-      projects: 'Projekte. Elias Blondiau',
-      about: 'Abseits vom Code. Elias Blondiau',
-      notFound: 'Seite nicht gefunden. Elias Blondiau',
+      home: 'Elias Blondiau | Portfolio',
+      projects: 'Projekte | Elias Blondiau',
+      about: 'Abseits vom Code | Elias Blondiau',
+      notFound: 'Seite nicht gefunden | Elias Blondiau',
       projectSuffix:
         'ein Projekt von Elias Blondiau, Informatiker-EFZ-Lernendem',
       descriptions: {
@@ -576,7 +576,7 @@ export const translations = {
           ],
           limits: [
             'Ich habe noch nicht jeden Bildschirm dokumentiert und beschränke mich deshalb auf Details, die ich aus meinen Notizen bestätigen kann.',
-            'Kein öffentliches Quell-Repository. nur die Live-Demo ist einsehbar.',
+            'Kein öffentliches Quell-Repository. Nur die Live-Demo ist einsehbar.',
           ],
           stateBody:
             'Live als eigenes Projekt. Ich nutze sie weiter im Training und verbessere, was mich stört.',
@@ -777,7 +777,7 @@ export const translations = {
         '3 × 10 entspannte Scrolls',
         '1 × langsames Lesen der Über-mich-Seite',
         '60 Sekunden Plank, während der Build läuft (optional)',
-        '0 ausgelassene Leg Days. hier gibt es keine Beine',
+        '0 ausgelassene Leg Days. Hier gibt es keine Beine.',
       ],
       restBack: 'Zurück zum Training',
       restSession: 'Heutige Einheit. Einfach abhaken.',
