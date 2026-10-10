@@ -120,7 +120,7 @@
   /* Sections */
   section { padding-block: clamp(3rem, 7vw, 6rem); }
   .section-head { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
-  .section-head h2 { font-size: clamp(2.25rem, 6vw, 4.5rem); }
+  .section-head h1, .section-head h2 { font-size: clamp(2.25rem, 6vw, 4.5rem); }
   .section-head p { margin-top: 1rem; color: var(--muted); }
 
   /* Projects */
@@ -129,7 +129,7 @@
     background: var(--card); border: 2px solid var(--edge); box-shadow: var(--shadow) var(--shadow) 0 var(--edge);
     padding: clamp(1.25rem, 3vw, 2rem);
   }
-  .card h3 { font-size: clamp(1.75rem, 3.2vw, 2.5rem); margin-bottom: .75rem; overflow-wrap: break-word; }
+  .card h2, .card h3 { font-size: clamp(1.75rem, 3.2vw, 2.5rem); margin-bottom: .75rem; overflow-wrap: break-word; }
   .status { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; font-size: .95rem; margin-bottom: 1rem; }
   .status::before { content: ""; width: .7rem; height: .7rem; background: currentColor; flex: none; }
   .status.live::before { border-radius: 50%; }
@@ -237,12 +237,12 @@
   }
 
   /* Detail pages */
-  .detail-hero h2 { font-size: clamp(2.25rem, 7vw, 5rem); margin: .75rem 0 1.25rem; max-width: 16ch; }
+  .detail-hero h1, .detail-hero h2 { font-size: clamp(2.25rem, 7vw, 5rem); margin: .75rem 0 1.25rem; max-width: 16ch; }
   .detail-grid { display: grid; gap: 1.5rem; margin-bottom: 1.5rem; }
   @media (min-width: 52rem) {
     .detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  .detail-grid .card h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 1rem; }
+  .detail-grid .card h2, .detail-grid .card h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 1rem; }
   .card-state { background: var(--bg); box-shadow: none; border-style: dashed; }
   .links-h { margin-top: 1.5rem; }
   .check-list { display: grid; gap: .7rem; }
@@ -299,6 +299,19 @@
   .shot.photo { aspect-ratio: 4 / 3; margin-top: 2rem; transform: rotate(-.6deg); }
   .card-values { background: var(--marker); color: var(--on-marker); border-color: var(--on-marker); }
   .card-values .check-list li::before { background: var(--on-marker); }
+  .cmd-h { font-size: 1.15rem; margin: 1.5rem 0 .75rem; }
+  .cmd-list { display: grid; gap: .6rem; }
+  .cmd-list li {
+    display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem;
+    background: var(--bg); border: 2px solid var(--edge); padding: .5rem .75rem;
+  }
+  .cmd-list code { font-size: 1rem; overflow-wrap: anywhere; flex: 1 1 12rem; }
+  .copy-btn {
+    background: var(--card); color: var(--fg); border: 2px solid var(--edge);
+    font: inherit; font-weight: 700; font-size: .9rem; cursor: pointer;
+    padding: .35rem .8rem; flex: none;
+  }
+  .copy-btn:hover { background: var(--marker); color: var(--on-marker); }
 
   /* Small screens: smoother type scale, full-width actions, calm sticker */
   @media (max-width: 40rem) {

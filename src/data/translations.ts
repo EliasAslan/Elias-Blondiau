@@ -5,6 +5,13 @@ export const translations = {
       projects: 'Projects',
       about: 'Beyond Code',
       changeLanguage: 'Switch language',
+      main: 'Main navigation',
+    },
+    meta: {
+      home: 'Elias Blondiau — Portfolio',
+      projects: 'Projects — Elias Blondiau',
+      about: 'Beyond Code — Elias Blondiau',
+      notFound: 'Page not found — Elias Blondiau',
     },
     skip: 'Skip to content',
     hero: {
@@ -88,6 +95,9 @@ export const translations = {
       techVerified: 'Verified against the public repository and README.',
       techUnverified:
         'No public source to verify against — setup notes still need confirmation.',
+      copy: 'Copy',
+      copied: 'Copied!',
+      commandsT: 'Commands',
       shots: 'Screenshots',
       shotPlaceholder: 'Screenshot placeholder',
       notFoundTitle: 'Project not found',
@@ -209,6 +219,7 @@ export const translations = {
             'Open http://localhost:8080 in the browser.',
             'For sign-in: paste your own Supabase publishable key into js/services/supabaseClient.js, serve over HTTP(S), then open Einstellungen → Konto / Supabase.',
           ],
+          techCommands: ['npm start', 'http://localhost:8080'],
         },
         ben: {
           tagline: 'One person. One pace. Keep going.',
@@ -252,6 +263,12 @@ export const translations = {
             'Clone the fork, copy .env.example to .env and adjust the hostname settings.',
             'Run “docker compose up -d” and open http://localhost:8080.',
             'Note: these are the upstream quick-start steps; fork-specific setup notes still need verification.',
+          ],
+          techCommands: [
+            'git clone https://github.com/EliasAslan/benOpenGym',
+            'cp .env.example .env',
+            'docker compose up -d',
+            'http://localhost:8080',
           ],
         },
       },
@@ -325,6 +342,13 @@ export const translations = {
       projects: 'Projekte',
       about: 'Abseits vom Code',
       changeLanguage: 'Sprache wechseln',
+      main: 'Hauptnavigation',
+    },
+    meta: {
+      home: 'Elias Blondiau — Portfolio',
+      projects: 'Projekte — Elias Blondiau',
+      about: 'Abseits vom Code — Elias Blondiau',
+      notFound: 'Seite nicht gefunden — Elias Blondiau',
     },
     skip: 'Zum Inhalt springen',
     hero: {
@@ -409,6 +433,9 @@ export const translations = {
       techVerified: 'Gegen das öffentliche Repository und README geprüft.',
       techUnverified:
         'Keine öffentliche Quelle zum Prüfen — Setup-Angaben noch unbestätigt.',
+      copy: 'Kopieren',
+      copied: 'Kopiert!',
+      commandsT: 'Befehle',
       shots: 'Screenshots',
       shotPlaceholder: 'Screenshot-Platzhalter',
       notFoundTitle: 'Projekt nicht gefunden',
@@ -530,6 +557,7 @@ export const translations = {
             'http://localhost:8080 im Browser öffnen.',
             'Fürs Anmelden: eigenen Supabase-Publishable-Key in js/services/supabaseClient.js eintragen, über HTTP(S) ausliefern, dann Einstellungen → Konto / Supabase öffnen.',
           ],
+          techCommands: ['npm start', 'http://localhost:8080'],
         },
         ben: {
           tagline: 'One person. One pace. Keep going.',
@@ -573,6 +601,12 @@ export const translations = {
             'Fork klonen, .env.example nach .env kopieren und Hostnamen-Einstellungen anpassen.',
             '„docker compose up -d“ ausführen und http://localhost:8080 öffnen.',
             'Hinweis: Das sind die Upstream-Kurzstart-Schritte; Fork-spezifische Setup-Angaben müssen noch geprüft werden.',
+          ],
+          techCommands: [
+            'git clone https://github.com/EliasAslan/benOpenGym',
+            'cp .env.example .env',
+            'docker compose up -d',
+            'http://localhost:8080',
           ],
         },
       },

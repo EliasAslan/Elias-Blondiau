@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { CONTACT, projectPath } from '../data/site';
 import { getProjectEntry } from '../data/projects';
@@ -31,7 +32,7 @@ export function SiteHeader() {
           Elias Blondiau
         </Link>
         <div className="head-right">
-          <nav className="site-nav" aria-label="Main">
+          <nav className="site-nav" aria-label={t.nav.main}>
             <ul>
               <li>
                 <NavLink to="/" end>{t.nav.home}</NavLink>
@@ -109,8 +110,7 @@ export function SiteFooter() {
   );
 }
 
-export function Placeholder({ title, body }: { title: string; body: string }) {
-  return (
+export function Placeholder({ title, body }: { title: string; body: string }) {  return (
     <div className="placeholder" role="note">
       <p className="placeholder-title">{title}</p>
       <p>{body}</p>
@@ -147,5 +147,47 @@ export function ProjectCard({ slug }: { slug: ProjectSlug }) {
         )}
       </p>
     </article>
+  );
+}
+
+export function CopyButton({ text }: { text: string }) {
+  const { t } = useLanguage();
+  const [copied, setCopied] = useState(false);
+  const timer = useRef<number | undefined>(undefined);
+
+  useEffect(() => {
+    return () => window.clearTimeout(timer.current);
+  }, []);
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const area = document.createElement('textarea');
+      area.value = text;
+      document.body.appendChild(area);
+      area.select();
+      try {
+        document.execCommand('copy');
+      } catch {
+        /* clipboard unavailable — label still describes the command */
+      }
+      area.remove();
+    }
+    setCopied(true);
+    window.clearTimeout(timer.current);
+    timer.current = window.setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <button
+      type="button"
+      className="copy-btn"
+      onClick={copy}
+      aria-label={`${t.detail.copy}: ${text}`}
+      aria-live="polite"
+    >
+      {copied ? t.detail.copied : t.detail.copy}
+    </button>
   );
 }

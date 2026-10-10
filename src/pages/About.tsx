@@ -9,7 +9,7 @@ export default function About() {
     <>
       <section className="detail-hero" aria-labelledby="about-h">
         <div className="wrap narrow">
-          <h2 id="about-h">{t.about.title}</h2>
+          <h1 id="about-h">{t.about.title}</h1>
           <p className="lead">{t.about.intro1}</p>
           <p>{t.about.intro2}</p>
           <div className="shot photo" role="note">
@@ -22,7 +22,7 @@ export default function About() {
       <section aria-labelledby="path-h">
         <div className="wrap narrow">
           <div className="card">
-            <h3 id="path-h">{t.education.title}</h3>
+            <h2 id="path-h">{t.education.title}</h2>
             <p>{t.about.eduBody}</p>
             <ul className="edu-links">
               <li>
@@ -52,13 +52,13 @@ export default function About() {
 
       <section aria-labelledby="training-h">
         <div className="wrap narrow story">
-          <h3 id="training-h" className="plain-h">
+          <h2 id="training-h" className="plain-h">
             {t.about.trainingTitle}
-          </h3>
+          </h2>
           <p>{t.about.trainingBody}</p>
           <p className="note">{t.about.trainingGoals}</p>
 
-          <h3 className="plain-h">{t.about.scoutsTitle}</h3>
+          <h2 className="plain-h">{t.about.scoutsTitle}</h2>
           <p>{t.about.scoutsBody}</p>
           <p className="hero-links">
             <Link className="btn" to="/projects/pfadi-siders">
@@ -66,7 +66,7 @@ export default function About() {
             </Link>
           </p>
 
-          <h3 className="plain-h">{t.about.tinkeringTitle}</h3>
+          <h2 className="plain-h">{t.about.tinkeringTitle}</h2>
           <p>{t.about.tinkeringBody}</p>
           <p className="hero-links">
             <Link className="btn" to="/projects">
@@ -79,7 +79,7 @@ export default function About() {
       <section aria-labelledby="values-h">
         <div className="wrap narrow">
           <div className="card card-values">
-            <h3 id="values-h">{t.about.valuesTitle}</h3>
+            <h2 id="values-h">{t.about.valuesTitle}</h2>
             <ul className="check-list">
               {t.about.values.map((item) => (
                 <li key={item}>{item}</li>

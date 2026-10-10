@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <section aria-labelledby="nf-h">
       <div className="wrap narrow">
-        <h2 id="nf-h">{t.detail.notFoundTitle}</h2>
+        <h1 id="nf-h">{t.detail.notFoundTitle}</h1>
         <p>{t.detail.notFoundBody}</p>
         <p className="hero-links">
           <Link className="btn primary" to="/">

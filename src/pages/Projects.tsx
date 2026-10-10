@@ -8,7 +8,7 @@ export default function Projects() {
     <section aria-labelledby="projects-h">
       <div className="wrap">
         <div className="section-head page-head">
-          <h2 id="projects-h">{t.projects.title}</h2>
+          <h1 id="projects-h">{t.projects.title}</h1>
           <p>{t.projects.subtitle}</p>
         </div>
         <div className="projects">

@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { PROJECT_SLUGS, type ProjectSlug } from '../data/site';
 import { getProjectEntry } from '../data/projects';
 import { useLanguage } from '../i18n/LanguageContext';
-import { ProjectCard } from '../components/layout';
+import { CopyButton, ProjectCard } from '../components/layout';
 
 const DETAIL_KEYS = {
   'pfadi-siders': 'pfadi',
@@ -28,7 +28,7 @@ export default function ProjectDetail() {
               ← {t.detail.back}
             </Link>
           </p>
-          <h2 id="missing-h">{t.detail.notFoundTitle}</h2>
+          <h1 id="missing-h">{t.detail.notFoundTitle}</h1>
           <p>{t.detail.notFoundBody}</p>
           <p className="hero-links">
             <Link className="btn primary" to="/projects">
@@ -57,7 +57,7 @@ export default function ProjectDetail() {
             </Link>
           </p>
           <p className={`status ${statusClass}`}>{entry.status}</p>
-          <h2 id="detail-h">{entry.title}</h2>
+          <h1 id="detail-h">{entry.title}</h1>
           <p className="tagline">{story.tagline}</p>
           <p className="lead">{entry.body}</p>
         </div>
@@ -65,14 +65,14 @@ export default function ProjectDetail() {
 
       <section aria-labelledby="why-h">
         <div className="wrap narrow story">
-          <h3 id="why-h" className="plain-h">
+          <h2 id="why-h" className="plain-h">
             {t.detail.whyT}
-          </h3>
+          </h2>
           {story.why.map((p) => (
             <p key={p}>{p}</p>
           ))}
 
-          <h3 className="plain-h">{t.detail.decisionsT}</h3>
+          <h2 className="plain-h">{t.detail.decisionsT}</h2>
           <ul className="check-list">
             {story.decisions.map((point) => (
               <li key={point}>{point}</li>
@@ -81,7 +81,7 @@ export default function ProjectDetail() {
 
           {'features' in story && (
             <>
-              <h3 className="plain-h">{t.detail.featuresT}</h3>
+              <h2 className="plain-h">{t.detail.featuresT}</h2>
               <ul className="check-list">
                 {story.features.map((point) => (
                   <li key={point}>{point}</li>
@@ -91,13 +91,13 @@ export default function ProjectDetail() {
           )}
           {'inherited' in story && (
             <>
-              <h3 className="plain-h">{t.detail.inheritedT}</h3>
+              <h2 className="plain-h">{t.detail.inheritedT}</h2>
               <ul className="check-list">
                 {story.inherited.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
               </ul>
-              <h3 className="plain-h">{t.detail.mineT}</h3>
+              <h2 className="plain-h">{t.detail.mineT}</h2>
               <ul className="check-list">
                 {story.mine.map((point) => (
                   <li key={point}>{point}</li>
@@ -106,7 +106,7 @@ export default function ProjectDetail() {
             </>
           )}
 
-          <h3 className="plain-h">{t.detail.challengesT}</h3>
+          <h2 className="plain-h">{t.detail.challengesT}</h2>
           <ul className="plain-list">
             {story.challenges.map((point) => (
               <li key={point}>{point}</li>
@@ -114,7 +114,7 @@ export default function ProjectDetail() {
           </ul>
 
           <div className="card card-state">
-            <h3>{t.detail.limitsT}</h3>
+            <h2>{t.detail.limitsT}</h2>
             <ul className="plain-list">
               {story.limits.map((point) => (
                 <li key={point}>{point}</li>
@@ -123,10 +123,10 @@ export default function ProjectDetail() {
           </div>
 
           <div className="card">
-            <h3>{t.detail.state}</h3>
+            <h2>{t.detail.state}</h2>
             <p>{story.stateBody}</p>
             {entry.note && <p className="note">{entry.note}</p>}
-            <h3 className="links-h">{t.detail.links}</h3>
+            <h2 className="links-h">{t.detail.links}</h2>
             <ul className="link-rows">
               {entry.demoUrl && (
                 <li>
@@ -188,11 +188,24 @@ export default function ProjectDetail() {
                     <li key={s}>{s}</li>
                   ))}
                 </ol>
+                {'techCommands' in story && (
+                  <>
+                    <h3 className="cmd-h">{t.detail.commandsT}</h3>
+                    <ul className="cmd-list">
+                      {(story.techCommands as string[]).map((cmd) => (
+                        <li key={cmd}>
+                          <code>{cmd}</code>
+                          <CopyButton text={cmd} />
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </>
             )}
           </details>
 
-          <h3 className="plain-h">{t.detail.shots}</h3>
+          <h2 className="plain-h">{t.detail.shots}</h2>
           <div className="detail-grid">
             {story.shots.map((shot) => (
               <div key={shot} className="shot" role="note">
