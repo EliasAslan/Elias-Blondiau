@@ -5,8 +5,8 @@ export const portfolioData: PortfolioData = {
     name: 'Elias Blondiau',
     preferredName: 'Elias',
     role: {
-      en: 'Informatiker EFZ Apprentice',
-      de: 'Informatiker EFZ in Ausbildung',
+      en: 'Informatiker EFZ — Plattformentwicklung',
+      de: 'Informatiker EFZ — Plattformentwicklung in Ausbildung',
     },
     workplace: 'EMVS BFO Visp',
     workplaceDetail: {
@@ -329,62 +329,62 @@ export const portfolioData: PortfolioData = {
 
   calisthenics: [
     {
-      name: 'Pull-ups',
+      name: 'Pull-ups & Weighted Pull-ups',
       currentProgression: {
-        en: 'Strict bodyweight reps with clean lock-out & chest-to-bar focus',
-        de: 'Saubere Wiederholungen mit vollem Bewegungsumfang & Brust zur Stange',
+        en: 'Around 20 clean bodyweight pull-ups and progressive weighted sets',
+        de: 'Etwa 20 saubere Klimmzüge mit Körpergewicht und progressive Zusatzgewichts-Sätze',
       },
       target: {
-        en: 'Weighted pull-up progression (+15kg)',
-        de: 'Zusatzgewicht-Progression (+15kg)',
+        en: 'Build strength while maintaining clean range of motion',
+        de: 'Kraft aufbauen und den sauberen Bewegungsumfang beibehalten',
       },
       status: 'mastering_form',
     },
     {
-      name: 'Muscle-up',
+      name: 'Handstand & Handstand Push-ups',
       currentProgression: {
-        en: 'Explosive high pull-ups and straight-bar dip transitions',
-        de: 'Explosive hohe Klimmzüge und Barren-Transitions',
+        en: 'Freestanding balance practice and wall-assisted handstand push-ups',
+        de: 'Freies Balancieren und wandgestützte Handstand-Liegestütze',
       },
       target: {
-        en: 'Strict clean bar muscle-up without kipping',
-        de: 'Sauberer Bar Muscle-Up ohne Schwung',
-      },
-      status: 'actively_training',
-    },
-    {
-      name: 'Handstand',
-      currentProgression: {
-        en: 'Wall-assisted holds & practicing kick-ups with wrist balance',
-        de: 'Wandgestützte Halteübungen & Freistehendes Ausbalancieren',
-      },
-      target: {
-        en: 'Consistent 30s freestanding hold with straight alignment',
-        de: 'Konstantes 30-Sekunden freies Stehen mit gerader Linie',
+        en: 'More consistent freestanding holds and deeper controlled reps',
+        de: 'Konstantere freie Holds und tiefere, kontrollierte Wiederholungen',
       },
       status: 'actively_training',
     },
     {
       name: 'Front Lever',
       currentProgression: {
-        en: 'Tuck front lever holds & advanced tuck lever raises',
-        de: 'Tuck Front Lever Halten & Advanced Tuck Lever Raises',
+        en: 'Advanced tuck holds and half-lay progression work',
+        de: 'Advanced-Tuck-Holds und Half-Lay-Progressionen',
       },
       target: {
-        en: 'Straddle front lever hold for 5-8 seconds',
-        de: 'Straddle Front Lever für 5-8 Sekunden stabil halten',
+        en: 'Progress toward a stronger, longer full-body lever hold',
+        de: 'Auf einen stärkeren und längeren Lever-Hold hinarbeiten',
       },
       status: 'actively_training',
     },
     {
-      name: 'Planche Progressions',
+      name: 'Planche & Back Lever',
       currentProgression: {
-        en: 'Planche leans, scapular protraction work & frog stands',
-        de: 'Planche Leans, Schulterblatt-Stabilität & Frog Stand',
+        en: 'Building straight-arm strength, shoulder control, and stable progressions',
+        de: 'Gestreckte Armkraft, Schulterkontrolle und stabile Progressionen aufbauen',
       },
       target: {
-        en: 'Tuck planche with straight arms',
-        de: 'Tuck Planche mit gestreckten Armen',
+        en: 'Develop controlled tuck progressions before advancing leverage',
+        de: 'Kontrollierte Tuck-Progressionen aufbauen, bevor die Hebelwirkung erhöht wird',
+      },
+      status: 'foundation',
+    },
+    {
+      name: 'All-round Skills',
+      currentProgression: {
+        en: 'Exploring human flag and dragon squat progressions alongside physique training',
+        de: 'Human-Flag- und Dragon-Squat-Progressionen parallel zum Krafttraining erkunden',
+      },
+      target: {
+        en: 'Build strength and mobility that transfer to harder skills',
+        de: 'Kraft und Beweglichkeit für schwierigere Skills aufbauen',
       },
       status: 'foundation',
     },
