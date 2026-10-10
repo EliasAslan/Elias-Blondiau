@@ -1,6 +1,6 @@
 {
-  "name": "Elias Blondiau — Portfolio",
-  "description": "Personal portfolio of Elias Blondiau, Informatiker EFZ apprentice at EMVS BFO Visp, Switzerland.",
+  "name": "Elias Blondiau | Portfolio",
+  "description": "Personal portfolio of Elias Blondiau, an Informatiker EFZ apprentice in platform development in Visp, Switzerland.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
