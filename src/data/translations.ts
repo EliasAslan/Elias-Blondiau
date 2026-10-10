@@ -37,7 +37,7 @@ export const translations = {
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
       sticker: 'Learning as I go',
-      stickerSmall: 'Informatiker EFZ, platform development · Visp',
+      stickerSmall: 'Informatiker EFZ in platform development · Visp',
     },
     education: {
       title: 'My path right now',
@@ -126,20 +126,20 @@ export const translations = {
       limitsT: 'Known limitations',
       sections: {
         pfadi: {
-          tagline: 'A scout group’s front door, rebuilt from scratch.',
+          tagline: 'A new website for my scout group.',
           why: [
             'Pfadi St. Christophorus Siders needed a website that shows what the group actually is: outdoor activities, clear age-group sections, a calendar people can find, and a way for newcomers to join. The old site no longer did that job, so I built a replacement.',
             'The site is live and in use. It has sections for Wölfe und Bienli, Pfadis, Pios and Rover, plus Abteilung, Kalender, Bilder, Mitmachen and Kontakt.',
           ],
           decisions: [
             'I chose the look and layout, including the “Gipfelpause” homepage and the page structure.',
-            'Gave every age group its own section so parents and kids land directly where they belong.',
+            'I gave each age group its own section so parents and kids can find the right information.',
             'Made the key details easy to find: meeting place (Pfadilokal, Rue Saint-Georges 19, Sierre), Saturday hours, calendar and contact.',
             'I used AI tools while coding, then checked and corrected the result against the design.',
           ],
           features: [
-            'Hero with headline, calls to action and links to the sections and Instagram.',
-            'Stufen pages for all four age groups with an overview of what to expect.',
+            'Homepage with links to the age groups, Instagram and key pages.',
+            'Pages for all four age groups, with an overview of their activities.',
             'Calendar view for meetups, camps and events.',
             'Meeting-place block with public-transport and map links.',
             'Contact, error-reporting and legal pages (Impressum, Datenschutz), with a webmaster credit.',
@@ -156,24 +156,24 @@ export const translations = {
           stateBody:
             'Live and in use by the group. Content updates happen as the group needs them.',
           shots: [
-            'Homepage hero “Gipfelpause”. desktop, 1600×900',
-            'Stufen overview. mobile, 390×844',
+            'Homepage hero “Gipfelpause”, desktop, 1600×900',
+            'Age-group overview, mobile, 390×844',
           ],
         },
         cal: {
-          tagline: 'A training app shaped by actual training.',
+          tagline: 'A workout app for my own training.',
           why: [
             'I train calisthenics regularly and wanted an app that fits how I train. I couldn’t find one that matched, so I built my own version.',
             'The live demo is called FORM: Calisthenics Training.',
           ],
           decisions: [
-            'Started from my own workouts, not from a feature list: the app had to survive a real session.',
-            'I chose how it should behave and look, then used AI assistance to help implement it.',
+            'I started with my own workouts and built around what I needed during a session.',
+            'I decided how it should look and work, then used AI tools to help with the code.',
             'I tested each version during my own training and fixed what got in the way.',
           ],
           features: [
             'The demo opens as FORM: Calisthenics Training.',
-            'The app is organized around my workout routines and gets refined as I use it.',
+            'The app follows my workout routines. I make changes as I use it.',
             'I have not documented every screen yet, so I have kept the feature list short.',
           ],
           challenges: [
@@ -187,20 +187,20 @@ export const translations = {
           stateBody:
             'Live as a personal project. I keep using it in training and improving what annoys me.',
           shots: [
-            'Workout session view. desktop, 1600×900',
-            'Workout session view. mobile, 390×844',
+            'Workout session view, desktop, 1600×900',
+            'Workout session view, mobile, 390×844',
           ],
         },
         emvs: {
-          tagline: 'A local-first dashboard for surviving vocational school.',
+          tagline: 'A dashboard for keeping my schoolwork together.',
           why: [
             'Between vocational school and the Berufsmaturität, I was tracking modules, objectives, resources, exams and deadlines in different places. I built the EMVS Study Hub to keep them together.',
-            'It is local-first on purpose: your study data lives in the browser via localStorage, so the app works without an account or a server.',
+            'Your study data stays in the browser using localStorage, so you can use the app without an account or a server.',
           ],
           decisions: [
-            'Chose local-first storage so the app is useful from the first second, with no signup friction.',
+            'I kept the data in the browser so the app works without sign-up.',
             'I added views for today’s work, weak spots, quick capture, exams, weekly reviews and tools.',
-            'Added a command palette (⌘K) and undo, because a tool you use daily must be fast and forgiving.',
+            'I added a command palette (⌘K) and undo to make common actions quicker and mistakes easier to fix.',
             'Added Supabase email and password sign-in. It does not connect to study data yet.',
           ],
           features: [
@@ -223,8 +223,8 @@ export const translations = {
           stateBody:
             'Still in progress, but usable locally. Sign-in is set up; cloud sync is not.',
           shots: [
-            'Dashboard “Heute” view. desktop, 1600×900',
-            'Schwachstellen view. mobile, 390×844',
+            'Dashboard “Heute” view, desktop, 1600×900',
+            'Schwachstellen view, mobile, 390×844',
           ],
           techStack: ['HTML', 'CSS', 'JavaScript (no build step)', 'localStorage', 'Supabase Auth (email/password)', 'Supabase JS client via esm.sh'],
           techSetup: [
@@ -244,7 +244,7 @@ export const translations = {
           decisions: [
             'I chose openGym because it already has routines, guided workouts, progression features and offline support.',
             'I kept the fork public on GitHub so it is clear where the project came from.',
-            'Set the direction toward a calmer, personal single-user experience under the BEN.SUSTAIN name.',
+            'I want BEN.SUSTAIN to feel simpler and more personal.',
           ],
           inherited: [
             'Routine planning over a large exercise library with animated demos, searchable by muscle.',
@@ -266,10 +266,10 @@ export const translations = {
             'There is no public live demo of my fork.',
           ],
           stateBody:
-            'Forked and public. Direction set; modification details to be documented.',
+            'The fork is public. I still need to document my changes.',
           shots: [
-            'BEN.SUSTAIN home view. desktop, 1600×900',
-            'Guided workout view. mobile, 390×844',
+            'BEN.SUSTAIN home view, desktop, 1600×900',
+            'Guided workout view, mobile, 390×844',
           ],
           techStack: ['Upstream: React 19 + Vite frontend', 'Upstream: plain Node.js API', 'Docker Compose self-hosting', 'License: GNU AGPLv3'],
           techSetup: [
@@ -330,9 +330,9 @@ export const translations = {
         'I spend my free time on study tools, training apps and other small projects. I usually start by solving a problem of my own. If it helps someone else too, even better.',
       valuesTitle: 'Things I try to stick to',
       values: [
-        'Curiosity over comfort. Try things I don’t know yet.',
+        'Try things I do not know yet.',
         'Think for myself. Understand before copying.',
-        'Solve practical problems. Working beats perfect plans.',
+        'Solve practical problems. A working result matters more than a perfect plan.',
         'Be honest about what I know and what I’m still learning.',
       ],
       readingTitle: 'Reading and ideas',
@@ -364,11 +364,11 @@ export const translations = {
       paletteNone: 'No match. Home is always a safe rep.',
       fourthTitle: 'Curiosity',
       fourthBody:
-        'Already maxed out. No certificate, just practice.',
+        'Already maxed out. No certificate needed.',
       fourthHint: 'It knows a secret: type “sustain” anywhere.',
       footerButton: 'Extra notes',
       footerNotes: [
-        'Built in the open, still learning.',
+        'Still learning as I build.',
         'No cookies or trackers. Just a website.',
         'Built with React, Vite and stubbornness.',
       ],
@@ -430,7 +430,7 @@ export const translations = {
       ctaProjects: 'Projekte ansehen',
       ctaContact: 'Kontakt aufnehmen',
       sticker: 'Ich lerne dazu',
-      stickerSmall: 'Informatiker EFZ, Plattformentwicklung · Visp',
+      stickerSmall: 'Lehre als Informatiker EFZ · Visp',
     },
     education: {
       title: 'Mein Weg gerade',
@@ -520,20 +520,20 @@ export const translations = {
       limitsT: 'Bekannte Einschränkungen',
       sections: {
         pfadi: {
-          tagline: 'Die Haustür einer Pfadi-Abteilung, neu gebaut.',
+          tagline: 'Eine neue Website für meine Pfadi-Abteilung.',
           why: [
             'Die Pfadi St. Christophorus Siders brauchte eine Website, die zeigt, was die Abteilung wirklich ist: Aktivitäten draussen, klare Stufen, ein auffindbarer Kalender und ein Weg für Neue zum Mitmachen. Die alte Seite hat das nicht mehr geleistet, also habe ich einen Ersatz gebaut.',
             'Die Seite ist live und wird genutzt. Sie enthält Bereiche für Wölfe und Bienli, Pfadis, Pios und Rover sowie Abteilung, Kalender, Bilder, Mitmachen und Kontakt.',
           ],
           decisions: [
-            'Visuelle Richtung selbst entworfen: ein ausdrucksstarker Hero („Gipfelpause“), eine Sprache, eine Struktur auf jeder Seite.',
-            'Jede Stufe hat einen eigenen Bereich, damit Kinder und Eltern direkt dort landen, wo sie hingehören.',
-            'Das Praktische steht vorne: Treffpunkt (Pfadilokal, Rue Saint-Georges 19, Sierre), Samstag-Zeiten, Kalender und Kontakt.',
-            'Mit KI-Unterstützung umgesetzt und das Ergebnis geprüft und korrigiert, bis es zum Entwurf passte.',
+            'Look und Aufbau selbst festgelegt, inklusive der Startseite „Gipfelpause“.',
+            'Jede Stufe hat einen eigenen Bereich, damit Kinder und Eltern die passenden Informationen finden.',
+            'Die wichtigsten Angaben sind leicht zu finden: Treffpunkt (Pfadilokal, Rue Saint-Georges 19, Sierre), Zeiten am Samstag, Kalender und Kontakt.',
+            'Beim Programmieren habe ich KI-Werkzeuge genutzt und den Code danach geprüft und korrigiert.',
           ],
           features: [
-            'Hero mit Titel, Handlungsaufrufen und Links zu Stufen und Instagram.',
-            'Stufen-Seiten für alle vier Altersgruppen mit Überblick zum Erwartbaren.',
+            'Startseite mit Links zu den Stufen, Instagram und den wichtigsten Seiten.',
+            'Seiten für alle vier Altersgruppen mit einem Überblick über ihre Aktivitäten.',
             'Kalenderansicht für Anlässe, Lager und Termine.',
             'Treffpunkt-Block mit ÖV- und Karten-Links.',
             'Kontakt-, Fehler-melden- und Rechtsseiten (Impressum, Datenschutz) mit Webmaster-Angabe.',
@@ -541,7 +541,7 @@ export const translations = {
           challenges: [
             'Ich musste mich auf die Seiten konzentrieren, die die Abteilung wirklich braucht.',
             'Für Kinder und Eltern zu schreiben bedeutete, Abenteuer und praktische Informationen auszubalancieren.',
-            'Layouts am echten Inhalt zu prüfen hat Probleme aufgedeckt, bevor sie sich weiterziehen konnten.',
+            'Beim Prüfen mit echten Inhalten habe ich Layout-Probleme entdeckt.',
           ],
           limits: [
             'Es gibt kein öffentliches Quell-Repository. Deshalb lässt sich nur die Live-Seite ansehen.',
@@ -550,28 +550,28 @@ export const translations = {
           stateBody:
             'Live und bei der Abteilung im Einsatz. Inhalte werden aktualisiert, wie die Abteilung sie braucht.',
           shots: [
-            'Homepage-Hero „Gipfelpause“. Desktop, 1600×900',
-            'Stufen-Übersicht. Mobil, 390×844',
+            'Startseiten-Hero „Gipfelpause“, Desktop, 1600×900',
+            'Stufenübersicht, Mobil, 390×844',
           ],
         },
         cal: {
-          tagline: 'Eine Trainings-App, geformt vom echten Training.',
+          tagline: 'Eine App für mein eigenes Training.',
           why: [
             'Ich trainiere regelmässig Calisthenics und wollte eine App, die zu meinem Training passt. Ich fand keine passende, also habe ich meine eigene Version gebaut.',
             'Die Live-Demo heisst FORM: Calisthenics Training.',
           ],
           decisions: [
-            'Ausgangspunkt waren meine eigenen Workouts, keine Feature-Liste: Die App musste eine echte Einheit überstehen.',
-            'Verhalten und Aussehen selbst festgelegt und KI bei der Umsetzung als Werkzeug genutzt.',
+            'Ich bin von meinen eigenen Workouts ausgegangen und habe die App an meine Bedürfnisse angepasst.',
+            'Aussehen und Verhalten selbst festgelegt. Bei der Umsetzung habe ich KI-Werkzeuge genutzt.',
             'Jede Version im eigenen Training getestet und verbessert, was dabei störte.',
           ],
           features: [
             'Die Demo öffnet als FORM: Calisthenics Training.',
-            'Die App ist um meine Trainingsroutinen aufgebaut und wird beim Nutzen weiter verbessert.',
+            'Die App richtet sich nach meinen Trainingsroutinen. Beim Nutzen passe ich sie weiter an.',
             'Ich muss die aktuelle Oberfläche noch dokumentieren, bevor ich eine genauere Feature-Liste ergänzen kann.',
           ],
           challenges: [
-            'Das Schwerste war zu entscheiden, was nicht gebaut wird: Ein persönliches Werkzeug muss schnell und einfach bleiben.',
+            'Ich musste entscheiden, welche Ideen ich weglasse, damit die App einfach bleibt.',
             'Beim Training habe ich Bedienprobleme entdeckt, die mir beim blossen Durchsehen nicht aufgefallen wären.',
           ],
           limits: [
@@ -581,19 +581,19 @@ export const translations = {
           stateBody:
             'Live als eigenes Projekt. Ich nutze sie weiter im Training und verbessere, was mich stört.',
           shots: [
-            'Workout-Ansicht. Desktop, 1600×900',
-            'Workout-Ansicht. Mobil, 390×844',
+            'Workout-Ansicht, Desktop, 1600×900',
+            'Workout-Ansicht, Mobil, 390×844',
           ],
         },
         emvs: {
-          tagline: 'Ein local-first Dashboard fürs Überleben in der Berufsschule.',
+          tagline: 'Ein Dashboard für meinen Schulstoff.',
           why: [
             'Mit Berufslehre und Berufsmaturität hatte ich Module, Lernziele, Materialien, Prüfungen und Fristen an verschiedenen Orten. Ich habe den EMVS Study Hub gebaut, um alles zusammenzuhalten.',
-            'Local-first mit Absicht: Die Lerndaten leben über localStorage im Browser, die App funktioniert also ohne Konto und ohne Server.',
+            'Die Lerndaten bleiben über localStorage im Browser. Die App funktioniert deshalb ohne Konto und Server.',
           ],
           decisions: [
-            'Local-first Speicher gewählt, damit die App ab der ersten Sekunde nützt, ohne Anmelde-Hürde.',
-            'An echten Lernabläufen strukturiert: Heute-Ansicht, Schwachstellen, Erfassen, Prüfungen, Wochen-Review, Werkzeuge.',
+            'Die Daten bleiben im Browser, damit die App ohne Anmeldung funktioniert.',
+            'Ansichten für Heute, Schwachstellen, Erfassen, Prüfungen, Wochenrückblick und Werkzeuge hinzugefügt.',
             'Befehlspalette (⌘K) und Rückgängig eingebaut, damit sich die App schneller bedienen lässt und Fehler nicht gleich zum Problem werden.',
             'Supabase-Anmeldung mit E-Mail und Passwort hinzugefügt. Die Lerndaten sind noch nicht damit verbunden.',
           ],
@@ -601,7 +601,7 @@ export const translations = {
             'Modul-Tracking mit Lernzielen, Ressourcen, Sessions und Prüfungen.',
             'Ansichten für Heute, Schwachstellen, Erfassen, Prüfungen, Review, Werkzeuge und Einstellungen.',
             'Befehlspalette (⌘K) und Rückgängig-Unterstützung.',
-            'Wochen-Reviews zum Zurückschauen und Planen.',
+            'Wochenrückblicke zum Prüfen und Planen.',
             'Einstellungen mit Supabase-E-Mail/Passwort-Login, Session-Wiederherstellung und Abmelden.',
           ],
           challenges: [
@@ -617,8 +617,8 @@ export const translations = {
           stateBody:
             'In Arbeit und lokal nutzbar. Auth-Basis fertig; Cloud-Sync ist eine separate spätere Phase.',
           shots: [
-            'Dashboard-Ansicht „Heute“. Desktop, 1600×900',
-            'Schwachstellen-Ansicht. Mobil, 390×844',
+            'Dashboard-Ansicht „Heute“, Desktop, 1600×900',
+            'Schwachstellen-Ansicht, Mobil, 390×844',
           ],
           techStack: ['HTML', 'CSS', 'JavaScript (ohne Build-Schritt)', 'localStorage', 'Supabase Auth (E-Mail/Passwort)', 'Supabase-JS-Client via esm.sh'],
           techSetup: [
@@ -638,7 +638,7 @@ export const translations = {
           decisions: [
             'openGym als Basis gewählt, weil es die schwierigen Teile schon löst: Routinen, geführte Workouts, Progressionslogik, Offline-Nutzung.',
             'Ich habe den Fork öffentlich gelassen, damit klar ist, woher das Projekt stammt.',
-            'Richtung gesetzt: ein ruhigeres, persönliches Einzelpersonen-Erlebnis unter dem Namen BEN.SUSTAIN.',
+            'BEN.SUSTAIN soll einfacher und persönlicher sein.',
           ],
           inherited: [
             'Routinenplanung über eine grosse Übungsbibliothek mit animierten Demos, durchsuchbar nach Muskel.',
@@ -660,10 +660,10 @@ export const translations = {
             'Es gibt keine öffentliche Live-Demo meines Forks.',
           ],
           stateBody:
-            'Geforkt und öffentlich. Richtung gesetzt; Änderungsdetails werden noch dokumentiert.',
+            'Der Fork ist öffentlich. Meine Änderungen muss ich noch dokumentieren.',
           shots: [
-            'BEN.SUSTAIN-Startansicht. Desktop, 1600×900',
-            'Geführte Workout-Ansicht. Mobil, 390×844',
+            'BEN.SUSTAIN-Startansicht, Desktop, 1600×900',
+            'Geführte Workout-Ansicht, Mobil, 390×844',
           ],
           techStack: ['Upstream: React 19 + Vite Frontend', 'Upstream: schlichte Node.js API', 'Docker-Compose-Self-Hosting', 'Lizenz: GNU AGPLv3'],
           techSetup: [
@@ -714,7 +714,7 @@ export const translations = {
         'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und parallel die Berufsmaturität TALS. Beides ist noch in Arbeit. Die offiziellen Programme sind:',
       trainingTitle: 'Calisthenics',
       trainingBody:
-        'Ich trainiere regelmässig Calisthenics. Dabei habe ich gelernt, erst dann zum nächsten Schritt zu wechseln, wenn der aktuelle sitzt. Beim Bauen von Trainingsfunktionen mache ich es ähnlich: Ich probiere sie im echten Training aus und verbessere, was stört.',
+        'Ich trainiere regelmässig Calisthenics. Bei neuen Übungen gehe ich erst weiter, wenn die aktuelle gut klappt. Neue Funktionen teste ich ebenfalls im Training und passe an, was mich stört.',
       trainingGoals: 'Im Moment arbeite ich an den Grundlagen und versuche, regelmässig zu trainieren. Konkrete Ziele ergänze ich, wenn ich sie festgelegt habe.',
       scoutsTitle: 'Pfadi',
       scoutsBody:
@@ -755,7 +755,7 @@ export const translations = {
       paletteLabel: 'Schnelle Seitensuche',
       palettePlaceholder: 'Seitenname tippen…',
       paletteHint: 'Gib einen Seitennamen ein, um ihn zu finden.',
-      paletteNone: 'Nichts gefunden. Start ist immer eine sichere Wiederholung.',
+      paletteNone: 'Nichts gefunden. Über die Startseite kommst du immer zurück.',
       fourthTitle: 'Neugier',
       fourthBody:
         'Schon auf Maximum. Kein Zertifikat, nur Übung.',
@@ -764,7 +764,7 @@ export const translations = {
       footerNotes: [
         'Offen gebaut, noch am Lernen.',
         'Keine Cookies und keine Tracker. Einfach eine Website.',
-        'Mit React, Vite und Sturheit gebaut.',
+        'Mit React, Vite und viel Ausprobieren gebaut.',
       ],
       footerRestBefore: 'Psst: Dieses Portfolio macht',
       footerRestLink: 'Ruhetage',
