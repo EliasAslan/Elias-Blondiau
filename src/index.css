@@ -33,6 +33,7 @@
     margin: 0; background: var(--bg); color: var(--fg);
     font-family: var(--body); font-size: 1.125rem; line-height: 1.6;
     -webkit-text-size-adjust: 100%;
+    overflow-x: clip;
   }
   img, svg { max-width: 100%; }
   a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 2px; }
@@ -55,11 +56,30 @@
   .site-nav ul { display: flex; gap: .25rem; }
   .site-nav a { display: block; padding: .4rem .8rem; text-decoration: none; font-weight: 700; border: 2px solid transparent; }
   .site-nav a:hover { border-color: var(--edge); }
-  .head-right { display: flex; align-items: center; gap: 1rem; }
+  .head-right { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; min-width: 0; }
   .lang-toggle { display: flex; align-items: center; gap: .15rem; }
   .lang-toggle button { background: none; border: 2px solid transparent; color: inherit; font: inherit; font-weight: 700; cursor: pointer; padding: .4rem .5rem; text-transform: uppercase; }
   .lang-toggle button:hover { border-color: var(--edge); }
   .lang-toggle button[aria-pressed="true"] { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: .2em; }
+
+  /* Narrow header: keep brand, nav and language toggle clear of each other */
+  @media (max-width: 30rem) {
+    .site-head .wrap { gap: .35rem .75rem; padding-block: .6rem; }
+    .brand { font-size: 1.1rem; }
+    .site-nav ul { flex-wrap: wrap; }
+    .site-nav a { padding: .45rem .55rem; }
+    .head-right { gap: .35rem .75rem; }
+  }
+  /* Taller wrapped header must not cover anchor targets */
+  @media (max-width: 40rem) {
+    html { scroll-padding-top: 9rem; }
+  }
+  /* Comfortable touch targets on touch devices */
+  @media (pointer: coarse) {
+    .site-nav a { padding: .7rem .8rem; }
+    .lang-toggle button { padding: .7rem .6rem; }
+    .btn { padding: .85rem 1.3rem; }
+  }
 
   /* Hero */
   .hero { padding-block: clamp(3rem, 9vw, 7rem) clamp(3rem, 7vw, 6rem); position: relative; }
@@ -86,6 +106,7 @@
     display: inline-block; padding: .7rem 1.2rem; border: 2px solid var(--edge); background: var(--card);
     color: var(--fg); font-weight: 700; text-decoration: none; box-shadow: 5px 5px 0 var(--edge);
     transition: transform .12s ease, box-shadow .12s ease;
+    max-width: 100%; overflow-wrap: anywhere;
   }
   .btn:hover { transform: translate(5px, 5px); box-shadow: 0 0 0 var(--edge); text-decoration: none; }
   .btn.primary { background: var(--accent); color: var(--on-accent); }
@@ -104,7 +125,7 @@
     background: var(--card); border: 2px solid var(--edge); box-shadow: var(--shadow) var(--shadow) 0 var(--edge);
     padding: clamp(1.25rem, 3vw, 2rem);
   }
-  .card h3 { font-size: clamp(1.75rem, 3.2vw, 2.5rem); margin-bottom: .75rem; }
+  .card h3 { font-size: clamp(1.75rem, 3.2vw, 2.5rem); margin-bottom: .75rem; overflow-wrap: break-word; }
   .status { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; font-size: .95rem; margin-bottom: 1rem; }
   .status::before { content: ""; width: .7rem; height: .7rem; background: currentColor; flex: none; }
   .status.live::before { border-radius: 50%; }
@@ -178,6 +199,19 @@
   footer { border-top: 2px solid var(--edge); padding-block: 1.5rem 2.5rem; color: var(--muted); font-size: 1rem; }
   footer p { margin: 0; max-width: none; }
 
+  /* Small screens: smoother type scale, full-width actions, calm sticker */
+  @media (max-width: 40rem) {
+    .hero h1 { font-size: clamp(2.5rem, 14vw, 4rem); }
+    .hero-copy p { font-size: 1.125rem; }
+  }
+  @media (max-width: 30rem) {
+    .wrap { width: min(100% - 2rem, 78rem); }
+    .hero-links .btn { flex: 1 1 100%; text-align: center; }
+    .sticker { max-width: 100%; transform: rotate(-1.5deg); margin-right: 0; }
+    .step { padding: 1.25rem; }
+    .skill-list li { font-size: 1.2rem; }
+    .contact-list li { grid-template-columns: 1fr; gap: .25rem; }
+  }
   /* One orchestrated moment on load, only if motion is welcome */
   @media (prefers-reduced-motion: no-preference) {
     .hero h1 span { animation: rise .7s cubic-bezier(.2,.8,.2,1) both; }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Language } from './types/portfolio';
 import { translations } from './data/translations';
 
@@ -17,6 +17,10 @@ export default function App() {
     }
   });
   const t = translations[lang];
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   const setLanguage = (l: Language) => {
     setLang(l);
@@ -107,16 +111,6 @@ export default function App() {
                 <p className="status live">{t.projects.pfadi.status}</p>
                 <h3>{t.projects.pfadi.title}</h3>
                 <p>{t.projects.pfadi.body}</p>
-                <dl className="roles">
-                  <div>
-                    <dt className="mine">{t.projects.myPart}</dt>
-                    <dd>{t.projects.pfadi.mine}</dd>
-                  </div>
-                  <div>
-                    <dt>{t.projects.withAI}</dt>
-                    <dd>{t.projects.pfadi.ai}</dd>
-                  </div>
-                </dl>
                 <p className="hero-links" style={{ marginTop: '1.75rem' }}>
                   <a
                     className="btn"
@@ -134,22 +128,6 @@ export default function App() {
                 <p className="status live">{t.projects.cal.status}</p>
                 <h3>{t.projects.cal.title}</h3>
                 <p>{t.projects.cal.body}</p>
-                <dl className="roles">
-                  <div>
-                    <dt className="mine">{t.projects.myPart}</dt>
-                    <dd>
-                      <ul>
-                        {t.projects.cal.mine.map((m) => (
-                          <li key={m}>{m}</li>
-                        ))}
-                      </ul>
-                    </dd>
-                  </div>
-                  <div>
-                    <dt>{t.projects.withAI}</dt>
-                    <dd>{t.projects.cal.ai}</dd>
-                  </div>
-                </dl>
                 <p className="hero-links" style={{ marginTop: '1.75rem' }}>
                   <a
                     className="btn"
@@ -167,16 +145,6 @@ export default function App() {
                 <p className="status wip">{t.projects.emvs.status}</p>
                 <h3>{t.projects.emvs.title}</h3>
                 <p>{t.projects.emvs.body}</p>
-                <dl className="roles">
-                  <div>
-                    <dt className="mine">{t.projects.myPart}</dt>
-                    <dd>{t.projects.emvs.mine}</dd>
-                  </div>
-                  <div>
-                    <dt>{t.projects.withAI}</dt>
-                    <dd>{t.projects.emvs.ai}</dd>
-                  </div>
-                </dl>
                 <p className="note">{t.projects.emvs.note}</p>
               </article>
 
@@ -184,16 +152,6 @@ export default function App() {
                 <p className="status mod">{t.projects.ben.status}</p>
                 <h3>{t.projects.ben.title}</h3>
                 <p>{t.projects.ben.body}</p>
-                <dl className="roles">
-                  <div>
-                    <dt className="mine">{t.projects.myPart}</dt>
-                    <dd>{t.projects.ben.mine}</dd>
-                  </div>
-                  <div>
-                    <dt>{t.projects.withAI}</dt>
-                    <dd>{t.projects.ben.ai}</dd>
-                  </div>
-                </dl>
               </article>
             </div>
           </div>
