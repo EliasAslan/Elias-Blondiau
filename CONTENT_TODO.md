@@ -1,8 +1,8 @@
-# Content TODO — things only Elias can provide
+# Content TODO: things only Elias can provide
 
 The site is complete and every gap is a labelled placeholder. To fill one,
 save the file under `public/` with the exact filename below, then rebuild
-and deploy (`npm run build`, push to `main`). No code change needed —
+and deploy (`npm run build`, push to `main`). No code change needed;
 placeholders swap automatically. Keep each file under ~500 KB.
 
 Slot locations are defined in `src/data/media.ts`.
@@ -39,7 +39,7 @@ are project screenshots.
   general on purpose).
 - Books and ideas that influence Elias (About page has a labelled
   placeholder).
-- Any apprenticeship milestones worth mentioning — ongoing status only,
+- Any apprenticeship milestones worth mentioning. Ongoing status only,
   never present either qualification as completed.
 
 ## Project information still needing verification
