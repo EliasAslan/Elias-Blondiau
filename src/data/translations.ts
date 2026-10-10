@@ -96,7 +96,7 @@ export const translations = {
       ben: {
         status: 'Customized, not original',
         title: 'BEN.SUSTAIN',
-        body: "I started from an existing open-source app and adapted it for my own use. The original project isn't mine; the ideas for how it should differ are.",
+        body: "I adapted an existing open-source fitness app toward a more personal, single-user setup. The original project isn't mine; the direction for this version is.",
       },
     },
     detail: {
@@ -238,7 +238,7 @@ export const translations = {
         ben: {
           tagline: 'One person. One pace. Keep going.',
           why: [
-            'I wanted a fitness tracker for one person training at their own pace. Instead of starting from zero, I forked openGym, an open-source gym and bodyweight tracker, and began adapting it into BEN.SUSTAIN.',
+            'I wanted a fitness tracker for one person to use at their own pace. Rather than start from zero, I forked openGym, an open-source gym and bodyweight tracker, and began adapting it into BEN.SUSTAIN.',
             'The brand idea is mine: “BEN.SUSTAIN — One person. One pace. Keep going.” The engine underneath is open-source work by others, and I present it as exactly that.',
           ],
           decisions: [
@@ -490,7 +490,7 @@ export const translations = {
       ben: {
         status: 'Angepasst, nicht original',
         title: 'BEN.SUSTAIN',
-        body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich für meinen Gebrauch angepasst habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
+        body: 'Ich habe eine bestehende Open-Source-Fitness-App auf eine persönlichere Nutzung für eine einzelne Person ausgerichtet. Das Original stammt nicht von mir; die Richtung dieser Version schon.',
       },
     },
     detail: {
@@ -632,7 +632,7 @@ export const translations = {
         ben: {
           tagline: 'One person. One pace. Keep going.',
           why: [
-            'Ich wollte einen Fitness-Tracker für eine Person, die in ihrem eigenen Tempo trainiert. Statt bei null anzufangen, habe ich openGym geforkt, einen selbst-hostbaren Open-Source-Tracker für Kraft- und Körpergewichtstraining, und passe ihn zu BEN.SUSTAIN an.',
+            'Ich wollte einen Fitness-Tracker, den eine Person im eigenen Tempo nutzen kann. Statt bei null anzufangen, habe ich openGym geforkt, einen selbst-hostbaren Open-Source-Tracker für Kraft- und Körpergewichtstraining, und passe ihn zu BEN.SUSTAIN an.',
             'Die Markenidee ist meine: „BEN.SUSTAIN — One person. One pace. Keep going.“ Die Engine darunter ist Open-Source-Arbeit anderer, und genau so stelle ich sie dar.',
           ],
           decisions: [
