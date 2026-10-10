@@ -5,7 +5,7 @@ import type { ProjectSlug } from './site';
  *
  * How to add an image: save the file under `public/` using the exact
  * filename below (e.g. `public/shots/pfadi-hero-desktop.png`), rebuild,
- * and the site shows it automatically — no code change needed.
+ * and the site shows it automatically. No code change is needed.
  * Until the file exists, a labelled placeholder is shown instead.
  *
  * Recommended: PNG for screenshots, JPG for photos, each under ~500 KB.

@@ -72,7 +72,7 @@ function ConsoleGreeting() {
       );
       for (const line of rest) console.log(line);
     } catch {
-      /* console unavailable — nothing to greet */
+      /* Console unavailable. Nothing to greet. */
     }
   }, [lang, t]);
   return null;
@@ -100,8 +100,8 @@ function DetailTitle() {
         ? getProjectEntry(t, slug)
         : undefined;
     if (entry) {
-      document.title = `${entry.title} — Elias Blondiau`;
-      setMetaDescription(`${entry.title} — ${t.meta.projectSuffix}. ${entry.body}`);
+      document.title = `${entry.title} | Elias Blondiau`;
+      setMetaDescription(`${entry.title} | ${t.meta.projectSuffix}. ${entry.body}`);
     } else {
       document.title = t.meta.notFound;
       setMetaDescription(t.meta.descriptions.notFound);
@@ -124,7 +124,7 @@ function RouteMeta() {
       document.title = t.meta.about;
       setMetaDescription(t.meta.descriptions.about);
     } else if (pathname === '/rest-day') {
-      document.title = `${t.eggs.restTitle} — Elias Blondiau`;
+      document.title = `${t.eggs.restTitle} | Elias Blondiau`;
       setMetaDescription(t.eggs.restIntro);
     } else if (!pathname.startsWith('/projects/')) {
       document.title = t.meta.notFound;
