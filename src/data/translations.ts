@@ -31,9 +31,9 @@ export const translations = {
       line1: 'I have ideas.',
       line2: 'I build them until they work.',
       copy1:
-        'I’m Elias, an Informatiker EFZ apprentice in platform development, working toward the Berufsmaturität TALS. I learn by turning my own ideas — a scout website, a training app, a study hub — into things that actually run.',
+        'I’m Elias. I study IT and build things in my spare time, usually because I have an idea and want to see if I can make it work.',
       copy2:
-        'I use AI as a tool along the way, but the ideas, the decisions and the stubborn testing are mine. Here is the proof so far.',
+        'Some are useful. Some are experiments.',
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
       sticker: 'Still learning, building in public',
@@ -66,7 +66,7 @@ export const translations = {
     projects: {
       title: 'Projects',
       subtitle:
-        'Three main projects and one modification, each with a note on how it was made.',
+        'Three projects I built or am building, plus one open-source project I adapted.',
       openNewTab: '(opens in a new tab)',
       details: 'Project details',
       demoLabel: 'Live demo',
@@ -76,21 +76,21 @@ export const translations = {
       pfadi: {
         status: 'Live website',
         title: 'Pfadi Siders website',
-        body: 'A new website for my scout group, replacing its previous one. I designed the visual direction and built it with AI support: a more consistent look, clearer organization and navigation, layouts that work on phones, and a more complete experience overall.',
+        body: 'A replacement website for my scout group, with clearer navigation, age-group pages, a calendar and layouts that work on phones.',
         cta: 'Open the live site',
         url: 'https://pfadi-siders-updated.vercel.app/',
       },
       cal: {
         status: 'Live app, personal project',
         title: 'Calisthenics workout app',
-        body: 'A workout app for my own training. I came up with the idea, defined the features, behavior and feel, and built it with AI assistance — measuring each version against my own training and improving what fell short.',
+        body: 'A workout app for my own training. I decide what it should do and refine it by using it during real workouts.',
         cta: 'Open the app',
         url: 'https://refreshing-apex-form-flow.base44.app/',
       },
       emvs: {
         status: 'In progress',
         title: 'EMVS Study Hub',
-        body: 'A study app I came up with and keep working on. I planned the features and build it with AI assistance — it is ongoing and not finished.',
+        body: 'A study app I'm building around my own school workflow. It is still in progress.',
         note: 'Local-first today: study data lives in the browser. Account sign-in exists but is not cloud sync yet.',
       },
       ben: {
@@ -422,9 +422,9 @@ export const translations = {
       line1: 'Ich habe Ideen.',
       line2: 'Ich baue sie, bis sie laufen.',
       copy1:
-        'Ich bin Elias, Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität TALS. Ich lerne, indem ich eigene Ideen — eine Pfadi-Website, eine Trainings-App, einen Study Hub — in Dinge verwandle, die wirklich laufen.',
+        'Ich bin Elias. Ich lerne Informatik und baue in meiner Freizeit Dinge, meistens weil ich eine Idee habe und sehen will, ob ich sie zum Laufen bringe.',
       copy2:
-        'KI nutze ich dabei als Werkzeug, aber Ideen, Entscheidungen und hartnäckiges Testen sind meine. Hier der bisherige Beweis.',
+        'Manches ist nützlich. Manches ist ein Experiment.',
       ctaProjects: 'Projekte ansehen',
       ctaContact: 'Kontakt aufnehmen',
       sticker: 'Noch am Lernen, baut öffentlich',
@@ -458,7 +458,7 @@ export const translations = {
     projects: {
       title: 'Projekte',
       subtitle:
-        'Drei Hauptprojekte und eine Anpassung, jeweils mit einer Notiz zur Entstehung.',
+        'Drei Projekte, die ich gebaut habe oder noch baue, plus ein angepasstes Open-Source-Projekt.',
       openNewTab: '(öffnet in einem neuen Tab)',
       details: 'Projektdetails',
       demoLabel: 'Live-Demo',
@@ -468,21 +468,21 @@ export const translations = {
       pfadi: {
         status: 'Live-Website',
         title: 'Pfadi Siders Website',
-        body: 'Eine neue Website für meine Pfadi-Abteilung als Ersatz für die bisherige. Ich habe die visuelle Richtung entworfen und sie mit KI-Unterstützung umgesetzt: einheitlicherer Auftritt, klarere Struktur und Navigation, Layouts fürs Handy und insgesamt ein vollständigeres Erlebnis.',
+        body: 'Eine neue Website als Ersatz für die bisherige Seite meiner Pfadi-Abteilung. Sie hat eine klarere Navigation, eigene Seiten für die Stufen, einen Kalender und Layouts fürs Handy.',
         cta: 'Live-Website öffnen',
         url: 'https://pfadi-siders-updated.vercel.app/',
       },
       cal: {
         status: 'Live-App, eigenes Projekt',
         title: 'Calisthenics-Trainings-App',
-        body: 'Eine Trainings-App für mein eigenes Training. Idee, Features, Verhalten und Anmutung stammen von mir; umgesetzt habe ich sie mit KI-Unterstützung und jede Version an meinem eigenen Training gemessen.',
+        body: 'Eine Trainings-App für mein eigenes Training. Ich lege fest, was sie können soll, und verbessere sie, indem ich sie beim Training tatsächlich nutze.',
         cta: 'App öffnen',
         url: 'https://refreshing-apex-form-flow.base44.app/',
       },
       emvs: {
         status: 'In Arbeit',
         title: 'EMVS Study Hub',
-        body: 'Eine Lern-App nach meiner Idee, an der ich weiterarbeite. Die Features habe ich geplant, die Umsetzung läuft mit KI-Unterstützung — das Projekt ist noch nicht fertig.',
+        body: 'Eine Lern-App, die ich rund um meinen eigenen Schulalltag entwickle. Sie ist noch in Arbeit.',
         note: 'Heute local-first: Die Lerndaten leben im Browser. Konto-Login existiert, ist aber noch keine Cloud-Synchronisierung.',
       },
       ben: {
