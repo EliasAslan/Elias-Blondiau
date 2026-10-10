@@ -96,7 +96,7 @@ export const translations = {
       ben: {
         status: 'Customized, not original',
         title: 'BEN.SUSTAIN',
-        body: "I started from an existing open-source app and reshaped it for my own use with AI assistance. The underlying project isn't mine; the ideas for how it should differ are.",
+        body: "I started from an existing open-source app and adapted it for my own use. The original project isn't mine; the ideas for how it should differ are.",
       },
     },
     detail: {
@@ -302,7 +302,7 @@ export const translations = {
       caption:
         'No scores, no bars — just where each skill stands, and the workflow I rely on to build.',
       strengths: [
-        'Describing the result I want and guiding AI toward it.',
+        'Describing the result I want and turning it into clear requirements.',
         'Testing features and reporting bugs.',
         'Reviewing proposed changes and judging whether they make sense.',
         'Breaking larger projects into manageable phases.',
@@ -489,7 +489,7 @@ export const translations = {
       ben: {
         status: 'Angepasst, nicht original',
         title: 'BEN.SUSTAIN',
-        body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich mit KI-Unterstützung für meinen Gebrauch umgeformt habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
+        body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich für meinen Gebrauch angepasst habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
       },
     },
     detail: {
@@ -695,7 +695,7 @@ export const translations = {
       caption:
         'Keine Scores, keine Balken — nur der aktuelle Stand und der Arbeitsablauf, auf den ich mich verlasse.',
       strengths: [
-        'Das gewünschte Ergebnis beschreiben und die KI dorthin steuern.',
+        'Das gewünschte Ergebnis beschreiben und klare Anforderungen daraus machen.',
         'Features testen und Fehler melden.',
         'Vorgeschlagene Änderungen prüfen und beurteilen, ob sie sinnvoll sind.',
         'Grössere Projekte in machbare Phasen aufteilen.',
