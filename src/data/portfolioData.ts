@@ -391,7 +391,7 @@ export const portfolioData: PortfolioData = {
   ],
 
   contact: {
-    
+    email: '',
     github: 'https://github.com/EliasAslan',
     linkedin: 'https://www.linkedin.com/in/elias-blondiau',
     locationNote: {
