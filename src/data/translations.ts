@@ -90,7 +90,7 @@ export const translations = {
       emvs: {
         status: 'In progress',
         title: 'EMVS Study Hub',
-        body: 'A study app I'm building around my own school workflow. It is still in progress.',
+        body: "A study app I’m building around my own school workflow. It is still in progress.",
         note: 'Local-first today: study data lives in the browser. Account sign-in exists but is not cloud sync yet.',
       },
       ben: {
