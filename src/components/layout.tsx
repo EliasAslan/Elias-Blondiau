@@ -308,20 +308,27 @@ export function CopyButton({ text }: { text: string }) {
   }, []);
 
   const copy = async () => {
+    let success = false;
     try {
       await navigator.clipboard.writeText(text);
+      success = true;
     } catch {
       const area = document.createElement('textarea');
       area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
       document.body.appendChild(area);
       area.select();
       try {
-        document.execCommand('copy');
+        success = document.execCommand('copy');
       } catch {
-        /* clipboard unavailable — label still describes the command */
+        success = false;
       }
       area.remove();
     }
+
+    if (!success) return;
     setCopied(true);
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(() => setCopied(false), 2000);
