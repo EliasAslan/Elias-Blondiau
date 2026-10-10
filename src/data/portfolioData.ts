@@ -19,19 +19,19 @@ export const portfolioData: PortfolioData = {
       de: 'Verstehen wie Systeme funktionieren, Code schreiben und Schritt für Schritt Neues erschaffen.',
     },
     heroSubheadline: {
-      en: 'I am an Informatiker EFZ apprentice based in Visp, Switzerland. I enjoy hands-on experimentation, exploring software development, and steadily developing my programming skills.',
-      de: 'Ich bin Informatiker EFZ Lernender in Visp, Schweiz. Ich lerne gerne durch Ausprobieren, entdecke Softwareentwicklung und baue mein Wissen kontinuierlich auf.',
+      en: 'I am an Informatiker EFZ apprentice in Switzerland, focused on building useful software, learning by shipping real projects, and understanding how the systems behind an app fit together.',
+      de: 'Ich bin Informatiker-EFZ-Lernender in der Schweiz. Ich entwickle nützliche Software, lerne durch echte Projekte und möchte verstehen, wie die Systeme hinter einer App zusammenspielen.',
     },
     bioParagraphs: {
       en: [
-        'Hi, I am Elias. I am currently completing my Informatiker EFZ apprenticeship at EMVS BFO in Visp, Switzerland. I have always been fascinated by computers and what happens behind the screen.',
-        'Rather than just reading theory, I learn best when I am actually building things — whether that is writing small Python automation scripts, creating experimental 2D game prototypes in Godot and Pygame, or building web interfaces.',
-        'I do not pretend to know everything — I am still in the early stages of my journey as a developer. What drives me every day is genuine curiosity, self-directed learning, and the satisfaction of solving a tricky problem with clean code.',
+        'Hi, I am Elias. I am currently completing my Informatiker EFZ apprenticeship at EMVS BFO in Visp, Switzerland. I am interested in what happens behind the interface: application logic, data, deployment, and the decisions that make software useful.',
+        'I learn by building and iterating. Current work includes EMVS Study Hub, a personalized fitness app, and a fitness tracker for a real user, alongside smaller programming experiments.',
+        'I am still learning, so I try to be honest about what works, what is unfinished, and what I need to understand better. I care about independent thinking, practical problem-solving, and making projects more reliable over time.',
       ],
       de: [
-        'Hallo, ich bin Elias. Ich absolviere derzeit meine Berufslehre als Informatiker EFZ an der EMVS BFO in Visp, Schweiz. Mich hat schon immer fasziniert, wie Computer funktionieren und was hinter dem Bildschirm abläuft.',
-        'Statt nur reine Theorie zu büffeln, lerne ich am liebsten direkt beim Machen: sei es durch kleine Python-Automatisierungsskripte, experimentelle 2D-Spieleprototypen in Godot und Pygame oder moderne Webseiten.',
-        'Ich behaupte nicht, alles zu wissen – ich stehe noch am Anfang meiner Laufbahn. Was mich antreibt, ist ehrliche Neugier, selbstständiges Lernen und die Freude daran, knifflige Probleme mit sauberem Code zu lösen.',
+        'Hallo, ich bin Elias. Ich absolviere derzeit meine Berufslehre als Informatiker EFZ an der EMVS BFO in Visp, Schweiz. Mich interessiert, was hinter der Oberfläche passiert: Anwendungslogik, Daten, Deployment und die Entscheidungen, die Software nützlich machen.',
+        'Ich lerne am besten durch Bauen und Verbessern. Aktuelle Projekte sind der EMVS Study Hub, eine persönliche Trainings-App und ein Fitness-Tracker für einen echten Nutzer – neben kleineren Programmierexperimenten.',
+        'Ich lerne noch und versuche deshalb ehrlich zu zeigen, was funktioniert, was unfertig ist und was ich besser verstehen muss. Mir sind selbstständiges Denken, praktische Problemlösung und zuverlässigere Projekte wichtig.',
       ],
     },
   },
@@ -57,8 +57,8 @@ export const portfolioData: PortfolioData = {
         de: 'Schwerpunkt',
       },
       description: {
-        en: 'Deepening JavaScript, Python fundamentals & modern web dev',
-        de: 'Vertiefung in JavaScript, Python-Grundlagen & modernes Web',
+        en: 'Building full-stack web apps, data flows, and deployment workflows',
+        de: 'Full-Stack-Web-Apps, Datenflüsse und Deployment-Workflows entwickeln',
       },
     },
     {
@@ -69,8 +69,8 @@ export const portfolioData: PortfolioData = {
         de: 'Erkundung',
       },
       description: {
-        en: 'Game development concepts with Godot & Pygame',
-        de: 'Spieleentwicklung-Konzepte mit Godot & Pygame',
+        en: 'Shipping and improving personal web projects',
+        de: 'Persönliche Webprojekte umsetzen und verbessern',
       },
     },
     {
@@ -89,144 +89,112 @@ export const portfolioData: PortfolioData = {
 
   projects: [
     {
-      id: 'project-1',
-      title: {
-        en: 'Personal Portfolio & Knowledge Hub',
-        de: 'Persönliches Portfolio & Wissens-Hub',
-      },
+      id: 'study-hub',
+      title: { en: 'EMVS Study Hub', de: 'EMVS Study Hub' },
       description: {
-        en: 'A warm, minimal personal website built with React, TypeScript, and Tailwind CSS. Designed to document my apprenticeship journey, learning log, and projects.',
-        de: 'Eine warme, minimalistische persönliche Website mit React, TypeScript und Tailwind CSS. Entwickelt, um meinen Lernweg, Projekte und Fortschritte zu dokumentieren.',
+        en: 'A local-first study workspace for organizing learning objectives, resources, exams, and actual study sessions, with session history and review workflows.',
+        de: 'Ein Local-first-Lernbereich zum Organisieren von Lernzielen, Ressourcen, Prüfungen und echten Lerneinheiten – inklusive Verlauf und Wiederholungs-Workflows.',
       },
       longDescription: {
-        en: 'Created to have a genuine online presence without corporate fluff. Focuses on clear typography, bilingual support (EN/DE), responsive design, and an easily maintainable data architecture.',
-        de: 'Erstellt als authentische Visitenkarte ohne übertriebene Floskeln. Schwerpunkt auf klarer Typografie, Zweisprachigkeit (DE/EN), mobilem Design und einer einfach pflegbaren Datenstruktur.',
+        en: 'Built around the real learning process rather than a static checklist. The project includes session logging, objective history, resource usage derived from sessions, and ongoing work on account-based cloud sync.',
+        de: 'Entwickelt rund um den tatsächlichen Lernprozess statt einer statischen Checkliste. Enthält Sitzungsprotokolle, Lernziel-Verlauf und aus Sitzungen abgeleitete Ressourcennutzung; Cloud-Synchronisierung ist in Arbeit.',
+      },
+      technologies: ['JavaScript', 'HTML', 'CSS', 'Supabase', 'Vercel'],
+      status: 'in_progress',
+      statusLabel: { en: 'In Development', de: 'In Entwicklung' },
+      category: 'web',
+      githubUrl: 'https://github.com/EliasAslan/EMVs-studyHub',
+      liveUrl: 'https://study-seven-tan.vercel.app/',
+      highlights: {
+        en: ['Log timed or manual study sessions', 'Track objective progress over time', 'Cloud sync and account flows under active development'],
+        de: ['Zeitgesteuerte oder manuelle Lerneinheiten protokollieren', 'Lernziel-Fortschritt über Zeit verfolgen', 'Cloud-Sync und Kontoabläufe in aktiver Entwicklung'],
+      },
+    },
+    {
+      id: 'ben-sustain',
+      title: { en: 'BEN.SUSTAIN — Personal Fitness App', de: 'BEN.SUSTAIN — Persönliche Fitness-App' },
+      description: {
+        en: 'A personalized home-training and habit-tracking web app designed around sustainable progress, adjustable workouts, and simple daily check-ins.',
+        de: 'Eine personalisierte Web-App für Heimtraining und Gewohnheiten – mit anpassbaren Workouts, einfachen Tages-Check-ins und nachhaltigem Fortschritt.',
+      },
+      longDescription: {
+        en: 'A practical project for turning a real person’s constraints into a usable product: workout options, activity and recovery check-ins, and progress tracking. The live demo is a test build, not a claim of a finished production service.',
+        de: 'Ein praxisnahes Projekt, bei dem reale Rahmenbedingungen in ein nutzbares Produkt übersetzt werden: Trainingsoptionen, Aktivitäts- und Erholungs-Check-ins sowie Fortschrittsverfolgung. Die Live-Demo ist ein Teststand und kein fertiger Produktionsdienst.',
+      },
+      technologies: ['JavaScript', 'HTML', 'CSS', 'GitHub Pages'],
+      status: 'in_progress',
+      statusLabel: { en: 'In Development', de: 'In Entwicklung' },
+      category: 'web',
+      githubUrl: 'https://github.com/EliasAslan/benOpenGym',
+      liveUrl: 'https://eliasaslan.github.io/benOpenGym/?#/test',
+      highlights: {
+        en: ['Designed for one real user and their routine', 'Flexible workout lengths and daily check-ins', 'Iterative deployment and troubleshooting'],
+        de: ['Für eine konkrete Person und ihren Alltag gestaltet', 'Flexible Trainingsdauer und tägliche Check-ins', 'Iterative Bereitstellung und Fehlerbehebung'],
+      },
+    },
+    {
+      id: 'calisthenics-workout',
+      title: { en: 'Personal Calisthenics Workout App', de: 'Persönliche Calisthenics-Trainings-App' },
+      description: {
+        en: 'A personal training tool shaped around skill practice, hypertrophy blocks, flexible workout lengths, set tracking, timers, and progression.',
+        de: 'Ein persönliches Trainingswerkzeug für Skills, Hypertrophiephasen, flexible Trainingslängen, Satzprotokolle, Timer und Progression.',
+      },
+      longDescription: {
+        en: 'The project explores how a training app can support real decisions instead of adding friction: full, short, and quick-hit sessions, progression across an eight-week phase, and useful history. The source repository is private, so this entry links to the working prototype.',
+        de: 'Das Projekt untersucht, wie eine Trainings-App echte Entscheidungen unterstützt statt zusätzliche Reibung zu erzeugen: volle, kurze und sehr kurze Einheiten, Progression über acht Wochen und ein sinnvoller Verlauf. Das Quell-Repository ist privat; verlinkt ist der Prototyp.',
+      },
+      technologies: ['Product Design', 'JavaScript', 'Web App', 'Progression Logic'],
+      status: 'in_progress',
+      statusLabel: { en: 'In Development', de: 'In Entwicklung' },
+      category: 'web',
+      liveUrl: 'https://refresh-apex-form-flow.base44.app/',
+      highlights: {
+        en: ['Flexible workout formats', 'Skill and hypertrophy planning', 'Set history, rest timers, and progression logic'],
+        de: ['Flexible Trainingsformate', 'Skill- und Hypertrophieplanung', 'Satzverlauf, Pausentimer und Progressionslogik'],
+      },
+    },
+    {
+      id: 'scout-site',
+      title: { en: 'Pfadi St. Christophorus Siders — Website Redesign', de: 'Pfadi St. Christophorus Siders — Website-Redesign' },
+      description: {
+        en: 'A refreshed scout-group website concept focused on clearer typography, spacing, cards, and editorial layouts while preserving the group’s red, yellow, black, and cream identity.',
+        de: 'Ein überarbeitetes Website-Konzept für die Pfadi mit besserer Typografie, Abständen, Karten und redaktionellen Layouts – bei Erhalt der roten, gelben, schwarzen und cremefarbenen Identität.',
+      },
+      longDescription: {
+        en: 'The redesign aims to make information for families and scouts easier to scan without replacing the organization’s existing visual identity. The linked Netlify build is a comparison preview, while the official site remains the source of truth.',
+        de: 'Das Redesign soll Informationen für Familien und Pfadis leichter erfassbar machen, ohne die bestehende visuelle Identität zu ersetzen. Der Netlify-Link ist eine Vergleichsvorschau; die offizielle Website bleibt die maßgebliche Quelle.',
+      },
+      technologies: ['HTML', 'CSS', 'Responsive Design', 'Content Design'],
+      status: 'prototype',
+      statusLabel: { en: 'Design Preview', de: 'Design-Vorschau' },
+      category: 'web',
+      githubUrl: 'https://st-christophorus-siders.ch/',
+      liveUrl: 'https://lucky-tarsier-64c751.netlify.app/stufen',
+      highlights: {
+        en: ['Preserves the existing scout identity', 'Improves hierarchy, typography, and spacing', 'Responsive multi-page concept'],
+        de: ['Bewahrt die bestehende Pfadi-Identität', 'Verbessert Hierarchie, Typografie und Abstände', 'Responsives mehrseitiges Konzept'],
+      },
+    },
+    {
+      id: 'portfolio',
+      title: { en: 'Personal Portfolio', de: 'Persönliches Portfolio' },
+      description: {
+        en: 'A bilingual portfolio documenting my work, learning process, and experiments in software development.',
+        de: 'Ein zweisprachiges Portfolio, das meine Projekte, meinen Lernprozess und Experimente in der Softwareentwicklung dokumentiert.',
+      },
+      longDescription: {
+        en: 'Built with React, TypeScript, Vite, and Tailwind CSS. The portfolio itself is an ongoing project: its content should reflect real work and clearly distinguish prototypes from finished products.',
+        de: 'Erstellt mit React, TypeScript, Vite und Tailwind CSS. Auch das Portfolio ist ein laufendes Projekt: Inhalte sollen echte Arbeit zeigen und Prototypen klar von fertigen Produkten unterscheiden.',
       },
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      status: 'completed',
-      statusLabel: {
-        en: 'Active',
-        de: 'Aktiv',
-      },
-      category: 'web',
-      githubUrl: 'https://github.com/eliasblondiau',
-      liveUrl: '#',
-      highlights: {
-        en: [
-          'Clean bilingual architecture (English & German)',
-          'Warm cream & minimalist workspace aesthetic',
-          'Fully responsive and accessible layout',
-        ],
-        de: [
-          'Saubere zweisprachige Architektur (Deutsch & Englisch)',
-          'Warme Creme- und Workspace-Ästhetik',
-          'Vollständig responsiv und barrierearm gestaltet',
-        ],
-      },
-    },
-    {
-      id: 'project-2',
-      title: {
-        en: 'Python Automation & File Toolkit',
-        de: 'Python Automatisierungs- & Datei-Toolkit',
-      },
-      description: {
-        en: 'A modular Python CLI utility created to automate repetitive file organization tasks, batch renaming, and basic system health checks.',
-        de: 'Ein modulares Python-CLI-Tool zur Automatisierung wiederkehrender Dateiverwaltungsaufgaben, Massen-Umbenennung und einfacher Systemchecks.',
-      },
-      longDescription: {
-        en: 'Built while learning Python scripting and OS modules. Helps organize downloaded files by extension, inspect directory sizes, and perform quick text search across local folders.',
-        de: 'Entstanden beim Lernen von Python-Skripting und OS-Bibliotheken. Hilft beim Sortieren von Downloads nach Dateiendung, Prüfen von Ordnergrößen und schneller lokaler Volltextsuche.',
-      },
-      technologies: ['Python', 'CLI', 'File I/O', 'OS & Pathlib'],
       status: 'in_progress',
-      statusLabel: {
-        en: 'In Development',
-        de: 'In Entwicklung',
-      },
-      category: 'python',
-      githubUrl: 'https://github.com/eliasblondiau',
-      highlights: {
-        en: [
-          'Interactive command-line interface with clear help menus',
-          'Safe file moving and directory cleanup routines',
-          'Modular structure with separate script modules',
-        ],
-        de: [
-          'Interaktive Terminal-Oberfläche mit Hilfemenüs',
-          'Sichere Dateiverschiebung und Bereinigungsroutinen',
-          'Modularer Aufbau mit separaten Funktionsmodulen',
-        ],
-      },
-    },
-    {
-      id: 'project-3',
-      title: {
-        en: '2D Game Mechanics Prototype',
-        de: '2D Game-Mechaniken Prototyp',
-      },
-      description: {
-        en: 'An interactive 2D mechanics sandbox built with Godot and GDScript / Pygame to experiment with character physics, collision detection, and tilemaps.',
-        de: 'Eine interaktive 2D-Sandbox mit Godot und GDScript / Pygame zum Experimentieren mit Spielfigur-Physik, Kollisionsabfrage und Tilemaps.',
-      },
-      longDescription: {
-        en: 'A playground project to understand game loops, delta time, state machines for player animations, and gravity physics. Created out of curiosity about game engine architecture.',
-        de: 'Ein Experimentierprojekt zum Verständnis von Game-Loops, Delta-Time, State-Machines für Spieleranimationen und Gravitationsphysik aus Neugier an Spiele-Engines.',
-      },
-      technologies: ['Godot Engine', 'GDScript', 'Pygame', 'Game Physics'],
-      status: 'prototype',
-      statusLabel: {
-        en: 'Learning Prototype',
-        de: 'Lern-Prototyp',
-      },
-      category: 'game',
-      githubUrl: 'https://github.com/eliasblondiau',
-      highlights: {
-        en: [
-          'Custom platformer controller with acceleration and jump buffering',
-          'State machine for idle, run, jump, and wall-slide states',
-          'Tilemap level layout with basic collectible pickups',
-        ],
-        de: [
-          'Eigene Platformer-Steuerung mit Beschleunigung und Jump-Buffering',
-          'State Machine für Idle-, Run-, Sprung- und Wandrutsch-Zustände',
-          'Tilemap-Levelaufbau mit einfachen Sammelobjekten',
-        ],
-      },
-    },
-    {
-      id: 'project-4',
-      title: {
-        en: 'Interactive Learning & Habit Tracker',
-        de: 'Interaktiver Lern- & Gewohnheiten-Tracker',
-      },
-      description: {
-        en: 'A lightweight client-side application to log daily programming practice, calisthenics skill training, and technical notes with local persistence.',
-        de: 'Eine schlanke Web-App zum Protokollieren täglicher Programmierübungen, Calisthenics-Trainings und technischer Notizen mit lokaler Speicherung.',
-      },
-      longDescription: {
-        en: 'Built to practice state management, LocalStorage persistence, date manipulation, and responsive UI components in modern TypeScript.',
-        de: 'Entwickelt zur Übung von State Management, lokaler Browser-Speicherung, Datumsverarbeitung und responsiven UI-Komponenten in modernem TypeScript.',
-      },
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
-      status: 'in_progress',
-      statusLabel: {
-        en: 'In Progress',
-        de: 'In Arbeit',
-      },
+      statusLabel: { en: 'Active', de: 'Aktiv' },
       category: 'web',
-      githubUrl: 'https://github.com/eliasblondiau',
+      githubUrl: 'https://github.com/EliasAslan/Elias-Blondiau',
+      liveUrl: 'https://eliasaslan.github.io/Elias-Blondiau/',
       highlights: {
-        en: [
-          'Simple daily log with custom tagging',
-          'Offline-first with zero external dependencies',
-          'Clean, distraction-free minimalist interface',
-        ],
-        de: [
-          'Einfaches Tagesprotokoll mit benutzerdefinierten Tags',
-          'Offline-fähig ohne externe Abhängigkeiten',
-          'Klare, ablenkungsfreie Benutzeroberfläche',
-        ],
+        en: ['English and German content', 'Responsive layout', 'Centralized portfolio data'],
+        de: ['Deutsche und englische Inhalte', 'Responsives Layout', 'Zentral verwaltete Portfolio-Daten'],
       },
     },
   ],
@@ -473,8 +441,8 @@ export const portfolioData: PortfolioData = {
   ],
 
   contact: {
-    email: 'elias.blondiau@example.ch', // Placeholder ready for Elias to update
-    github: 'https://github.com/eliasblondiau',
+    
+    github: 'https://github.com/EliasAslan',
     linkedin: 'https://www.linkedin.com/in/elias-blondiau',
     locationNote: {
       en: 'Visp, Valais, Switzerland (UTC+1/UTC+2)',
