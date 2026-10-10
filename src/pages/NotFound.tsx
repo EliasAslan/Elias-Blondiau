@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
+import { RoutePalette } from '../components/layout';
 
 export default function NotFound() {
   const { t } = useLanguage();
@@ -16,6 +17,7 @@ export default function NotFound() {
             {t.detail.notFoundCta}
           </Link>
         </p>
+        <RoutePalette />
       </div>
     </section>
   );

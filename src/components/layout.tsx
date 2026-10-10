@@ -78,12 +78,104 @@ export function ContactLinks() {
   );
 }
 
+export function FooterNotes() {
+  const { t } = useLanguage();
+  const [index, setIndex] = useState(0);
+  const total = t.eggs.footerNotes.length + 1;
+  const cycle = () => setIndex((i) => (i + 1) % total);
+  return (
+    <p className="foot-notes">
+      <button
+        type="button"
+        className="foot-egg"
+        onClick={cycle}
+        aria-label={t.eggs.footerButton}
+        title={t.eggs.footerButton}
+      >
+        ⁂
+      </button>{' '}
+      <span aria-live="polite">
+        {index < t.eggs.footerNotes.length ? (
+          t.eggs.footerNotes[index]
+        ) : (
+          <>
+            {t.eggs.footerRestBefore}{' '}
+            <Link to="/rest-day">{t.eggs.footerRestLink}</Link>
+            {t.eggs.footerRestAfter}
+          </>
+        )}
+      </span>
+    </p>
+  );
+}
+
+export function RoutePalette() {
+  const { t } = useLanguage();
+  const [query, setQuery] = useState('');
+  const routes = [
+    {
+      to: '/',
+      names: ['home', 'start', t.nav.home],
+    },
+    {
+      to: '/projects',
+      names: ['projects', 'projekte', 'alle projekte', 'all projects', t.nav.projects],
+    },
+    {
+      to: '/about',
+      names: ['about', 'beyond code', 'code', 'über mich', t.nav.about],
+    },
+  ];
+  const q = query.trim().toLowerCase();
+  const matches =
+    q === '' ? routes : routes.filter((r) => r.names.some((n) => n.toLowerCase().includes(q)));
+  return (
+    <div className="palette">
+      <p className="muted">{t.eggs.paletteHint}</p>
+      <label className="palette-label" htmlFor="route-palette">
+        {t.eggs.paletteLabel}
+      </label>
+      <input
+        id="route-palette"
+        className="palette-input"
+        type="text"
+        value={query}
+        autoComplete="off"
+        placeholder={t.eggs.palettePlaceholder}
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Escape') {
+            setQuery('');
+            e.currentTarget.blur();
+          }
+        }}
+      />
+      {matches.length > 0 ? (
+        <ul className="palette-list" aria-live="polite">
+          {matches.map((r) => (
+            <li key={r.to}>
+              <Link className="btn" to={r.to}>
+                {r.names[r.names.length - 1]}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="muted" aria-live="polite">
+          {t.eggs.paletteNone}
+        </p>
+      )}
+    </div>
+  );
+}
+
 export function SiteFooter() {
   const { t } = useLanguage();
   return (
     <footer>
       <div className="wrap foot-grid">
         <p>{t.footer.line}</p>
+        <FooterNotes />
         <ul className="foot-links">
           <li>
             <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>

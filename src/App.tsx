@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   HashRouter,
   Route,
   Routes,
   useLocation,
+  useNavigate,
   useParams,
 } from 'react-router-dom';
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext';
@@ -14,12 +15,66 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import ProjectDetail from './pages/ProjectDetail';
 import Projects from './pages/Projects';
+import RestDay from './pages/RestDay';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }, [pathname]);
+  return null;
+}
+
+const EGG_WORD = 'sustain';
+
+function EggKey() {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const buffer = useRef('');
+  useEffect(() => {
+    buffer.current = '';
+    const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (
+        e.metaKey ||
+        e.ctrlKey ||
+        e.altKey ||
+        (target &&
+          (target.tagName === 'INPUT' ||
+            target.tagName === 'TEXTAREA' ||
+            target.tagName === 'SELECT' ||
+            target.isContentEditable))
+      ) {
+        return;
+      }
+      if (/^[a-zA-Z]$/.test(e.key)) {
+        buffer.current = (buffer.current + e.key.toLowerCase()).slice(-EGG_WORD.length);
+        if (buffer.current === EGG_WORD) {
+          buffer.current = '';
+          navigate('/rest-day');
+        }
+      } else if (e.key === 'Escape') {
+        buffer.current = '';
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [navigate, pathname]);
+  return null;
+}
+
+function ConsoleGreeting() {
+  const { lang, t } = useLanguage();
+  const logged = useRef(false);
+  useEffect(() => {
+    if (logged.current) return;
+    logged.current = true;
+    try {
+      for (const line of t.eggs.console) console.log(line);
+    } catch {
+      /* console unavailable — nothing to greet */
+    }
+  }, [lang, t]);
   return null;
 }
 
@@ -46,6 +101,8 @@ function RouteMeta() {
     if (pathname === '/') document.title = t.meta.home;
     else if (pathname === '/projects') document.title = t.meta.projects;
     else if (pathname === '/about') document.title = t.meta.about;
+    else if (pathname === '/rest-day')
+      document.title = `${t.eggs.restTitle} — Elias Blondiau`;
     else if (!pathname.startsWith('/projects/'))
       document.title = t.meta.notFound;
   }, [pathname, lang, t]);
@@ -74,6 +131,7 @@ function Shell() {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/rest-day" element={<RestDay />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
@@ -88,6 +146,8 @@ export default function App() {
       <HashRouter>
         <ScrollToTop />
         <RouteMeta />
+        <EggKey />
+        <ConsoleGreeting />
         <Shell />
       </HashRouter>
     </LanguageProvider>

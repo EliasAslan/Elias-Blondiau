@@ -205,6 +205,30 @@
   .foot-grid { display: flex; flex-wrap: wrap; gap: .75rem 2rem; align-items: baseline; justify-content: space-between; }
   .foot-links { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
   .foot-links a { overflow-wrap: anywhere; }
+  .foot-notes { margin: 0; max-width: none; display: flex; align-items: baseline; gap: .5rem; }
+  .foot-egg {
+    background: none; border: 2px solid transparent; color: inherit;
+    font: inherit; cursor: pointer; padding: .1rem .4rem; flex: none;
+  }
+  .foot-egg:hover { border-color: var(--edge); }
+
+  /* Phase 4: quiet discoveries */
+  .palette { margin-top: 2.5rem; border-top: 2px solid var(--edge); padding-top: 1.5rem; }
+  .palette-label { display: block; font-family: var(--display); font-weight: 800; font-size: 1.25rem; margin: 1rem 0 .5rem; }
+  .palette-input {
+    width: 100%; max-width: 28rem; font: inherit; color: var(--fg); background: var(--card);
+    border: 2px solid var(--edge); box-shadow: 5px 5px 0 var(--edge); padding: .7rem 1rem;
+  }
+  .palette-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; }
+  .palette-list .btn { margin: 0; }
+  .step-secret { background: var(--marker); color: var(--on-marker); border-color: var(--on-marker); }
+  .step-secret .meaning { color: var(--on-marker); }
+  .secret-hint { font-size: 1rem; margin-bottom: 0; }
+  .step[role="button"] { cursor: pointer; }
+  .step[role="button"]:hover { transform: translateY(-2px); }
+  @media (prefers-reduced-motion: reduce) {
+    .step[role="button"]:hover { transform: none; }
+  }
 
   /* Phase 1 multi-page additions */
   .wrap.narrow { max-width: 56rem; }

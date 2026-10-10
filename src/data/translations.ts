@@ -334,6 +334,40 @@ export const translations = {
     footer: {
       line: 'Designed and built by Elias in Visp.',
     },
+    eggs: {
+      console: [
+        'Elias Blondiau — Portfolio. Curious? Good, that’s the whole point.',
+        'Psst: type “sustain” anywhere on this site for a rest day.',
+        'No trackers were used to detect your curiosity.',
+      ],
+      paletteLabel: 'Quick route finder',
+      palettePlaceholder: 'Type a page name…',
+      paletteHint: 'Lost? Start typing — I’ll point you somewhere real.',
+      paletteNone: 'No match. Home is always a safe rep.',
+      fourthTitle: 'Curiosity',
+      fourthBody:
+        'Already maxed. Unofficial fourth step — no certificate, just momentum.',
+      fourthHint: 'It knows a secret: type “sustain” anywhere.',
+      footerButton: 'Extra notes',
+      footerNotes: [
+        'Built in the open, still learning.',
+        'No cookies, no trackers — just markup with ambitions.',
+      ],
+      footerRestBefore: 'Psst: this portfolio takes',
+      footerRestLink: 'rest days',
+      footerRestAfter: '.',
+      restEyebrow: 'Hidden page — you typed the magic word',
+      restTitle: 'Rest day.',
+      restIntro:
+        'Even portfolios need recovery. No sets, no PRs, no cloud sync — just a light session:',
+      restPlan: [
+        '3 × 10 relaxed scrolls',
+        '1 × slow read of the About page',
+        '60-second plank while the build runs (optional)',
+        '0 skipped leg days — there are no legs here',
+      ],
+      restBack: 'Back to training',
+    },
   },
 
   de: {
@@ -672,6 +706,40 @@ export const translations = {
     },
     footer: {
       line: 'Von Elias in Visp entworfen und gebaut.',
+    },
+    eggs: {
+      console: [
+        'Elias Blondiau — Portfolio. Neugierig? Gut, darum geht es hier.',
+        'Psst: Tippe irgendwo auf dieser Seite „sustain“ für einen Ruhetag.',
+        'Zur Erkennung deiner Neugier wurden keine Tracker verwendet.',
+      ],
+      paletteLabel: 'Schnelle Seitensuche',
+      palettePlaceholder: 'Seitenname tippen…',
+      paletteHint: 'Verloren? Einfach tippen — ich zeige dir etwas Echtes.',
+      paletteNone: 'Nichts gefunden. Start ist immer eine sichere Wiederholung.',
+      fourthTitle: 'Neugier',
+      fourthBody:
+        'Bereits maximiert. Inoffizielle vierte Stufe — kein Zertifikat, nur Schwung.',
+      fourthHint: 'Sie kennt ein Geheimnis: Tippe irgendwo „sustain“.',
+      footerButton: 'Extra-Notizen',
+      footerNotes: [
+        'Offen gebaut, noch am Lernen.',
+        'Keine Cookies, keine Tracker — nur Markup mit Ambitionen.',
+      ],
+      footerRestBefore: 'Psst: Dieses Portfolio macht',
+      footerRestLink: 'Ruhetage',
+      footerRestAfter: '.',
+      restEyebrow: 'Versteckte Seite — du hast das Zauberwort getippt',
+      restTitle: 'Ruhetag.',
+      restIntro:
+        'Auch Portfolios brauchen Erholung. Keine Sätze, keine PRs, kein Cloud-Sync — nur eine lockere Einheit:',
+      restPlan: [
+        '3 × 10 entspannte Scrolls',
+        '1 × langsames Lesen der Über-mich-Seite',
+        '60 Sekunden Plank, während der Build läuft (optional)',
+        '0 ausgelassene Leg Days — hier gibt es keine Beine',
+      ],
+      restBack: 'Zurück zum Training',
     },
   },
 };
