@@ -298,6 +298,7 @@ export const translations = {
       exploringMeaning: 'Trying it out and finding my way.',
       stronger: 'Workflow',
       strongerMeaning: 'How I plan, build and check things.',
+      tapHint: 'Tap to reveal',
       caption:
         'No scores, no bars — just where each skill stands, and the workflow I rely on to build.',
       strengths: [
@@ -690,6 +691,7 @@ export const translations = {
       exploringMeaning: 'Ausprobieren und sich zurechtfinden.',
       stronger: 'Arbeitsweise',
       strongerMeaning: 'Wie ich plane, baue und prüfe.',
+      tapHint: 'Antippen zum Entdecken',
       caption:
         'Keine Scores, keine Balken — nur der aktuelle Stand und der Arbeitsablauf, auf den ich mich verlasse.',
       strengths: [
