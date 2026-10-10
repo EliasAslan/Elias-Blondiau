@@ -48,7 +48,7 @@ export const translations = {
       bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
       after:
         '. Both are still in progress.',
-      status: 'Apprenticeship in progress',
+      status: 'Apprenticeship ongoing',
     },
     home: {
       featuredTitle: 'Featured projects',
@@ -151,10 +151,10 @@ export const translations = {
           ],
           limits: [
             'There is no public source repository, so the live site is the only version available to review.',
-            'I have not measured usage or collected feedback; there are no metrics or testimonials to show.',
+            'I have not measured site usage or collected feedback, so I have no figures or testimonials to share.',
           ],
           stateBody:
-            'Live and in use by the group. Content updates happen as the group needs them.',
+            'The group uses the site. I update it when needed.',
           shots: [
             'Homepage hero “Gipfelpause”, desktop, 1600×900',
             'Age-group overview, mobile, 390×844',
@@ -185,7 +185,7 @@ export const translations = {
             'There is no public source repository, so the live demo is the only version available to review.',
           ],
           stateBody:
-            'Live as a personal project. I keep using it in training and improving what annoys me.',
+            'I use it for my own training and keep changing things that get in the way.',
           shots: [
             'Workout session view, desktop, 1600×900',
             'Workout session view, mobile, 390×844',
@@ -221,7 +221,7 @@ export const translations = {
             'Supabase setup requires the user’s own publishable key; never a service_role key in browser code.',
           ],
           stateBody:
-            'Still in progress, but usable locally. Sign-in is set up; cloud sync is not.',
+            'Still in progress. The local app works, but study data does not sync to the cloud.',
           shots: [
             'Dashboard “Heute” view, desktop, 1600×900',
             'Schwachstellen view, mobile, 390×844',
@@ -361,7 +361,7 @@ export const translations = {
       paletteLabel: 'Quick route finder',
       palettePlaceholder: 'Type a page name…',
       paletteHint: 'Type a page name to find it.',
-      paletteNone: 'No match. Home is always a safe rep.',
+      paletteNone: 'No match. Try the home page.',
       fourthTitle: 'Curiosity',
       fourthBody:
         'Already maxed out. No certificate needed.',
@@ -370,9 +370,9 @@ export const translations = {
       footerNotes: [
         'Still learning as I build.',
         'No cookies or trackers. Just a website.',
-        'Built with React, Vite and stubbornness.',
+        'Built with React, Vite and a lot of trial and error.',
       ],
-      footerRestBefore: 'Psst: this portfolio takes',
+      footerRestBefore: 'This portfolio takes',
       footerRestLink: 'rest days',
       footerRestAfter: '.',
       restEyebrow: 'Hidden page. You found the word.',
@@ -545,7 +545,7 @@ export const translations = {
           ],
           limits: [
             'Es gibt kein öffentliches Quell-Repository. Deshalb lässt sich nur die Live-Seite ansehen.',
-            'Keine Nutzungsmessung, kein gesammeltes Feedback; es gibt keine Kennzahlen oder Testimonials.',
+            'Ich habe die Nutzung nicht gemessen und kein Feedback gesammelt. Deshalb gibt es keine Kennzahlen oder Rückmeldungen.',
           ],
           stateBody:
             'Live und bei der Abteilung im Einsatz. Inhalte werden aktualisiert, wie die Abteilung sie braucht.',
@@ -615,7 +615,7 @@ export const translations = {
             'Das Supabase-Setup braucht den eigenen Publishable Key; niemals einen Service-Role-Key im Browser-Code.',
           ],
           stateBody:
-            'In Arbeit und lokal nutzbar. Auth-Basis fertig; Cloud-Sync ist eine separate spätere Phase.',
+            'Noch in Arbeit. Die lokale App funktioniert, aber die Lerndaten werden nicht in die Cloud synchronisiert.',
           shots: [
             'Dashboard-Ansicht „Heute“, Desktop, 1600×900',
             'Schwachstellen-Ansicht, Mobil, 390×844',
@@ -766,7 +766,7 @@ export const translations = {
         'Keine Cookies und keine Tracker. Einfach eine Website.',
         'Mit React, Vite und viel Ausprobieren gebaut.',
       ],
-      footerRestBefore: 'Psst: Dieses Portfolio macht',
+      footerRestBefore: 'Dieses Portfolio macht',
       footerRestLink: 'Ruhetage',
       footerRestAfter: '.',
       restEyebrow: 'Versteckte Seite. Du hast das Wort gefunden.',
