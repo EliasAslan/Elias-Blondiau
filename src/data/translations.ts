@@ -28,8 +28,8 @@ export const translations = {
     },
     skip: 'Skip to content',
     hero: {
-      line1: 'I have ideas.',
-      line2: 'I build them until they work.',
+      line1: 'I get ideas.',
+      line2: 'Then I try to build them.',
       copy1:
         'I’m Elias. I study IT and build things in my spare time, usually because I have an idea and want to see if I can make it work.',
       copy2:
@@ -37,7 +37,7 @@ export const translations = {
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
       sticker: 'Learning as I go',
-      stickerSmall: 'Informatiker EFZ in platform development · Visp',
+      stickerSmall: 'Informatiker EFZ apprentice · Visp',
     },
     education: {
       title: 'My path right now',
@@ -48,7 +48,7 @@ export const translations = {
       bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
       after:
         '. Both are still in progress.',
-      status: 'Apprenticeship ongoing',
+      status: 'Apprenticeship in progress',
     },
     home: {
       featuredTitle: 'Featured projects',
@@ -71,7 +71,7 @@ export const translations = {
       details: 'Project details',
       demoLabel: 'Live demo',
       repoLabel: 'Source code',
-      upstreamLabel: 'Upstream project',
+      upstreamLabel: 'Original project',
       noSource: 'No public source repository.',
       pfadi: {
         status: 'Live website',
@@ -91,7 +91,7 @@ export const translations = {
         status: 'In progress',
         title: 'EMVS Study Hub',
         body: "A study app I’m building to keep my schoolwork in one place. It is still in progress.",
-        note: 'Local-first today: study data lives in the browser. Account sign-in exists but is not cloud sync yet.',
+        note: 'Study data stays in this browser. Sign-in is available, but it does not sync data to the cloud.',
       },
       ben: {
         status: 'Open-source adaptation',
@@ -120,7 +120,7 @@ export const translations = {
       whyT: 'Why I made it',
       decisionsT: 'What I chose',
       featuresT: 'What it does',
-      inheritedT: 'Inherited from upstream',
+      inheritedT: 'From the original project',
       mineT: 'My modifications and ideas',
       challengesT: 'What was difficult',
       limitsT: 'Known limitations',
@@ -422,7 +422,7 @@ export const translations = {
     skip: 'Zum Inhalt springen',
     hero: {
       line1: 'Ich habe Ideen.',
-      line2: 'Ich baue sie, bis sie laufen.',
+      line2: 'Dann versuche ich, sie umzusetzen.',
       copy1:
         'Ich bin Elias. Ich lerne Informatik und baue in meiner Freizeit Dinge, meistens weil ich eine Idee habe und sehen will, ob ich sie zum Laufen bringe.',
       copy2:
@@ -485,7 +485,7 @@ export const translations = {
         status: 'In Arbeit',
         title: 'EMVS Study Hub',
         body: 'Eine Lern-App, die mir hilft, meinen Schulstoff an einem Ort zu organisieren. Sie ist noch in Arbeit.',
-        note: 'Heute local-first: Die Lerndaten leben im Browser. Konto-Login existiert, ist aber noch keine Cloud-Synchronisierung.',
+        note: 'Die Lerndaten bleiben in diesem Browser. Eine Anmeldung ist möglich, synchronisiert die Daten aber nicht mit der Cloud.',
       },
       ben: {
         status: 'Open-Source-Anpassung',
@@ -683,9 +683,9 @@ export const translations = {
       },
     },
     skills: {
-      title: 'Skills, nach Stand',
+      title: 'Was ich bisher kann',
       subtitle:
-        'Ich trainiere Calisthenics und gehe erst zur nächsten Übung über, wenn die aktuelle gut klappt. Die Karten zeigen meinen aktuellen Stand.',
+        'Ich trainiere Calisthenics und gehe erst weiter, wenn die aktuelle Übung gut klappt. Die Karten zeigen meinen Stand.',
       learning: 'Lernend',
       learningMeaning: 'Grundlagen aufbauen.',
       exploring: 'Erkundend',
