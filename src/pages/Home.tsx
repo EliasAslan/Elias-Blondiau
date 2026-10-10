@@ -89,7 +89,7 @@ function SkillsSnapshot() {
             <h3>{t.skills.stronger}</h3>
             <p className="meaning">{t.skills.strongerMeaning}</p>
             <ul className="skill-list">
-              <li>AI-assisted development</li>
+              <li>Iterative development</li>
             </ul>
             <ul className="strengths">
               {t.skills.strengths.map((s) => (
