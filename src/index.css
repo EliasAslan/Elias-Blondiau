@@ -123,3 +123,24 @@ button:focus-visible,
     transform: none;
   }
 }
+
+/* Experimental identity: a working notebook, not a conventional corporate portfolio. */
+#portfolio-root{--ink:#20251f;--paper:#f4f0e6;--acid:#d9f36a;--rust:#c85b3b;background-color:var(--paper);background-image:radial-gradient(ellipse at 85% 12%,rgba(217,243,106,.22),transparent 28rem),linear-gradient(rgba(32,37,31,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(32,37,31,.045) 1px,transparent 1px);background-size:auto,32px 32px,32px 32px}
+#hero-section{border-bottom:2px solid var(--ink);background:linear-gradient(115deg,rgba(217,243,106,.18),transparent 58%)}
+#hero-name{font-size:clamp(3.8rem,10vw,8.5rem);line-height:.88;max-width:9ch;letter-spacing:-.085em}
+#hero-headline{border-left:0;padding:.35rem 0 .35rem 1rem;border-left:5px solid var(--rust);font-style:normal;color:var(--ink);max-width:18ch}
+#hero-profile-card{border:2px solid var(--ink);border-radius:2px;box-shadow:9px 9px 0 var(--acid);transform:rotate(1.25deg)}
+#hero-profile-card:hover{transform:rotate(0deg) translate(-2px,-2px)}
+#main-navigation{border-bottom:1px solid rgba(32,37,31,.18)}
+#nav-logo span:first-child{font-family:var(--font-mono);font-weight:800;letter-spacing:-.09em}
+section[id] h2{letter-spacing:-.045em}
+#projects{background:#f4f0e6}
+#projects .grid>div{border:1.5px solid var(--ink);border-radius:2px;box-shadow:4px 4px 0 rgba(32,37,31,.12);transition:transform 180ms ease,box-shadow 180ms ease,background-color 180ms ease}
+#projects .grid>div:nth-child(1){background:#e7edcf;transform:rotate(-.45deg)}
+#projects .grid>div:nth-child(2){background:#f1d9cb;transform:rotate(.4deg)}
+#projects .grid>div:nth-child(3){background:#e1e7ed}
+#projects .grid>div:hover{transform:translateY(-4px) rotate(0deg);box-shadow:8px 8px 0 rgba(32,37,31,.18)}
+#contact{background:#d9f36a;color:#20251f}
+a:focus-visible,button:focus-visible,[role=button]:focus-visible{outline:3px solid #c85b3b;outline-offset:4px}
+@media(max-width:640px){#hero-name{font-size:clamp(3.2rem,16vw,5rem)}#projects .grid>div:nth-child(1),#projects .grid>div:nth-child(2){transform:none}}
+@media(prefers-reduced-motion:reduce){#projects .grid>div,#projects .grid>div:hover{transition:none;transform:none}}
