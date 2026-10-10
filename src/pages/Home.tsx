@@ -72,7 +72,14 @@ function SkillsSnapshot() {
               <li>Git &amp; GitHub</li>
               <li>Python</li>
             </ul>
-            <button className="step-tap" type="button" onClick={() => tapStep('learning')} aria-label={`${t.skills.tapHint}: ${t.skills.learning}`}>{t.skills.tapHint}</button>
+            <button
+              className="step-tap"
+              type="button"
+              onClick={() => tapStep('learning')}
+              aria-label={`${t.skills.tapHint}: ${t.skills.learning}`}
+            >
+              {t.skills.tapHint}
+            </button>
           </div>
           <div className="step step-exploring">
             <h3>{t.skills.exploring}</h3>
@@ -83,7 +90,14 @@ function SkillsSnapshot() {
               <li>React &amp; Vite</li>
               <li>SQL &amp; Supabase</li>
             </ul>
-            <button className="step-tap" type="button" onClick={() => tapStep('exploring')} aria-label={`${t.skills.tapHint}: ${t.skills.exploring}`}>{t.skills.tapHint}</button>
+            <button
+              className="step-tap"
+              type="button"
+              onClick={() => tapStep('exploring')}
+              aria-label={`${t.skills.tapHint}: ${t.skills.exploring}`}
+            >
+              {t.skills.tapHint}
+            </button>
           </div>
           <div className="step step-strong">
             <h3>{t.skills.stronger}</h3>
@@ -96,7 +110,14 @@ function SkillsSnapshot() {
                 <li key={s}>{s}</li>
               ))}
             </ul>
-            <button className="step-tap" type="button" onClick={() => tapStep('strong')} aria-label={`${t.skills.tapHint}: ${t.skills.stronger}`}>{t.skills.tapHint}</button>
+            <button
+              className="step-tap"
+              type="button"
+              onClick={() => tapStep('strong')}
+              aria-label={`${t.skills.tapHint}: ${t.skills.stronger}`}
+            >
+              {t.skills.tapHint}
+            </button>
           </div>
           {unlocked && (
             <div className="step step-secret" aria-live="polite">
