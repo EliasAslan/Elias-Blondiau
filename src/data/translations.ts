@@ -1,9 +1,9 @@
 export const translations = {
   en: {
     nav: {
+      home: 'Home',
       projects: 'Projects',
-      skills: 'Skills',
-      contact: 'Contact',
+      about: 'Beyond Code',
       changeLanguage: 'Switch language',
     },
     skip: 'Skip to content',
@@ -19,11 +19,33 @@ export const translations = {
       sticker: 'Still learning, building in public',
       stickerSmall: 'Informatiker EFZ learner · Visp, CH',
     },
+    education: {
+      title: 'My path right now',
+      before:
+        'I’m doing an apprenticeship as an Informatiker EFZ in platform development, and alongside it a Berufsmaturität in engineering, architecture and life sciences. The programmes are the ',
+      efzName: 'Informatiker/in EFZ – EMVS',
+      middle: ' and the ',
+      bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
+      after:
+        '. Both are in progress — I haven’t completed either of them yet.',
+      status: 'Apprentice · in progress, not completed',
+    },
+    home: {
+      featuredTitle: 'Featured projects',
+      featuredSubtitle: 'Two projects that show how I work — idea, build, test, improve.',
+      allProjects: 'Explore all projects',
+      allProjectsNote: 'Four projects, each with notes on what I contributed.',
+      beyondTitle: 'Beyond Code',
+      beyondBody:
+        'Calisthenics, scouts, and the habit of turning spare-time ideas into small working things. More about the person behind the projects.',
+      beyondCta: 'More about me',
+    },
     projects: {
       title: 'Projects',
       subtitle:
         'Three main projects and one modification, each with a note on how it was made.',
       openNewTab: '(opens in a new tab)',
+      details: 'Project details',
       pfadi: {
         status: 'Live website',
         title: 'Pfadi Siders website',
@@ -50,6 +72,65 @@ export const translations = {
         body: "I started from an existing open-source app and reshaped it for my own use with AI assistance. The underlying project isn't mine; the ideas for how it should differ are.",
       },
     },
+    detail: {
+      back: 'All projects',
+      overview: 'What it is',
+      contribution: 'What I contributed',
+      state: 'Where it stands',
+      links: 'Links',
+      liveSite: 'Open the live site',
+      liveApp: 'Open the app',
+      comingTech: 'Technical details',
+      comingTechBody:
+        'Stack, structure and lessons learned will be added here in Phase 2.',
+      comingScreens: 'Screenshots',
+      comingScreensBody: 'Screenshots will be added here in Phase 2.',
+      notFoundTitle: 'Project not found',
+      notFoundBody: 'This project doesn’t exist. Here are the ones that do.',
+      notFoundCta: 'See all projects',
+      pfadi: {
+        extra:
+          'It replaces the group’s previous website with a more consistent look and clearer navigation.',
+        points: [
+          'Designed the visual direction for the new site.',
+          'Reorganised the structure and navigation.',
+          'Made sure the layouts work on phones.',
+          'Built it with AI support, testing and improving until it worked.',
+        ],
+        stateBody: 'Live and in use by the group.',
+      },
+      cal: {
+        extra:
+          'It exists because I wanted a training app that fits exactly how I train.',
+        points: [
+          'Came up with the idea and defined the features.',
+          'Defined the behavior and feel of the app.',
+          'Built it with AI assistance.',
+          'Tested each version against my own training and improved what fell short.',
+        ],
+        stateBody: 'Live as a personal project; I keep using and improving it.',
+      },
+      emvs: {
+        extra: 'It is my ongoing study project, and it is not finished.',
+        points: [
+          'Came up with the idea for the app.',
+          'Planned the features.',
+          'Building it with AI assistance.',
+        ],
+        stateBody:
+          'In progress. Account-based cloud sync is still under development, and there is no public demo yet.',
+      },
+      ben: {
+        extra: 'An exercise in reshaping existing software to fit my own needs.',
+        points: [
+          'Chose an existing open-source app as the starting point.',
+          'Decided how it should differ for my own use.',
+          'Reshaped it with AI assistance.',
+        ],
+        stateBody:
+          'A customized version for personal use. The underlying project is not mine.',
+      },
+    },
     skills: {
       title: 'Skills, by stage',
       subtitle:
@@ -71,6 +152,27 @@ export const translations = {
         'Setting up deployments and troubleshooting build failures.',
       ],
     },
+    about: {
+      title: 'Beyond Code',
+      intro1:
+        'I’m Elias, an Informatiker EFZ apprentice in platform development, working toward a Berufsmaturität in engineering, architecture and life sciences. I’m still at the start — curious, experimental, and learning by building things that actually work.',
+      intro2:
+        'What drives me is independent thinking and practical problem-solving: having an idea, figuring out how to make it real, and improving it until it holds up in everyday use.',
+      pathTitle: 'Education',
+      pathBody:
+        'I’m currently in vocational training as an Informatiker EFZ and attending Berufsmaturität classes. Both qualifications are still ahead of me.',
+      interestsTitle: 'Away from the keyboard',
+      interests: [
+        'Calisthenics — training that rewards patience and honest self-assessment.',
+        'Scouts — I built a new website for my scout group, Pfadi Siders.',
+        'Side projects — small ideas I turn into working things in my spare time.',
+      ],
+      nowTitle: 'Right now',
+      nowBody:
+        'I keep working on the EMVS Study Hub, train regularly, and document what I learn project by project.',
+      photoPlaceholder: 'Photo coming in Phase 2.',
+      contactCta: 'Get in touch',
+    },
     contact: {
       title: 'Have an idea or a question?',
       email: 'Email',
@@ -85,9 +187,9 @@ export const translations = {
 
   de: {
     nav: {
+      home: 'Start',
       projects: 'Projekte',
-      skills: 'Skills',
-      contact: 'Kontakt',
+      about: 'Abseits vom Code',
       changeLanguage: 'Sprache wechseln',
     },
     skip: 'Zum Inhalt springen',
@@ -103,11 +205,34 @@ export const translations = {
       sticker: 'Noch am Lernen, baut öffentlich',
       stickerSmall: 'Informatiker EFZ in Ausbildung · Visp, CH',
     },
+    education: {
+      title: 'Mein Weg gerade',
+      before:
+        'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und begleitend dazu eine Berufsmaturität in Technik, Architektur und Life Sciences. Die Programme sind der ',
+      efzName: 'Informatiker/in EFZ – EMVS',
+      middle: ' und die ',
+      bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
+      after:
+        '. Beides läuft noch — abgeschlossen habe ich noch keinen der beiden Abschlüsse.',
+      status: 'In Ausbildung · laufend, nicht abgeschlossen',
+    },
+    home: {
+      featuredTitle: 'Ausgewählte Projekte',
+      featuredSubtitle:
+        'Zwei Projekte, die zeigen, wie ich arbeite — Idee, Bau, Test, Verbesserung.',
+      allProjects: 'Alle Projekte entdecken',
+      allProjectsNote: 'Vier Projekte, jeweils mit Notizen zu meinem Beitrag.',
+      beyondTitle: 'Abseits vom Code',
+      beyondBody:
+        'Calisthenics, Pfadi und die Gewohnheit, Ideen aus der Freizeit in kleine funktionierende Dinge zu verwandeln. Mehr über die Person hinter den Projekten.',
+      beyondCta: 'Mehr über mich',
+    },
     projects: {
       title: 'Projekte',
       subtitle:
         'Drei Hauptprojekte und eine Anpassung, jeweils mit einer Notiz zur Entstehung.',
       openNewTab: '(öffnet in einem neuen Tab)',
+      details: 'Projektdetails',
       pfadi: {
         status: 'Live-Website',
         title: 'Pfadi Siders Website',
@@ -134,6 +259,66 @@ export const translations = {
         body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich mit KI-Unterstützung für meinen Gebrauch umgeformt habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
       },
     },
+    detail: {
+      back: 'Alle Projekte',
+      overview: 'Worum es geht',
+      contribution: 'Mein Beitrag',
+      state: 'Aktueller Stand',
+      links: 'Links',
+      liveSite: 'Live-Website öffnen',
+      liveApp: 'App öffnen',
+      comingTech: 'Technische Details',
+      comingTechBody:
+        'Stack, Aufbau und gelernte Lektionen werden hier in Phase 2 ergänzt.',
+      comingScreens: 'Screenshots',
+      comingScreensBody: 'Screenshots werden hier in Phase 2 ergänzt.',
+      notFoundTitle: 'Projekt nicht gefunden',
+      notFoundBody: 'Dieses Projekt gibt es nicht. Hier sind die, die es gibt.',
+      notFoundCta: 'Alle Projekte ansehen',
+      pfadi: {
+        extra:
+          'Sie ersetzt die bisherige Website der Abteilung durch einen einheitlicheren Auftritt und eine klarere Navigation.',
+        points: [
+          'Visuelle Richtung der neuen Website entworfen.',
+          'Struktur und Navigation neu organisiert.',
+          'Dafür gesorgt, dass die Layouts auf dem Handy funktionieren.',
+          'Mit KI-Unterstützung umgesetzt, getestet und verbessert, bis es passte.',
+        ],
+        stateBody: 'Live und bei der Abteilung im Einsatz.',
+      },
+      cal: {
+        extra:
+          'Sie existiert, weil ich eine Trainings-App wollte, die genau zu meinem Training passt.',
+        points: [
+          'Idee gehabt und Features definiert.',
+          'Verhalten und Anmutung der App festgelegt.',
+          'Mit KI-Unterstützung umgesetzt.',
+          'Jede Version am eigenen Training gemessen und Schwachstellen verbessert.',
+        ],
+        stateBody: 'Live als eigenes Projekt; ich nutze und verbessere sie weiter.',
+      },
+      emvs: {
+        extra: 'Es ist mein laufendes Lernprojekt und noch nicht fertig.',
+        points: [
+          'Idee für die App gehabt.',
+          'Features geplant.',
+          'Setze sie mit KI-Unterstützung um.',
+        ],
+        stateBody:
+          'In Arbeit. Die kontobasierte Cloud-Synchronisierung ist noch in Entwicklung, und es gibt noch keine öffentliche Demo.',
+      },
+      ben: {
+        extra:
+          'Eine Übung darin, bestehende Software an die eigenen Bedürfnisse anzupassen.',
+        points: [
+          'Bestehende Open-Source-App als Ausgangspunkt gewählt.',
+          'Festgelegt, wie sie für meinen Gebrauch anders sein soll.',
+          'Mit KI-Unterstützung umgeformt.',
+        ],
+        stateBody:
+          'Angepasste Version für den eigenen Gebrauch. Das Grundprojekt ist nicht meins.',
+      },
+    },
     skills: {
       title: 'Skills, nach Stand',
       subtitle:
@@ -154,6 +339,27 @@ export const translations = {
         'Kleine Code-Änderungen selbst machen.',
         'Deployments einrichten und Build-Fehler beheben.',
       ],
+    },
+    about: {
+      title: 'Abseits vom Code',
+      intro1:
+        'Ich bin Elias, Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität in Technik, Architektur und Life Sciences. Ich stehe noch am Anfang — neugierig, experimentierfreudig, und ich lerne, indem ich Dinge baue, die wirklich funktionieren.',
+      intro2:
+        'Was mich antreibt, ist eigenständiges Denken und praktisches Problemlösen: eine Idee haben, herausfinden, wie sie echt wird, und sie verbessern, bis sie im Alltag hält.',
+      pathTitle: 'Ausbildung',
+      pathBody:
+        'Ich bin derzeit in der Berufslehre als Informatiker EFZ und besuche die Berufsmaturitätsklassen. Beide Abschlüsse liegen noch vor mir.',
+      interestsTitle: 'Abseits der Tastatur',
+      interests: [
+        'Calisthenics — Training, das Geduld und ehrliche Selbsteinschätzung belohnt.',
+        'Pfadi — für meine Pfadi-Abteilung Pfadi Siders habe ich eine neue Website gebaut.',
+        'Nebenprojekte — kleine Ideen, die ich in meiner Freizeit in funktionierende Dinge verwandle.',
+      ],
+      nowTitle: 'Gerade jetzt',
+      nowBody:
+        'Ich arbeite weiter am EMVS Study Hub, trainiere regelmässig und halte fest, was ich Projekt für Projekt lerne.',
+      photoPlaceholder: 'Foto folgt in Phase 2.',
+      contactCta: 'Kontakt aufnehmen',
     },
     contact: {
       title: 'Idee oder Frage?',
