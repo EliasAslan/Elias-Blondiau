@@ -16,7 +16,7 @@ export const DEMOS = {
 export const REPOS = {
   /** EMVS Study Hub source. Public JavaScript repository. */
   emvs: 'https://github.com/EliasAslan/EMVs-studyHub',
-  /** BEN.SUSTAIN fork — public fork of upstream openGym. */
+  /** BEN.SUSTAIN fork. Public fork of openGym. */
   benFork: 'https://github.com/EliasAslan/benOpenGym',
 } as const;
 
