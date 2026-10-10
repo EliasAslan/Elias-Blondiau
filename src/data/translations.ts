@@ -13,11 +13,11 @@ export const translations = {
       about: 'Beyond Code. Elias Blondiau',
       notFound: 'Page not found. Elias Blondiau',
       projectSuffix:
-        'a project by Elias Blondiau, Informatiker EFZ apprentice',
+        'a project by Elias Blondiau, Informatiker EFZ apprentice in platform development',
       descriptions: {
         home: 'Elias Blondiau, Informatiker EFZ apprentice in platform development. Personal projects, skills and contact.',
         projects:
-          'All projects by Elias Blondiau: Pfadi Siders website, calisthenics training app, EMVS Study Hub and BEN.SUSTAIN.',
+          'Projects by Elias Blondiau: the Pfadi Siders website, a calisthenics app, EMVS Study Hub and BEN.SUSTAIN.',
         about:
           'Calisthenics, scouting and small projects outside school.',
         notFound: 'Page not found on the portfolio of Elias Blondiau.',
@@ -36,8 +36,8 @@ export const translations = {
         'Some are useful. Some are experiments.',
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
-      sticker: 'Still learning, building in public',
-      stickerSmall: 'Informatiker EFZ learner · Visp, CH',
+      sticker: 'Learning as I go',
+      stickerSmall: 'Informatiker EFZ, platform development · Visp',
     },
     education: {
       title: 'My path right now',
@@ -52,9 +52,9 @@ export const translations = {
     },
     home: {
       featuredTitle: 'Featured projects',
-      featuredSubtitle: 'Two projects I built, tested and improved.',
+      featuredSubtitle: 'A closer look at two projects.',
       allProjects: 'Explore all projects',
-      allProjectsNote: 'Four projects, each with notes on what I contributed.',
+      allProjectsNote: 'Four projects, with a clear note on my part in each.',
       beyondTitle: 'Beyond Code',
       beyondBody:
         'Calisthenics, scouting and small projects outside school.',
@@ -66,7 +66,7 @@ export const translations = {
     projects: {
       title: 'Projects',
       subtitle:
-        'Three projects I built or am building, plus one open-source project I adapted.',
+        'Three projects of my own and one open-source project I adapted.',
       openNewTab: '(opens in a new tab)',
       details: 'Project details',
       demoLabel: 'Live demo',
@@ -76,7 +76,7 @@ export const translations = {
       pfadi: {
         status: 'Live website',
         title: 'Pfadi Siders website',
-        body: 'A replacement website for my scout group, with clearer navigation, age-group pages, a calendar and layouts that work on phones.',
+        body: 'A new website for my scout group, with clearer navigation, pages for each age group and a calendar that works on phones.',
         cta: 'Open the live site',
         url: 'https://pfadi-siders-updated.vercel.app/',
       },
@@ -96,7 +96,7 @@ export const translations = {
       ben: {
         status: 'Open-source adaptation',
         title: 'BEN.SUSTAIN',
-        body: "I adapted an existing open-source fitness app toward a more personal, single-user setup. The original project isn't mine; the direction for this version is.",
+        body: "I’m adapting an open-source fitness app for one person. The original project isn’t mine, but I’m shaping this version for my own use.",
       },
     },
     detail: {
@@ -117,12 +117,12 @@ export const translations = {
       notFoundTitle: 'Project not found',
       notFoundBody: 'This project doesn’t exist. Here are the ones that do.',
       notFoundCta: 'See all projects',
-      whyT: 'Why it exists',
-      decisionsT: 'My ideas and decisions',
+      whyT: 'Why I made it',
+      decisionsT: 'What I chose',
       featuresT: 'What it does',
       inheritedT: 'Inherited from upstream',
       mineT: 'My modifications and ideas',
-      challengesT: 'Challenges and what I learned',
+      challengesT: 'What was difficult',
       limitsT: 'Known limitations',
       sections: {
         pfadi: {
@@ -132,10 +132,10 @@ export const translations = {
             'The site is live and in use. It has sections for Wölfe und Bienli, Pfadis, Pios and Rover, plus Abteilung, Kalender, Bilder, Mitmachen and Kontakt.',
           ],
           decisions: [
-            'Designed the visual direction myself: one expressive hero (“Gipfelpause”), one voice, one structure across every page.',
+            'I chose the look and layout, including the “Gipfelpause” homepage and the page structure.',
             'Gave every age group its own section so parents and kids land directly where they belong.',
             'Made the key details easy to find: meeting place (Pfadilokal, Rue Saint-Georges 19, Sierre), Saturday hours, calendar and contact.',
-            'Implemented it with AI support, reviewing and correcting the output until the result matched the design.',
+            'I used AI tools while coding, then checked and corrected the result against the design.',
           ],
           features: [
             'Hero with headline, calls to action and links to the sections and Instagram.',
@@ -145,7 +145,7 @@ export const translations = {
             'Contact, error-reporting and legal pages (Impressum, Datenschutz), with a webmaster credit.',
           ],
           challenges: [
-            'Keeping the scope small was harder than it sounds. I focused on the pages the group needs.',
+            'I had to keep the project focused on the pages the group actually needs.',
             'Writing for kids and parents meant balancing the sense of adventure with practical details.',
             'Checking each layout against real content caught problems before they spread.',
           ],
@@ -177,8 +177,8 @@ export const translations = {
             'I have not documented every screen yet, so I have kept the feature list short.',
           ],
           challenges: [
-            'The hardest part was deciding what not to build: a personal tool has to stay fast and simple.',
-            'Testing the app during my own workouts revealed usability problems a checklist would have missed.',
+            'It was easy to keep adding ideas. I had to focus on what I would actually use.',
+            'Using the app during workouts helped me spot problems I would not have noticed otherwise.',
           ],
           limits: [
             'I haven’t documented every screen yet, so this page sticks to details I can confirm from my own notes.',
@@ -199,7 +199,7 @@ export const translations = {
           ],
           decisions: [
             'Chose local-first storage so the app is useful from the first second, with no signup friction.',
-            'Structured it around real study workflows: today view, weak-spot tracking, capture, exams, weekly review, tools.',
+            'I added views for today’s work, weak spots, quick capture, exams, weekly reviews and tools.',
             'Added a command palette (⌘K) and undo, because a tool you use daily must be fast and forgiving.',
             'Added Supabase email and password sign-in. It does not connect to study data yet.',
           ],
@@ -211,8 +211,8 @@ export const translations = {
             'Settings with Supabase email/password sign-in, session restore and sign-out.',
           ],
           challenges: [
-            'The tricky part was making clear that signing in does not sync study data. I made that limitation explicit in the README.',
-            'Splitting the work into phases (local app first, auth foundation, sync later) kept an ambitious project shippable.',
+            'I had to make it clear that signing in does not sync study data, so I explained this in the README.',
+            'Building it in stages helped me finish a usable local version before working on sign-in and sync.',
             'Writing down what a phase does not do helps prevent misunderstandings.',
           ],
           limits: [
@@ -238,12 +238,12 @@ export const translations = {
         ben: {
           tagline: 'One person. One pace. Keep going.',
           why: [
-            'I wanted a fitness tracker for one person to use at their own pace. Rather than start from zero, I forked openGym, an open-source gym and bodyweight tracker, and began adapting it into BEN.SUSTAIN.',
+            'I wanted a fitness tracker for one person. I started with openGym, an open-source gym and bodyweight tracker, and began adapting it for BEN.SUSTAIN.',
             'I came up with the BEN.SUSTAIN name and its direction: “One person. One pace. Keep going.” The app is based on someone else’s open-source project.',
           ],
           decisions: [
-            'Chose openGym as the base because it already solves the hard parts: routines, guided workouts, progression logic, offline use.',
-            'Kept the fork public on GitHub so the derivation from upstream stays visible.',
+            'I chose openGym because it already has routines, guided workouts, progression features and offline support.',
+            'I kept the fork public on GitHub so it is clear where the project came from.',
             'Set the direction toward a calmer, personal single-user experience under the BEN.SUSTAIN name.',
           ],
           inherited: [
@@ -258,7 +258,7 @@ export const translations = {
             'I have started adapting it for my own use. I still need to list the exact changes here.',
           ],
           challenges: [
-            'Forking a mature codebase means understanding it before changing it.',
+            'I need to understand the existing code before changing it.',
             'I need to keep the original features separate from the changes I make.',
           ],
           limits: [
@@ -289,25 +289,25 @@ export const translations = {
       },
     },
     skills: {
-      title: 'Skills, by stage',
+      title: 'What I know so far',
       subtitle:
         'I train calisthenics and move to harder skills when I can do the current step well. These cards show where I am with each skill.',
       learning: 'Learning',
       learningMeaning: 'Getting the basics down.',
       exploring: 'Exploring',
       exploringMeaning: 'Trying it out and finding my way.',
-      stronger: 'Workflow',
-      strongerMeaning: 'How I plan, build and check things.',
+      stronger: 'How I work',
+      strongerMeaning: 'From idea to a working result.',
       tapHint: 'Tap to reveal',
       caption:
-        'No scores or progress bars. Just my current level and how I work.',
+        'My current level in each skill, plus a few notes on how I work.',
       strengths: [
-        'Describing the result I want and turning it into clear requirements.',
-        'Testing features and reporting bugs.',
-        'Reviewing proposed changes and judging whether they make sense.',
-        'Breaking larger projects into manageable phases.',
+        'Explaining what I want a project to do.',
+        'Testing features and finding bugs.',
+        'Checking suggested changes before using them.',
+        'Splitting big projects into smaller steps.',
         'Making small code changes.',
-        'Setting up deployments and troubleshooting build failures.',
+        'Deploying projects and fixing build errors.',
       ],
     },
     about: {
@@ -315,10 +315,10 @@ export const translations = {
       intro1:
         'I’m Elias. I’m doing an Informatiker EFZ apprenticeship in platform development and a Berufsmaturität TALS. Outside school, I usually prefer making something over talking about it.',
       intro2:
-        'This page is the non-CV version: what I do when I’m not at the keyboard, and the ideas I carry back to it.',
+        'Here is what I get up to outside school and coding.',
       eduBody:
         'I’m doing an Informatiker EFZ apprenticeship in platform development alongside the Berufsmaturität TALS. Both are in progress. The official programmes are:',
-      trainingTitle: 'Calisthenics: my other progression system',
+      trainingTitle: 'Calisthenics',
       trainingBody:
         'I train calisthenics regularly. It taught me to move up a progression only when I can do the current step properly. I use the same idea when building training features: I try them in a real workout and fix what gets in the way.',
       trainingGoals: 'Right now I’m working on the basics and trying to train consistently. I’ll add specific goals when I’ve settled on them.',
@@ -328,7 +328,7 @@ export const translations = {
       tinkeringTitle: 'Spare-time tinkering',
       tinkeringBody:
         'I spend my free time on study tools, training apps and other small projects. I usually start by solving a problem of my own. If it helps someone else too, even better.',
-      valuesTitle: 'What I’m aiming at',
+      valuesTitle: 'Things I try to stick to',
       values: [
         'Curiosity over comfort. Try things I don’t know yet.',
         'Think for myself. Understand before copying.',
@@ -336,9 +336,9 @@ export const translations = {
         'Be honest about what I know and what I’m still learning.',
       ],
       readingTitle: 'Reading and ideas',
-      readingBody: 'A short list of books and ideas that influence me will go here.',
+      readingBody: 'I’ll add a few books and ideas here later.',
       photoLabel: 'Photo placeholder',
-      photoBody: 'A personal photo goes here (4:3) once I provide one.',
+      photoBody: 'I’ll add a photo here later (4:3).',
       photoAlt: 'Portrait photo of Elias (to be added)',
       contactCta: 'Get in touch',
     },
@@ -408,7 +408,7 @@ export const translations = {
       projectSuffix:
         'ein Projekt von Elias Blondiau, Informatiker-EFZ-Lernendem',
       descriptions: {
-        home: 'Elias Blondiau, Informatiker-EFZ-Lernender in Plattformentwicklung. Eigene Projekte, Skills und Kontakt.',
+        home: 'Elias Blondiau macht eine Lehre als Informatiker EFZ in Plattformentwicklung. Projekte und Kontakt.',
         projects:
           'Alle Projekte von Elias Blondiau: Pfadi-Siders-Website, Calisthenics-Trainings-App, EMVS Study Hub und BEN.SUSTAIN.',
         about:
@@ -429,8 +429,8 @@ export const translations = {
         'Manches ist nützlich. Manches ist ein Experiment.',
       ctaProjects: 'Projekte ansehen',
       ctaContact: 'Kontakt aufnehmen',
-      sticker: 'Noch am Lernen, baut öffentlich',
-      stickerSmall: 'Informatiker EFZ in Ausbildung · Visp, CH',
+      sticker: 'Ich lerne dazu',
+      stickerSmall: 'Informatiker EFZ, Plattformentwicklung · Visp',
     },
     education: {
       title: 'Mein Weg gerade',
@@ -441,14 +441,14 @@ export const translations = {
       bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
       after:
         '. Beide Abschlüsse sind noch in Arbeit.',
-      status: 'In Ausbildung · laufend, nicht abgeschlossen',
+      status: 'Lehre in Arbeit',
     },
     home: {
       featuredTitle: 'Ausgewählte Projekte',
       featuredSubtitle:
         'Zwei Projekte, die ich gebaut, getestet und verbessert habe.',
       allProjects: 'Alle Projekte entdecken',
-      allProjectsNote: 'Vier Projekte, jeweils mit Notizen zu meinem Beitrag.',
+      allProjectsNote: 'Vier Projekte. Bei jedem steht dabei, was ich gemacht habe.',
       beyondTitle: 'Abseits vom Code',
       beyondBody:
         'Calisthenics, Pfadi und kleine Projekte neben der Schule.',
@@ -470,7 +470,7 @@ export const translations = {
       pfadi: {
         status: 'Live-Website',
         title: 'Pfadi Siders Website',
-        body: 'Eine neue Website als Ersatz für die bisherige Seite meiner Pfadi-Abteilung. Sie hat eine klarere Navigation, eigene Seiten für die Stufen, einen Kalender und Layouts fürs Handy.',
+        body: 'Eine neue Website für meine Pfadi-Abteilung, mit klarer Navigation, Seiten für die Stufen und einem Kalender, der auch auf dem Handy funktioniert.',
         cta: 'Live-Website öffnen',
         url: 'https://pfadi-siders-updated.vercel.app/',
       },
@@ -484,13 +484,13 @@ export const translations = {
       emvs: {
         status: 'In Arbeit',
         title: 'EMVS Study Hub',
-        body: 'Eine Lern-App, die ich rund um meinen eigenen Schulalltag entwickle. Sie ist noch in Arbeit.',
+        body: 'Eine Lern-App, die mir hilft, meinen Schulstoff an einem Ort zu organisieren. Sie ist noch in Arbeit.',
         note: 'Heute local-first: Die Lerndaten leben im Browser. Konto-Login existiert, ist aber noch keine Cloud-Synchronisierung.',
       },
       ben: {
         status: 'Open-Source-Anpassung',
         title: 'BEN.SUSTAIN',
-        body: 'Ich habe eine bestehende Open-Source-Fitness-App auf eine persönlichere Nutzung für eine einzelne Person ausgerichtet. Das Original stammt nicht von mir; die Richtung dieser Version schon.',
+        body: 'Ich passe eine Open-Source-Fitness-App für eine einzelne Person an. Das Original stammt nicht von mir, aber ich richte diese Version für meinen eigenen Gebrauch aus.',
       },
     },
     detail: {
@@ -512,11 +512,11 @@ export const translations = {
       notFoundBody: 'Dieses Projekt gibt es nicht. Hier sind die, die es gibt.',
       notFoundCta: 'Alle Projekte ansehen',
       whyT: 'Warum es existiert',
-      decisionsT: 'Meine Ideen und Entscheidungen',
+      decisionsT: 'Was ich entschieden habe',
       featuresT: 'Was es kann',
       inheritedT: 'Vom Ursprungsprojekt übernommen',
       mineT: 'Meine Anpassungen und Ideen',
-      challengesT: 'Herausforderungen und was ich gelernt habe',
+      challengesT: 'Was schwierig war',
       limitsT: 'Bekannte Einschränkungen',
       sections: {
         pfadi: {
@@ -539,7 +539,7 @@ export const translations = {
             'Kontakt-, Fehler-melden- und Rechtsseiten (Impressum, Datenschutz) mit Webmaster-Angabe.',
           ],
           challenges: [
-            'Den Umfang klein zu halten war schwieriger, als es klingt. Ich habe mich auf die Seiten konzentriert, die die Abteilung braucht.',
+            'Ich musste mich auf die Seiten konzentrieren, die die Abteilung wirklich braucht.',
             'Für Kinder und Eltern zu schreiben bedeutete, Abenteuer und praktische Informationen auszubalancieren.',
             'Layouts am echten Inhalt zu prüfen hat Probleme aufgedeckt, bevor sie sich weiterziehen konnten.',
           ],
@@ -572,7 +572,7 @@ export const translations = {
           ],
           challenges: [
             'Das Schwerste war zu entscheiden, was nicht gebaut wird: Ein persönliches Werkzeug muss schnell und einfach bleiben.',
-            'Tests während meines eigenen Trainings haben Bedienprobleme gezeigt, die eine Checkliste übersehen hätte.',
+            'Beim Training habe ich Bedienprobleme entdeckt, die mir beim blossen Durchsehen nicht aufgefallen wären.',
           ],
           limits: [
             'Ich habe noch nicht jeden Bildschirm dokumentiert und beschränke mich deshalb auf Details, die ich aus meinen Notizen bestätigen kann.',
@@ -594,7 +594,7 @@ export const translations = {
           decisions: [
             'Local-first Speicher gewählt, damit die App ab der ersten Sekunde nützt, ohne Anmelde-Hürde.',
             'An echten Lernabläufen strukturiert: Heute-Ansicht, Schwachstellen, Erfassen, Prüfungen, Wochen-Review, Werkzeuge.',
-            'Befehlspalette (⌘K) und Rückgängig eingebaut, weil ein täglich genutztes Werkzeug schnell und verzeihend sein muss.',
+            'Befehlspalette (⌘K) und Rückgängig eingebaut, damit sich die App schneller bedienen lässt und Fehler nicht gleich zum Problem werden.',
             'Supabase-Anmeldung mit E-Mail und Passwort hinzugefügt. Die Lerndaten sind noch nicht damit verbunden.',
           ],
           features: [
@@ -605,7 +605,7 @@ export const translations = {
             'Einstellungen mit Supabase-E-Mail/Passwort-Login, Session-Wiederherstellung und Abmelden.',
           ],
           challenges: [
-            'Wichtig war klarzustellen, dass ein Login die Lerndaten nicht synchronisiert. Diese Einschränkung steht ausdrücklich im README.',
+            'Ich musste klar erklären, dass die Anmeldung keine Lerndaten synchronisiert. Das steht auch im README.',
             'Die Arbeit in Phasen zu teilen (erst lokale App, dann Auth-Basis, später Sync) hat ein ehrgeiziges Projekt auslieferbar gehalten.',
             'Festzuhalten, was eine Phase nicht tut, hilft Missverständnisse zu vermeiden.',
           ],
@@ -637,7 +637,7 @@ export const translations = {
           ],
           decisions: [
             'openGym als Basis gewählt, weil es die schwierigen Teile schon löst: Routinen, geführte Workouts, Progressionslogik, Offline-Nutzung.',
-            'Den Fork öffentlich auf GitHub gehalten, damit die Ableitung vom Upstream sichtbar bleibt.',
+            'Ich habe den Fork öffentlich gelassen, damit klar ist, woher das Projekt stammt.',
             'Richtung gesetzt: ein ruhigeres, persönliches Einzelpersonen-Erlebnis unter dem Namen BEN.SUSTAIN.',
           ],
           inherited: [
@@ -653,7 +653,7 @@ export const translations = {
           ],
           challenges: [
             'Bei einer ausgereiften Codebasis kommt erst das Verstehen, dann das Ändern.',
-            'Damit der Fork transparent bleibt, trenne ich übernommene Funktionen klar von meinen Änderungen.',
+            'Ich trenne die übernommenen Funktionen klar von meinen eigenen Änderungen.',
           ],
           limits: [
             'Meine konkreten Code-Änderungen sind hier noch nicht dokumentiert.',
@@ -690,8 +690,8 @@ export const translations = {
       learningMeaning: 'Grundlagen aufbauen.',
       exploring: 'Erkundend',
       exploringMeaning: 'Ausprobieren und sich zurechtfinden.',
-      stronger: 'Arbeitsweise',
-      strongerMeaning: 'Wie ich plane, baue und prüfe.',
+      stronger: 'So arbeite ich',
+      strongerMeaning: 'Von der Idee zum Ergebnis.',
       tapHint: 'Antippen zum Entdecken',
       caption:
         'Keine Scores und keine Balken. Nur mein aktueller Stand und wie ich arbeite.',
@@ -707,12 +707,12 @@ export const translations = {
     about: {
       title: 'Abseits vom Code',
       intro1:
-        'Ich bin Elias. Tagsüber bin ich Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität TALS. In der restlichen Zeit bin ich lieber die Person, die das Ding baut, statt über das Bauen zu reden.',
+        'Ich bin Elias. Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und die Berufsmaturität TALS. In meiner Freizeit baue ich lieber etwas, als lange darüber zu reden.',
       intro2:
-        'Diese Seite ist die Nicht-CV-Version: was ich abseits der Tastatur tue und welche Ideen ich von dort mitbringe.',
+        'Hier geht es darum, was ich neben Schule und Programmieren mache.',
       eduBody:
         'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und parallel die Berufsmaturität TALS. Beides ist noch in Arbeit. Die offiziellen Programme sind:',
-      trainingTitle: 'Calisthenics: mein anderes Progressionssystem',
+      trainingTitle: 'Calisthenics',
       trainingBody:
         'Ich trainiere regelmässig Calisthenics. Dabei habe ich gelernt, erst dann zum nächsten Schritt zu wechseln, wenn der aktuelle sitzt. Beim Bauen von Trainingsfunktionen mache ich es ähnlich: Ich probiere sie im echten Training aus und verbessere, was stört.',
       trainingGoals: 'Im Moment arbeite ich an den Grundlagen und versuche, regelmässig zu trainieren. Konkrete Ziele ergänze ich, wenn ich sie festgelegt habe.',
@@ -722,7 +722,7 @@ export const translations = {
       tinkeringTitle: 'Tüftelei in der Freizeit',
       tinkeringBody:
         'In meiner Freizeit arbeite ich an Lernwerkzeugen, Trainings-Apps und kleinen Projekten. Meistens löse ich damit zuerst ein eigenes Problem. Wenn es auch anderen hilft, umso besser.',
-      valuesTitle: 'Worauf ich ziele',
+      valuesTitle: 'Dinge, an die ich mich halten will',
       values: [
         'Neugierig bleiben. Auch mal etwas Neues ausprobieren.',
         'Selbst denken. Erst verstehen, dann kopieren.',
@@ -730,9 +730,9 @@ export const translations = {
         'Ehrlich sagen, was ich kann und was ich noch lerne.',
       ],
       readingTitle: 'Lesen und Ideen',
-      readingBody: 'Hier kommt eine kurze Liste von Büchern und Ideen, die mich beeinflussen.',
+      readingBody: 'Hier ergänze ich später ein paar Bücher und Ideen.',
       photoLabel: 'Foto-Platzhalter',
-      photoBody: 'Hier kommt ein persönliches Foto hin (4:3), sobald ich eines liefere.',
+      photoBody: 'Hier ergänze ich später ein Foto (4:3).',
       photoAlt: 'Porträtfoto von Elias (folgt)',
       contactCta: 'Kontakt aufnehmen',
     },
