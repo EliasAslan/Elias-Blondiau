@@ -15,21 +15,21 @@ export const portfolioData: PortfolioData = {
     },
     location: 'Visp, Switzerland',
     heroHeadline: {
-      en: 'Learning how systems work, writing code, and building projects one step at a time.',
-      de: 'Verstehen wie Systeme funktionieren, Code schreiben und Schritt für Schritt Neues erschaffen.',
+      en: 'Curiosity first. Build something. Find out what breaks.',
+      de: 'Neugierig werden. Etwas bauen. Herausfinden, was noch nicht funktioniert.',
     },
     heroSubheadline: {
-      en: 'I am an Informatiker EFZ apprentice in Switzerland, focused on building useful software, learning by shipping real projects, and understanding how the systems behind an app fit together.',
-      de: 'Ich bin Informatiker-EFZ-Lernender in der Schweiz. Ich entwickle nützliche Software, lerne durch echte Projekte und möchte verstehen, wie die Systeme hinter einer App zusammenspielen.',
+      en: 'I'm an Informatiker EFZ learner exploring software development and AI-assisted engineering through real projects.',
+      de: 'Ich bin Informatiker EFZ in Ausbildung und erkunde Softwareentwicklung und KI-gestütztes Engineering anhand echter Projekte.',
     },
     bioParagraphs: {
       en: [
-        'Hi, I am Elias. I am currently completing my Informatiker EFZ apprenticeship at EMVS BFO in Visp, Switzerland. I am interested in what happens behind the interface: application logic, data, deployment, and the decisions that make software useful.',
+        'Hi, I am Elias. I am currently completing my Informatiker EFZ apprenticeship at EMVS BFO in Visp, Switzerland. I’m interested in the space between an idea and a working product: shaping what it should do, guiding AI-assisted implementation, testing the result, and learning how the underlying systems work.',
         'I learn by building and iterating. Current work includes EMVS Study Hub, a personalized fitness app, and a fitness tracker for a real user, alongside smaller programming experiments.',
         'I am still learning, so I try to be honest about what works, what is unfinished, and what I need to understand better. I care about independent thinking, practical problem-solving, and making projects more reliable over time.',
       ],
       de: [
-        'Hallo, ich bin Elias. Ich absolviere derzeit meine Berufslehre als Informatiker EFZ an der EMVS BFO in Visp, Schweiz. Mich interessiert, was hinter der Oberfläche passiert: Anwendungslogik, Daten, Deployment und die Entscheidungen, die Software nützlich machen.',
+        'Hallo, ich bin Elias. Ich absolviere derzeit meine Berufslehre als Informatiker EFZ an der EMVS BFO in Visp, Schweiz. Mich interessiert der Weg von einer Idee zu einem funktionierenden Produkt: festlegen, was es können soll, die KI-gestützte Umsetzung steuern, das Ergebnis testen und die Systeme dahinter verstehen.',
         'Ich lerne am besten durch Bauen und Verbessern. Aktuelle Projekte sind der EMVS Study Hub, eine persönliche Trainings-App und ein Fitness-Tracker für einen echten Nutzer – neben kleineren Programmierexperimenten.',
         'Ich lerne noch und versuche deshalb ehrlich zu zeigen, was funktioniert, was unfertig ist und was ich besser verstehen muss. Mir sind selbstständiges Denken, praktische Problemlösung und zuverlässigere Projekte wichtig.',
       ],
@@ -89,6 +89,48 @@ export const portfolioData: PortfolioData = {
 
   projects: [
     {
+      id: 'scout-site',
+      title: { en: 'Pfadi St. Christophorus Siders — Website Redesign', de: 'Pfadi St. Christophorus Siders — Website-Redesign' },
+      description: {
+        en: 'A redesign for my scout group that replaces an outdated web presence with a more coherent, modern experience and makes key information easier to find.',
+        de: 'Ein Redesign für meine Pfadi-Abteilung, das den bisherigen Webauftritt durch eine modernere, stimmigere Erfahrung ersetzt und wichtige Informationen leichter auffindbar macht.',
+      },
+      longDescription: {
+        en: 'I shaped the visual direction and used AI to help implement it. The redesign brings together a more consistent identity, clearer navigation and page organization, responsive layouts, and a more complete set of information for families and young people. Hosted on Vercel; no GitHub repository is connected.',
+        de: 'Ich entwickelte die visuelle Richtung und nutzte KI zur Unterstützung bei der Umsetzung. Das Redesign verbindet einen einheitlicheren Auftritt mit klarerer Navigation und Seitenstruktur, responsiven Layouts und einem vollständigeren Informationsangebot für Familien und Jugendliche. Gehostet auf Vercel; kein GitHub-Repository verknüpft.',
+      },
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Vercel'],
+      status: 'completed',
+      statusLabel: { en: 'Live Website', de: 'Live-Website' },
+      category: 'web',
+      liveUrl: 'https://pfadi-siders-updated.vercel.app/',
+      highlights: {
+        en: ['Live multi-page scout-group website', 'Calendar, gallery, section and joining pages', 'Responsive navigation and accessible interaction details'],
+        de: ['Veröffentlichte mehrseitige Pfadi-Website', 'Kalender, Galerie, Stufen- und Mitmachen-Seiten', 'Responsive Navigation und zugängliche Interaktionen'],
+      },
+    },
+    {
+      id: 'calisthenics-workout',
+      title: { en: 'Personal Calisthenics Workout App', de: 'Persönliche Calisthenics-Trainings-App' },
+      description: {
+        en: 'A personal calisthenics app concept shaped around how I want to train: skill practice, flexible sessions, set tracking, timers, and progression.',
+        de: 'Das Konzept einer persönlichen Calisthenics-App, ausgerichtet auf meine Trainingsweise: Skills, flexible Einheiten, Satzprotokolle, Timer und Progression.',
+      },
+      longDescription: {
+        en: 'I came up with the idea and planned what the app should do, then used AI-assisted implementation to move the prototype toward those expectations. The project is an ongoing experiment in turning a personal workflow into a useful tool.',
+        de: 'Ich hatte die Idee und plante, was die App können soll. Anschliessend nutzte ich KI-gestützte Umsetzung, um den Prototyp an diese Erwartungen anzunähern. Das Projekt ist ein laufendes Experiment, einen persönlichen Ablauf in ein nützliches Werkzeug zu verwandeln.',
+      },
+      technologies: ['Product Design', 'JavaScript', 'Web App', 'Progression Logic'],
+      status: 'in_progress',
+      statusLabel: { en: 'In Development', de: 'In Entwicklung' },
+      category: 'web',
+      liveUrl: 'https://refreshing-apex-form-flow.base44.app/',
+      highlights: {
+        en: ['Flexible workout formats', 'Skill and hypertrophy planning', 'Set history, rest timers, and progression logic'],
+        de: ['Flexible Trainingsformate', 'Skill- und Hypertrophieplanung', 'Satzverlauf, Pausentimer und Progressionslogik'],
+      },
+    },
+    {
       id: 'study-hub',
       title: { en: 'EMVS Study Hub', de: 'EMVS Study Hub' },
       description: {
@@ -110,16 +152,18 @@ export const portfolioData: PortfolioData = {
         de: ['Zeitgesteuerte oder manuelle Lerneinheiten protokollieren', 'Lernziel-Fortschritt über Zeit verfolgen', 'Cloud-Sync und Kontoabläufe in aktiver Entwicklung'],
       },
     },
+
+,
     {
       id: 'ben-sustain',
       title: { en: 'BEN.SUSTAIN — Personal Fitness App', de: 'BEN.SUSTAIN — Persönliche Fitness-App' },
       description: {
-        en: 'A personalized home-training and habit-tracking web app designed around sustainable progress, adjustable workouts, and simple daily check-ins.',
-        de: 'Eine personalisierte Web-App für Heimtraining und Gewohnheiten – mit anpassbaren Workouts, einfachen Tages-Check-ins und nachhaltigem Fortschritt.',
+        en: 'An AI-assisted customization of an existing open-source fitness project, adapted around personal ideas and intended use.',
+        de: 'Eine mit KI angepasste Version eines bestehenden Open-Source-Fitnessprojekts, zugeschnitten auf persönliche Ideen und den eigenen Gebrauch.',
       },
       longDescription: {
-        en: 'A practical project for turning a real person’s constraints into a usable product: workout options, activity and recovery check-ins, and progress tracking. The live demo is a test build, not a claim of a finished production service.',
-        de: 'Ein praxisnahes Projekt, bei dem reale Rahmenbedingungen in ein nutzbares Produkt übersetzt werden: Trainingsoptionen, Aktivitäts- und Erholungs-Check-ins sowie Fortschrittsverfolgung. Die Live-Demo ist ein Teststand und kein fertiger Produktionsdienst.',
+        en: 'I started from an existing open-source project rather than building the original app. I used AI to help make personal modifications, deciding what I wanted changed and guiding the result toward those expectations. The live demo is a test build.',
+        de: 'Ausgangspunkt war ein bestehendes Open-Source-Projekt, nicht eine von mir entwickelte Original-App. Mit KI habe ich persönliche Anpassungen umgesetzt, selbst entschieden, was geändert werden soll, und das Ergebnis entsprechend gesteuert. Die Live-Demo ist ein Teststand.',
       },
       technologies: ['JavaScript', 'HTML', 'CSS', 'GitHub Pages'],
       status: 'in_progress',
@@ -132,48 +176,8 @@ export const portfolioData: PortfolioData = {
         de: ['Für eine konkrete Person und ihren Alltag gestaltet', 'Flexible Trainingsdauer und tägliche Check-ins', 'Iterative Bereitstellung und Fehlerbehebung'],
       },
     },
-    {
-      id: 'calisthenics-workout',
-      title: { en: 'Personal Calisthenics Workout App', de: 'Persönliche Calisthenics-Trainings-App' },
-      description: {
-        en: 'A personal training tool shaped around skill practice, hypertrophy blocks, flexible workout lengths, set tracking, timers, and progression.',
-        de: 'Ein persönliches Trainingswerkzeug für Skills, Hypertrophiephasen, flexible Trainingslängen, Satzprotokolle, Timer und Progression.',
-      },
-      longDescription: {
-        en: 'The project explores how a training app can support real decisions instead of adding friction: full, short, and quick-hit sessions, progression across an eight-week phase, and useful history. The source repository is private, so this entry links to the working prototype.',
-        de: 'Das Projekt untersucht, wie eine Trainings-App echte Entscheidungen unterstützt statt zusätzliche Reibung zu erzeugen: volle, kurze und sehr kurze Einheiten, Progression über acht Wochen und ein sinnvoller Verlauf. Das Quell-Repository ist privat; verlinkt ist der Prototyp.',
-      },
-      technologies: ['Product Design', 'JavaScript', 'Web App', 'Progression Logic'],
-      status: 'in_progress',
-      statusLabel: { en: 'In Development', de: 'In Entwicklung' },
-      category: 'web',
-      liveUrl: 'https://refresh-apex-form-flow.base44.app/',
-      highlights: {
-        en: ['Flexible workout formats', 'Skill and hypertrophy planning', 'Set history, rest timers, and progression logic'],
-        de: ['Flexible Trainingsformate', 'Skill- und Hypertrophieplanung', 'Satzverlauf, Pausentimer und Progressionslogik'],
-      },
-    },
-    {
-      id: 'scout-site',
-      title: { en: 'Pfadi St. Christophorus Siders — Website Redesign', de: 'Pfadi St. Christophorus Siders — Website-Redesign' },
-      description: {
-        en: 'A multi-page website for Pfadi St. Christophorus Siders, helping families and young people find information about the scout group, age sections, activities, calendar, photos, and joining.',
-        de: 'Eine mehrseitige Website für die Pfadi St. Christophorus Siders. Familien und Jugendliche finden Informationen zur Abteilung, den Stufen, Aktivitäten, zum Kalender, zu Bildern und zum Mitmachen.',
-      },
-      longDescription: {
-        en: 'The deployed site includes dedicated pages for the group, sections, calendar, photo gallery, joining, and contact information, with responsive navigation and the group’s red, yellow, black, and cream visual identity. The site is hosted on Vercel and is not connected to a GitHub repository.',
-        de: 'Die veröffentlichte Website umfasst eigene Seiten für die Abteilung, Stufen, Kalender, Bildergalerie, Mitmachen und Kontakt. Sie nutzt eine responsive Navigation und die rote, gelbe, schwarze und cremefarbene Identität der Pfadi. Die Website wird über Vercel bereitgestellt und ist nicht mit einem GitHub-Repository verbunden.',
-      },
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Vercel'],
-      status: 'completed',
-      statusLabel: { en: 'Live Website', de: 'Live-Website' },
-      category: 'web',
-      liveUrl: 'https://pfadi-siders-updated.vercel.app/',
-      highlights: {
-        en: ['Live multi-page scout-group website', 'Calendar, gallery, section and joining pages', 'Responsive navigation and accessible interaction details'],
-        de: ['Veröffentlichte mehrseitige Pfadi-Website', 'Kalender, Galerie, Stufen- und Mitmachen-Seiten', 'Responsive Navigation und zugängliche Interaktionen'],
-      },
-    },
+,
+,
     {
       id: 'portfolio',
       title: { en: 'Personal Portfolio', de: 'Persönliches Portfolio' },
@@ -201,9 +205,9 @@ export const portfolioData: PortfolioData = {
   skills: [
     {
       name: 'JavaScript',
-      level: 'learning',
+      level: 'exploring',
       category: 'languages',
-      note: { en: 'Building interactive web applications, stateful interfaces, and browser features', de: 'Interaktive Web-Apps, zustandsbasierte Oberflächen und Browser-Funktionen entwickeln' },
+      note: { en: 'Learning to build simple interactions and understand how browser code works', de: 'Einfache Interaktionen entwickeln und verstehen, wie Code im Browser funktioniert' },
     },
     {
       name: 'HTML & CSS',
@@ -213,9 +217,9 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: 'TypeScript',
-      level: 'learning',
+      level: 'exploring',
       category: 'languages',
-      note: { en: 'Typed application code and React component architecture', de: 'Typisierter Anwendungscode und React-Komponentenarchitektur' },
+      note: { en: 'Exploring types, interfaces, and how TypeScript helps catch mistakes', de: 'Typen, Interfaces und wie TypeScript Fehler früh sichtbar machen kann, erkunden' },
     },
     {
       name: 'Java',
@@ -225,33 +229,33 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: 'SQL & Supabase',
-      level: 'learning',
+      level: 'exploring',
       category: 'languages',
-      note: { en: 'Relational data, authentication, row-level security, and cloud-sync workflows', de: 'Relationale Daten, Authentifizierung, Row-Level Security und Cloud-Sync-Workflows' },
+      note: { en: 'Exploring tables, queries, accounts, and how apps store and sync data', de: 'Tabellen, Abfragen, Konten und das Speichern und Synchronisieren von App-Daten erkunden' },
     },
     {
       name: 'React & Vite',
-      level: 'learning',
+      level: 'exploring',
       category: 'frameworks_tools',
-      note: { en: 'Component-driven frontend development and production builds', de: 'Komponentenbasierte Frontend-Entwicklung und Produktions-Builds' },
+      note: { en: 'Exploring components, project structure, and how frontend apps are built', de: 'Komponenten, Projektstruktur und den Aufbau von Frontend-Apps erkunden' },
     },
     {
       name: 'Git & GitHub',
-      level: 'familiar',
+      level: 'learning',
       category: 'workflow',
-      note: { en: 'Branches, commits, pull requests, GitHub Actions, and deployment troubleshooting', de: 'Branches, Commits, Pull Requests, GitHub Actions und Deployment-Fehlersuche' },
+      note: { en: 'Learning to work with repositories, commits, branches, and deployment workflows', de: 'Den Umgang mit Repositories, Commits, Branches und Deployment-Abläufen lernen' },
     },
     {
       name: 'AI-assisted development',
-      level: 'exploring',
+      level: 'familiar',
       category: 'frameworks_tools',
-      note: { en: 'Using AI to accelerate implementation while reviewing, testing, and understanding the resulting code', de: 'KI zur schnelleren Umsetzung nutzen und den erzeugten Code prüfen, testen und verstehen' },
+      note: { en: 'A strong part of my workflow: defining goals, guiding AI, testing results, reporting bugs, and reviewing changes', de: 'Ein starker Teil meines Workflows: Ziele definieren, KI steuern, Ergebnisse testen, Fehler melden und Änderungen prüfen' },
     },
     {
       name: 'Python',
-      level: 'exploring',
+      level: 'learning',
       category: 'languages',
-      note: { en: 'Fundamentals, scripting, and small experiments', de: 'Grundlagen, Skripting und kleine Experimente' },
+      note: { en: 'Learning Python fundamentals through small exercises and experiments', de: 'Python-Grundlagen durch kleine Übungen und Experimente lernen' },
     },
   ],
 
