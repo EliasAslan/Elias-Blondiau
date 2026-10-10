@@ -13,7 +13,7 @@ export const translations = {
       about: 'Beyond Code | Elias Blondiau',
       notFound: 'Page not found | Elias Blondiau',
       projectSuffix:
-        'a project by Elias Blondiau, Informatiker EFZ apprentice in platform development',
+        'a project by Elias Blondiau, an Informatiker EFZ apprentice in platform development',
       descriptions: {
         home: 'Elias Blondiau, Informatiker EFZ apprentice in platform development. Personal projects, skills and contact.',
         projects:
@@ -28,8 +28,8 @@ export const translations = {
     },
     skip: 'Skip to content',
     hero: {
-      line1: 'I get ideas.',
-      line2: 'Then I try to build them.',
+      line1: 'I like figuring things out.',
+      line2: 'Usually by building something.',
       copy1:
         'I’m Elias. I study IT and build things in my spare time, usually because I have an idea and want to see if I can make it work.',
       copy2:
@@ -48,7 +48,7 @@ export const translations = {
       bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
       after:
         '. Both are still in progress.',
-      status: 'Apprenticeship in progress',
+      status: 'Both programmes in progress',
     },
     home: {
       featuredTitle: 'Featured projects',
@@ -406,7 +406,7 @@ export const translations = {
       about: 'Abseits vom Code | Elias Blondiau',
       notFound: 'Seite nicht gefunden | Elias Blondiau',
       projectSuffix:
-        'ein Projekt von Elias Blondiau, Informatiker-EFZ-Lernendem',
+        'ein Projekt von Elias Blondiau, Informatiker EFZ in Ausbildung',
       descriptions: {
         home: 'Elias Blondiau macht eine Lehre als Informatiker EFZ in Plattformentwicklung. Projekte und Kontakt.',
         projects:
@@ -421,8 +421,8 @@ export const translations = {
     },
     skip: 'Zum Inhalt springen',
     hero: {
-      line1: 'Ich habe Ideen.',
-      line2: 'Dann versuche ich, sie umzusetzen.',
+      line1: 'Ich tüftle gern.',
+      line2: 'Meistens, indem ich etwas baue.',
       copy1:
         'Ich bin Elias. Ich lerne Informatik und baue in meiner Freizeit Dinge, meistens weil ich eine Idee habe und sehen will, ob ich sie zum Laufen bringe.',
       copy2:
@@ -435,13 +435,13 @@ export const translations = {
     education: {
       title: 'Mein Weg gerade',
       before:
-        'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und begleitend dazu eine Berufsmaturität in Technik, Architektur und Life Sciences. Die Programme sind der ',
+        'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und dazu eine Berufsmaturität in Technik, Architektur und Life Sciences. Die offiziellen Bezeichnungen sind: ',
       efzName: 'Informatiker/in EFZ – EMVS',
-      middle: ' und die ',
+      middle: ' und ',
       bmName: 'Berufsmaturität TALS (Technik, Architektur, Life Sciences)',
       after:
         '. Beide Abschlüsse sind noch in Arbeit.',
-      status: 'Lehre in Arbeit',
+      status: 'Beides in Arbeit',
     },
     home: {
       featuredTitle: 'Ausgewählte Projekte',
@@ -460,7 +460,7 @@ export const translations = {
     projects: {
       title: 'Projekte',
       subtitle:
-        'Drei Projekte, die ich gebaut habe oder noch baue, plus ein angepasstes Open-Source-Projekt.',
+        'Drei eigene Projekte und ein angepasstes Open-Source-Projekt.',
       openNewTab: '(öffnet in einem neuen Tab)',
       details: 'Projektdetails',
       demoLabel: 'Live-Demo',
@@ -511,11 +511,11 @@ export const translations = {
       notFoundTitle: 'Projekt nicht gefunden',
       notFoundBody: 'Dieses Projekt gibt es nicht. Hier sind die, die es gibt.',
       notFoundCta: 'Alle Projekte ansehen',
-      whyT: 'Warum es existiert',
-      decisionsT: 'Was ich entschieden habe',
+      whyT: 'Warum ich es gebaut habe',
+      decisionsT: 'Was ich gemacht habe',
       featuresT: 'Was es kann',
       inheritedT: 'Vom Ursprungsprojekt übernommen',
-      mineT: 'Meine Anpassungen und Ideen',
+      mineT: 'Meine Änderungen',
       challengesT: 'Was schwierig war',
       limitsT: 'Bekannte Einschränkungen',
       sections: {
@@ -686,15 +686,15 @@ export const translations = {
       title: 'Was ich bisher kann',
       subtitle:
         'Ich trainiere Calisthenics und gehe erst weiter, wenn die aktuelle Übung gut klappt. Die Karten zeigen meinen Stand.',
-      learning: 'Lernend',
+      learning: 'Lernen',
       learningMeaning: 'Grundlagen aufbauen.',
-      exploring: 'Erkundend',
-      exploringMeaning: 'Ausprobieren und sich zurechtfinden.',
+      exploring: 'Ausprobieren',
+      exploringMeaning: 'Erste Projekte damit umsetzen.',
       stronger: 'So arbeite ich',
       strongerMeaning: 'Von der Idee zum Ergebnis.',
       tapHint: 'Antippen zum Entdecken',
       caption:
-        'Keine Scores und keine Balken. Nur mein aktueller Stand und wie ich arbeite.',
+        'Mein aktueller Stand und ein paar Dinge, die ich bei der Arbeit selbst mache.',
       strengths: [
         'Das gewünschte Ergebnis beschreiben und klare Anforderungen daraus machen.',
         'Features testen und Fehler melden.',
