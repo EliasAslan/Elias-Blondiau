@@ -202,7 +202,14 @@ export function SiteFooter() {
   );
 }
 
-export function Placeholder({ title, body }: { title: string; body: string }) {  return (
+export function Placeholder({
+  title,
+  body,
+}: {
+  title: string;
+  body: string;
+}) {
+  return (
     <div className="placeholder" role="note">
       <p className="placeholder-title">{title}</p>
       <p>{body}</p>

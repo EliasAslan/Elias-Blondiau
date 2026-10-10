@@ -31,9 +31,9 @@ export const translations = {
       line1: 'I have ideas.',
       line2: 'I build them until they work.',
       copy1:
-        'I’m Elias, an Informatiker EFZ apprentice in platform development, working toward the Berufsmaturität TALS. I learn by turning my own ideas — a scout website, a training app, a study hub — into things that actually run.',
+        'I’m Elias. I study IT and build things in my spare time, usually because I have an idea and want to see if I can make it work.',
       copy2:
-        'I use AI as a tool along the way, but the ideas, the decisions and the stubborn testing are mine. Here is the proof so far.',
+        'Some are useful. Some are experiments.',
       ctaProjects: 'See the projects',
       ctaContact: 'Get in touch',
       sticker: 'Still learning, building in public',
@@ -66,7 +66,7 @@ export const translations = {
     projects: {
       title: 'Projects',
       subtitle:
-        'Three main projects and one modification, each with a note on how it was made.',
+        'Three projects I built or am building, plus one open-source project I adapted.',
       openNewTab: '(opens in a new tab)',
       details: 'Project details',
       demoLabel: 'Live demo',
@@ -76,27 +76,27 @@ export const translations = {
       pfadi: {
         status: 'Live website',
         title: 'Pfadi Siders website',
-        body: 'A new website for my scout group, replacing its previous one. I designed the visual direction and built it with AI support: a more consistent look, clearer organization and navigation, layouts that work on phones, and a more complete experience overall.',
+        body: 'A replacement website for my scout group, with clearer navigation, age-group pages, a calendar and layouts that work on phones.',
         cta: 'Open the live site',
         url: 'https://pfadi-siders-updated.vercel.app/',
       },
       cal: {
         status: 'Live app, personal project',
         title: 'Calisthenics workout app',
-        body: 'A workout app for my own training. I came up with the idea, defined the features, behavior and feel, and built it with AI assistance — measuring each version against my own training and improving what fell short.',
+        body: 'A workout app for my own training. I decide what it should do and refine it by using it during real workouts.',
         cta: 'Open the app',
         url: 'https://refreshing-apex-form-flow.base44.app/',
       },
       emvs: {
         status: 'In progress',
         title: 'EMVS Study Hub',
-        body: 'A study app I came up with and keep working on. I planned the features and build it with AI assistance — it is ongoing and not finished.',
+        body: 'A study app I'm building around my own school workflow. It is still in progress.',
         note: 'Local-first today: study data lives in the browser. Account sign-in exists but is not cloud sync yet.',
       },
       ben: {
         status: 'Customized, not original',
         title: 'BEN.SUSTAIN',
-        body: "I started from an existing open-source app and reshaped it for my own use with AI assistance. The underlying project isn't mine; the ideas for how it should differ are.",
+        body: "I started from an existing open-source app and adapted it for my own use. The original project isn't mine; the ideas for how it should differ are.",
       },
     },
     detail: {
@@ -147,7 +147,7 @@ export const translations = {
           challenges: [
             'Scope discipline: a group website can grow forever — I kept it to the pages the group actually needs.',
             'Writing for two audiences at once: kids who want adventure, parents who want facts.',
-            'Lesson: reviewing AI-generated layouts against the real content caught mismatches early, before they became structure problems.',
+            'Comparing each layout against the real content caught mismatches before they became bigger structure problems.',
           ],
           limits: [
             'No public source repository — only the live site can be reviewed.',
@@ -178,7 +178,7 @@ export const translations = {
           ],
           challenges: [
             'The hardest part was deciding what not to build: a personal tool has to stay fast and simple.',
-            'Lesson: testing against my own workouts found usability problems no checklist would have caught.',
+            'Testing the app during my own workouts revealed usability problems a checklist would have missed.',
           ],
           limits: [
             'The demo is a client-rendered app, so its interface could not be verified from the outside — details above come from my own build notes.',
@@ -298,10 +298,11 @@ export const translations = {
       exploringMeaning: 'Trying it out and finding my way.',
       stronger: 'Workflow',
       strongerMeaning: 'How I plan, build and check things.',
+      tapHint: 'Tap to reveal',
       caption:
         'No scores, no bars — just where each skill stands, and the workflow I rely on to build.',
       strengths: [
-        'Describing the result I want and guiding AI toward it.',
+        'Describing the result I want and turning it into clear requirements.',
         'Testing features and reporting bugs.',
         'Reviewing proposed changes and judging whether they make sense.',
         'Breaking larger projects into manageable phases.',
@@ -316,9 +317,10 @@ export const translations = {
       intro2:
         'This page is the non-CV version: what I do when I’m not at the keyboard, and the ideas I carry back to it.',
       eduBody:
-        'Vocational training as an Informatiker EFZ plus Berufsmaturität classes — both still ahead of me, documented under these official programmes:',
-      trainingTitle: 'Calisthenics: my other progression system',      trainingBody:
-        'I train calisthenics regularly — it’s where I learned the mindset behind my skills section: you move up only when you’ve earned it. My own training is also the acceptance test for everything I build around it: if a workout feature doesn’t survive a real session, it doesn’t ship.',
+        'I’m doing an Informatiker EFZ apprenticeship in platform development alongside the Berufsmaturität TALS. Both are in progress. The official programmes are:',
+      trainingTitle: 'Calisthenics: my other progression system',
+      trainingBody:
+        'I train calisthenics regularly. It taught me to move up a progression only when I can do the current step properly. I use the same idea when building training features: I try them in a real workout and fix what gets in the way.',
       trainingGoals: 'Current focus: steady basics, honest form, showing up. Specific skills and goals get listed here once I write them down properly.',
       scoutsTitle: 'Scouts',
       scoutsBody:
@@ -422,9 +424,9 @@ export const translations = {
       line1: 'Ich habe Ideen.',
       line2: 'Ich baue sie, bis sie laufen.',
       copy1:
-        'Ich bin Elias, Informatiker-EFZ-Lernender in Plattformentwicklung auf dem Weg zur Berufsmaturität TALS. Ich lerne, indem ich eigene Ideen — eine Pfadi-Website, eine Trainings-App, einen Study Hub — in Dinge verwandle, die wirklich laufen.',
+        'Ich bin Elias. Ich lerne Informatik und baue in meiner Freizeit Dinge, meistens weil ich eine Idee habe und sehen will, ob ich sie zum Laufen bringe.',
       copy2:
-        'KI nutze ich dabei als Werkzeug, aber Ideen, Entscheidungen und hartnäckiges Testen sind meine. Hier der bisherige Beweis.',
+        'Manches ist nützlich. Manches ist ein Experiment.',
       ctaProjects: 'Projekte ansehen',
       ctaContact: 'Kontakt aufnehmen',
       sticker: 'Noch am Lernen, baut öffentlich',
@@ -458,7 +460,7 @@ export const translations = {
     projects: {
       title: 'Projekte',
       subtitle:
-        'Drei Hauptprojekte und eine Anpassung, jeweils mit einer Notiz zur Entstehung.',
+        'Drei Projekte, die ich gebaut habe oder noch baue, plus ein angepasstes Open-Source-Projekt.',
       openNewTab: '(öffnet in einem neuen Tab)',
       details: 'Projektdetails',
       demoLabel: 'Live-Demo',
@@ -468,27 +470,27 @@ export const translations = {
       pfadi: {
         status: 'Live-Website',
         title: 'Pfadi Siders Website',
-        body: 'Eine neue Website für meine Pfadi-Abteilung als Ersatz für die bisherige. Ich habe die visuelle Richtung entworfen und sie mit KI-Unterstützung umgesetzt: einheitlicherer Auftritt, klarere Struktur und Navigation, Layouts fürs Handy und insgesamt ein vollständigeres Erlebnis.',
+        body: 'Eine neue Website als Ersatz für die bisherige Seite meiner Pfadi-Abteilung. Sie hat eine klarere Navigation, eigene Seiten für die Stufen, einen Kalender und Layouts fürs Handy.',
         cta: 'Live-Website öffnen',
         url: 'https://pfadi-siders-updated.vercel.app/',
       },
       cal: {
         status: 'Live-App, eigenes Projekt',
         title: 'Calisthenics-Trainings-App',
-        body: 'Eine Trainings-App für mein eigenes Training. Idee, Features, Verhalten und Anmutung stammen von mir; umgesetzt habe ich sie mit KI-Unterstützung und jede Version an meinem eigenen Training gemessen.',
+        body: 'Eine Trainings-App für mein eigenes Training. Ich lege fest, was sie können soll, und verbessere sie, indem ich sie beim Training tatsächlich nutze.',
         cta: 'App öffnen',
         url: 'https://refreshing-apex-form-flow.base44.app/',
       },
       emvs: {
         status: 'In Arbeit',
         title: 'EMVS Study Hub',
-        body: 'Eine Lern-App nach meiner Idee, an der ich weiterarbeite. Die Features habe ich geplant, die Umsetzung läuft mit KI-Unterstützung — das Projekt ist noch nicht fertig.',
+        body: 'Eine Lern-App, die ich rund um meinen eigenen Schulalltag entwickle. Sie ist noch in Arbeit.',
         note: 'Heute local-first: Die Lerndaten leben im Browser. Konto-Login existiert, ist aber noch keine Cloud-Synchronisierung.',
       },
       ben: {
         status: 'Angepasst, nicht original',
         title: 'BEN.SUSTAIN',
-        body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich mit KI-Unterstützung für meinen Gebrauch umgeformt habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
+        body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich für meinen Gebrauch angepasst habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
       },
     },
     detail: {
@@ -539,7 +541,7 @@ export const translations = {
           challenges: [
             'Umfangsdisziplin: Eine Gruppen-Website kann ewig wachsen — ich habe mich auf die Seiten beschränkt, die die Abteilung wirklich braucht.',
             'Für zwei Publika gleichzeitig schreiben: Kinder wollen Abenteuer, Eltern wollen Fakten.',
-            'Lektion: KI-generierte Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten früh aufgedeckt, bevor sie zu Strukturproblemen wurden.',
+            'Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten aufgedeckt, bevor daraus grössere Strukturprobleme wurden.',
           ],
           limits: [
             'Kein öffentliches Quell-Repository — nur die Live-Seite ist einsehbar.',
@@ -570,7 +572,7 @@ export const translations = {
           ],
           challenges: [
             'Das Schwerste war zu entscheiden, was nicht gebaut wird: Ein persönliches Werkzeug muss schnell und einfach bleiben.',
-            'Lektion: Tests am eigenen Training haben Bedienprobleme gefunden, die keine Checkliste gefunden hätte.',
+            'Tests während meines eigenen Trainings haben Bedienprobleme gezeigt, die eine Checkliste übersehen hätte.',
           ],
           limits: [
             'Die Demo ist eine clientseitig gerenderte App, ihre Oberfläche war von aussen nicht prüfbar — Details oben stammen aus meinen Bau-Notizen.',
@@ -690,10 +692,11 @@ export const translations = {
       exploringMeaning: 'Ausprobieren und sich zurechtfinden.',
       stronger: 'Arbeitsweise',
       strongerMeaning: 'Wie ich plane, baue und prüfe.',
+      tapHint: 'Antippen zum Entdecken',
       caption:
         'Keine Scores, keine Balken — nur der aktuelle Stand und der Arbeitsablauf, auf den ich mich verlasse.',
       strengths: [
-        'Das gewünschte Ergebnis beschreiben und die KI dorthin steuern.',
+        'Das gewünschte Ergebnis beschreiben und klare Anforderungen daraus machen.',
         'Features testen und Fehler melden.',
         'Vorgeschlagene Änderungen prüfen und beurteilen, ob sie sinnvoll sind.',
         'Grössere Projekte in machbare Phasen aufteilen.',
@@ -708,10 +711,10 @@ export const translations = {
       intro2:
         'Diese Seite ist die Nicht-CV-Version: was ich abseits der Tastatur tue und welche Ideen ich von dort mitbringe.',
       eduBody:
-        'Berufslehre als Informatiker EFZ plus Berufsmaturitätsklassen — beides noch vor mir, dokumentiert unter diesen offiziellen Programmen:',
+        'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und parallel die Berufsmaturität TALS. Beides läuft noch. Die offiziellen Programme sind:',
       trainingTitle: 'Calisthenics: mein anderes Progressionssystem',
       trainingBody:
-        'Ich trainiere regelmässig Calisthenics — dort habe ich die Haltung hinter meiner Skills-Sektion gelernt: Man steigt erst auf, wenn man es sich verdient hat. Mein eigenes Training ist auch der Abnahmetest für alles, was ich darum baue: Was eine echte Einheit nicht übersteht, wird nicht ausgeliefert.',
+        'Ich trainiere regelmässig Calisthenics. Dabei habe ich gelernt, erst dann zum nächsten Schritt zu wechseln, wenn der aktuelle sitzt. Beim Bauen von Trainingsfunktionen mache ich es ähnlich: Ich probiere sie im echten Training aus und verbessere, was stört.',
       trainingGoals: 'Aktueller Fokus: solide Basics, ehrliche Form, Dranbleiben. Konkrete Skills und Ziele liste ich hier, sobald ich sie sauber aufgeschrieben habe.',
       scoutsTitle: 'Pfadi',
       scoutsBody:
