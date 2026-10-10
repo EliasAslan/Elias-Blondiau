@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { CONTACT, EDUCATION_LINKS } from '../data/site';
 import { useLanguage } from '../i18n/LanguageContext';
-import { ContactLinks, Placeholder } from '../components/layout';
+import { ContactLinks, MediaSlot, Placeholder } from '../components/layout';
+import { PHOTOS } from '../data/media';
 
 export default function About() {
   const { t } = useLanguage();
@@ -12,10 +13,14 @@ export default function About() {
           <h1 id="about-h">{t.about.title}</h1>
           <p className="lead">{t.about.intro1}</p>
           <p>{t.about.intro2}</p>
-          <div className="shot photo" role="note">
-            <p className="placeholder-title">{t.about.photoLabel}</p>
-            <p>{t.about.photoBody}</p>
-          </div>
+          <MediaSlot
+            file={PHOTOS.about.file}
+            alt={t.about.photoAlt}
+            ratio={PHOTOS.about.ratio}
+            label={t.about.photoLabel}
+            body={t.about.photoBody}
+            frameClass="photo"
+          />
         </div>
       </section>
 

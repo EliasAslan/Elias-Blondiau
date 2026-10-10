@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EDUCATION_LINKS, FEATURED_SLUGS } from '../data/site';
 import { useLanguage } from '../i18n/LanguageContext';
-import { ContactLinks, ProjectCard } from '../components/layout';
+import { ContactLinks, MediaSlot, ProjectCard } from '../components/layout';
+import { PHOTOS } from '../data/media';
 
 function Education() {
   const { t } = useLanguage();
@@ -186,10 +187,14 @@ export default function Home() {
               </Link>
             </p>
           </div>
-          <div className="shot photo" role="note" aria-label={t.home.beyondPhotoLabel}>
-            <p className="placeholder-title">{t.home.beyondPhotoLabel}</p>
-            <p>{t.home.beyondPhotoBody}</p>
-          </div>
+          <MediaSlot
+            file={PHOTOS.beyond.file}
+            alt={t.home.beyondPhotoAlt}
+            ratio={PHOTOS.beyond.ratio}
+            label={t.home.beyondPhotoLabel}
+            body={t.home.beyondPhotoBody}
+            frameClass="photo"
+          />
         </div>
       </section>
 

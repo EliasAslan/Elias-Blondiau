@@ -2,7 +2,8 @@ import { Link, useParams } from 'react-router-dom';
 import { PROJECT_SLUGS, type ProjectSlug } from '../data/site';
 import { getProjectEntry } from '../data/projects';
 import { useLanguage } from '../i18n/LanguageContext';
-import { CopyButton, ProjectCard, RoutePalette } from '../components/layout';
+import { CopyButton, MediaSlot, ProjectCard, RoutePalette } from '../components/layout';
+import { SHOTS } from '../data/media';
 
 const DETAIL_KEYS = {
   'pfadi-siders': 'pfadi',
@@ -211,11 +212,15 @@ export default function ProjectDetail() {
 
           <h2 className="plain-h">{t.detail.shots}</h2>
           <div className="detail-grid">
-            {story.shots.map((shot) => (
-              <div key={shot} className="shot" role="note">
-                <p className="placeholder-title">{t.detail.shotPlaceholder}</p>
-                <p>{shot}</p>
-              </div>
+            {story.shots.map((shot, i) => (
+              <MediaSlot
+                key={shot}
+                file={SHOTS[slug][i]?.file ?? ''}
+                alt={shot}
+                ratio={SHOTS[slug][i]?.ratio ?? '16 / 9'}
+                label={t.detail.shotPlaceholder}
+                body={shot}
+              />
             ))}
           </div>
         </div>

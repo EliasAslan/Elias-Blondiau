@@ -341,6 +341,13 @@
   }
   .shot p:last-child { margin-bottom: 0; }
   .shot.photo { aspect-ratio: 4 / 3; margin-top: 2rem; transform: rotate(-.6deg); }
+  .shot-file { font-size: .95rem; }
+  .media-img {
+    display: block; width: 100%; object-fit: cover;
+    border: 2px solid var(--edge); box-shadow: var(--shadow) var(--shadow) 0 var(--edge);
+    background: var(--card);
+  }
+  .media-img.photo { transform: rotate(-.6deg); }
   .card-values { background: var(--marker); color: var(--on-marker); border-color: var(--on-marker); }
   .card-values .check-list li::before { background: var(--on-marker); }
   .cmd-h { font-size: 1.15rem; margin: 1.5rem 0 .75rem; }

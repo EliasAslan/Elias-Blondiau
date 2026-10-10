@@ -12,6 +12,19 @@ export const translations = {
       projects: 'Projects — Elias Blondiau',
       about: 'Beyond Code — Elias Blondiau',
       notFound: 'Page not found — Elias Blondiau',
+      projectSuffix:
+        'a project by Elias Blondiau, Informatiker EFZ apprentice',
+      descriptions: {
+        home: 'Elias Blondiau, Informatiker EFZ apprentice in platform development. Personal projects, skills and contact.',
+        projects:
+          'All projects by Elias Blondiau: Pfadi Siders website, calisthenics training app, EMVS Study Hub and BEN.SUSTAIN.',
+        about:
+          'Beyond Code: calisthenics, scouts and tinkering — the person behind the projects of Elias Blondiau.',
+        notFound: 'Page not found on the portfolio of Elias Blondiau.',
+      },
+    },
+    media: {
+      expected: 'Expected file:',
     },
     skip: 'Skip to content',
     hero: {
@@ -48,6 +61,7 @@ export const translations = {
       beyondCta: 'More about me',
       beyondPhotoLabel: 'Photo placeholder',
       beyondPhotoBody: 'A personal photo will go here (4:3) once I add one.',
+      beyondPhotoAlt: 'Personal photo (to be added)',
     },
     projects: {
       title: 'Projects',
@@ -262,6 +276,7 @@ export const translations = {
             'You need Docker with Compose.',
             'Clone the fork, copy .env.example to .env and adjust the hostname settings.',
             'Run “docker compose up -d” and open http://localhost:8080.',
+            'First start downloads the exercise media (about 140 MB) once.',
             'Note: these are the upstream quick-start steps; fork-specific setup notes still need verification.',
           ],
           techCommands: [
@@ -322,6 +337,7 @@ export const translations = {
       readingBody: 'A short list of books and ideas that influence me will go here.',
       photoLabel: 'Photo placeholder',
       photoBody: 'A personal photo goes here (4:3) once I provide one.',
+      photoAlt: 'Portrait photo of Elias (to be added)',
       contactCta: 'Get in touch',
     },
     contact: {
@@ -387,6 +403,19 @@ export const translations = {
       projects: 'Projekte — Elias Blondiau',
       about: 'Abseits vom Code — Elias Blondiau',
       notFound: 'Seite nicht gefunden — Elias Blondiau',
+      projectSuffix:
+        'ein Projekt von Elias Blondiau, Informatiker-EFZ-Lernendem',
+      descriptions: {
+        home: 'Elias Blondiau, Informatiker-EFZ-Lernender in Plattformentwicklung. Eigene Projekte, Skills und Kontakt.',
+        projects:
+          'Alle Projekte von Elias Blondiau: Pfadi-Siders-Website, Calisthenics-Trainings-App, EMVS Study Hub und BEN.SUSTAIN.',
+        about:
+          'Abseits vom Code: Calisthenics, Pfadi und Tüftelei — die Person hinter den Projekten von Elias Blondiau.',
+        notFound: 'Seite nicht gefunden im Portfolio von Elias Blondiau.',
+      },
+    },
+    media: {
+      expected: 'Erwartete Datei:',
     },
     skip: 'Zum Inhalt springen',
     hero: {
@@ -424,6 +453,7 @@ export const translations = {
       beyondCta: 'Mehr über mich',
       beyondPhotoLabel: 'Foto-Platzhalter',
       beyondPhotoBody: 'Hier kommt ein persönliches Foto hin (4:3), sobald ich eines habe.',
+      beyondPhotoAlt: 'Persönliches Foto (folgt)',
     },
     projects: {
       title: 'Projekte',
@@ -638,6 +668,7 @@ export const translations = {
             'Docker mit Compose wird benötigt.',
             'Fork klonen, .env.example nach .env kopieren und Hostnamen-Einstellungen anpassen.',
             '„docker compose up -d“ ausführen und http://localhost:8080 öffnen.',
+            'Beim ersten Start werden die Übungsmedien einmalig heruntergeladen (ca. 140 MB).',
             'Hinweis: Das sind die Upstream-Kurzstart-Schritte; Fork-spezifische Setup-Angaben müssen noch geprüft werden.',
           ],
           techCommands: [
@@ -699,6 +730,7 @@ export const translations = {
       readingBody: 'Hier kommt eine kurze Liste von Büchern und Ideen, die mich beeinflussen.',
       photoLabel: 'Foto-Platzhalter',
       photoBody: 'Hier kommt ein persönliches Foto hin (4:3), sobald ich eines liefere.',
+      photoAlt: 'Porträtfoto von Elias (folgt)',
       contactCta: 'Kontakt aufnehmen',
     },
     contact: {

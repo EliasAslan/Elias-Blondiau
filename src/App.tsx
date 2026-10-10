@@ -80,6 +80,16 @@ function ConsoleGreeting() {
   return null;
 }
 
+function setMetaDescription(content: string) {
+  let tag = document.querySelector('meta[name="description"]');
+  if (!tag) {
+    tag = document.createElement('meta');
+    tag.setAttribute('name', 'description');
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('content', content);
+}
+
 function DetailTitle() {
   const { slug } = useParams<{ slug: string }>();
   const { lang, t } = useLanguage();
@@ -91,7 +101,13 @@ function DetailTitle() {
       slug === 'ben-sustain'
         ? getProjectEntry(t, slug)
         : undefined;
-    document.title = entry ? `${entry.title} — Elias Blondiau` : t.meta.notFound;
+    if (entry) {
+      document.title = `${entry.title} — Elias Blondiau`;
+      setMetaDescription(`${entry.title} — ${t.meta.projectSuffix}. ${entry.body}`);
+    } else {
+      document.title = t.meta.notFound;
+      setMetaDescription(t.meta.descriptions.notFound);
+    }
   }, [slug, lang, t]);
   return null;
 }
@@ -100,13 +116,22 @@ function RouteMeta() {
   const { pathname } = useLocation();
   const { lang, t } = useLanguage();
   useEffect(() => {
-    if (pathname === '/') document.title = t.meta.home;
-    else if (pathname === '/projects') document.title = t.meta.projects;
-    else if (pathname === '/about') document.title = t.meta.about;
-    else if (pathname === '/rest-day')
+    if (pathname === '/') {
+      document.title = t.meta.home;
+      setMetaDescription(t.meta.descriptions.home);
+    } else if (pathname === '/projects') {
+      document.title = t.meta.projects;
+      setMetaDescription(t.meta.descriptions.projects);
+    } else if (pathname === '/about') {
+      document.title = t.meta.about;
+      setMetaDescription(t.meta.descriptions.about);
+    } else if (pathname === '/rest-day') {
       document.title = `${t.eggs.restTitle} — Elias Blondiau`;
-    else if (!pathname.startsWith('/projects/'))
+      setMetaDescription(t.eggs.restIntro);
+    } else if (!pathname.startsWith('/projects/')) {
       document.title = t.meta.notFound;
+      setMetaDescription(t.meta.descriptions.notFound);
+    }
   }, [pathname, lang, t]);
   return null;
 }

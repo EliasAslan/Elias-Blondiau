@@ -210,6 +210,55 @@ export function Placeholder({ title, body }: { title: string; body: string }) { 
   );
 }
 
+/**
+ * Image slot that shows a user-supplied file from `public/` when it exists
+ * and a labelled placeholder (with the expected filename) until then.
+ */
+export function MediaSlot({
+  file,
+  alt,
+  ratio,
+  label,
+  body,
+  frameClass,
+}: {
+  file: string;
+  alt: string;
+  ratio: string;
+  label: string;
+  body: string;
+  frameClass?: string;
+}) {
+  const { t } = useLanguage();
+  const [missing, setMissing] = useState(true);
+  useEffect(() => {
+    setMissing(true);
+    const img = new Image();
+    img.onload = () => setMissing(false);
+    img.src = `${import.meta.env.BASE_URL}${file}`;
+  }, [file]);
+  if (missing) {
+    return (
+      <div className={`shot${frameClass ? ` ${frameClass}` : ''}`} role="note">
+        <p className="placeholder-title">{label}</p>
+        <p>{body}</p>
+        <p className="muted shot-file">
+          {t.media.expected} <code className="code-chip">{file}</code>
+        </p>
+      </div>
+    );
+  }
+  return (
+    <img
+      src={`${import.meta.env.BASE_URL}${file}`}
+      alt={alt}
+      loading="lazy"
+      style={{ aspectRatio: ratio }}
+      className={`media-img${frameClass ? ` ${frameClass}` : ''}`}
+    />
+  );
+}
+
 export function ProjectCard({ slug }: { slug: ProjectSlug }) {
   const { t } = useLanguage();
   const entry = getProjectEntry(t, slug);
