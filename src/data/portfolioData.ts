@@ -200,109 +200,59 @@ export const portfolioData: PortfolioData = {
   ],
 
   skills: [
-    // Learning
     {
-      name: 'Python',
+      name: 'JavaScript',
       level: 'learning',
       category: 'languages',
-      note: {
-        en: 'Writing scripts, automation, data structures, and Pygame experiments',
-        de: 'Skripte, Automatisierung, Datenstrukturen und Pygame-Experimente',
-      },
+      note: { en: 'Building interactive web applications, stateful interfaces, and browser features', de: 'Interaktive Web-Apps, zustandsbasierte Oberflächen und Browser-Funktionen entwickeln' },
     },
     {
-      name: 'JavaScript / TypeScript',
+      name: 'HTML & CSS',
       level: 'learning',
       category: 'languages',
-      note: {
-        en: 'DOM manipulation, modern ES6+ features, React components, and types',
-        de: 'DOM-Manipulation, moderne ES6+-Syntax, React-Komponenten und Typen',
-      },
+      note: { en: 'Semantic structure, responsive layouts, accessibility, and visual refinement', de: 'Semantische Struktur, responsive Layouts, Barrierefreiheit und visuelle Verfeinerung' },
     },
     {
-      name: 'HTML5 & CSS3',
+      name: 'TypeScript',
       level: 'learning',
       category: 'languages',
-      note: {
-        en: 'Semantic markup, Flexbox, Grid, responsive layouts, and Tailwind',
-        de: 'Semantisches Markup, Flexbox, Grid, responsive Layouts und Tailwind',
-      },
+      note: { en: 'Typed application code and React component architecture', de: 'Typisierter Anwendungscode und React-Komponentenarchitektur' },
+    },
+    {
+      name: 'Java',
+      level: 'learning',
+      category: 'languages',
+      note: { en: 'Object-oriented programming and JavaFX desktop application experiments', de: 'Objektorientierte Programmierung und Experimente mit JavaFX-Desktop-Apps' },
+    },
+    {
+      name: 'SQL & Supabase',
+      level: 'learning',
+      category: 'languages',
+      note: { en: 'Relational data, authentication, row-level security, and cloud-sync workflows', de: 'Relationale Daten, Authentifizierung, Row-Level Security und Cloud-Sync-Workflows' },
+    },
+    {
+      name: 'React & Vite',
+      level: 'learning',
+      category: 'frameworks_tools',
+      note: { en: 'Component-driven frontend development and production builds', de: 'Komponentenbasierte Frontend-Entwicklung und Produktions-Builds' },
     },
     {
       name: 'Git & GitHub',
-      level: 'learning',
-      category: 'workflow',
-      note: {
-        en: 'Version control basics, branching, commits, and repository management',
-        de: 'Versionskontrolle, Branching, Commits und Repository-Pflege',
-      },
-    },
-
-    // Familiar
-    {
-      name: 'Linux / CLI Basics',
       level: 'familiar',
       category: 'workflow',
-      note: {
-        en: 'Command-line navigation, file permissions, shell commands, and bash scripts',
-        de: 'Terminal-Navigation, Dateirechte, Shell-Befehle und grundlegende Skripte',
-      },
+      note: { en: 'Branches, commits, pull requests, GitHub Actions, and deployment troubleshooting', de: 'Branches, Commits, Pull Requests, GitHub Actions und Deployment-Fehlersuche' },
     },
     {
-      name: 'VS Code & Dev Tools',
-      level: 'familiar',
-      category: 'workflow',
-      note: {
-        en: 'Editor workflows, debugging, extensions, and browser dev inspector',
-        de: 'Editor-Workflows, Debugging, Erweiterungen und Browser DevTools',
-      },
-    },
-    {
-      name: 'Computer Hardware & OS',
-      level: 'familiar',
-      category: 'workflow',
-      note: {
-        en: 'Hardware fundamentals, operating system setup, and basic networking',
-        de: 'Hardware-Grundlagen, Betriebssystem-Konfiguration und Netzwerk-Basics',
-      },
-    },
-
-    // Exploring
-    {
-      name: 'Godot Engine (GDScript)',
-      level: 'exploring',
-      category: 'engines_gamedev',
-      note: {
-        en: 'Exploring 2D nodes, scene hierarchy, physics, and input handling',
-        de: 'Erkundung von 2D-Nodes, Szenenbaum, Physik und Eingabesteuerung',
-      },
-    },
-    {
-      name: 'Pygame',
-      level: 'exploring',
-      category: 'engines_gamedev',
-      note: {
-        en: 'Understanding the game loop, sprite rendering, and event queues',
-        de: 'Verständnis von Game Loops, Sprite-Rendering und Event-Queues',
-      },
-    },
-    {
-      name: 'AI-Assisted Development',
+      name: 'AI-assisted development',
       level: 'exploring',
       category: 'frameworks_tools',
-      note: {
-        en: 'Using modern AI tools to learn faster, debug code, and explore solutions',
-        de: 'Einsatz moderner KI-Tools zum schnelleren Lernen und Debuggen',
-      },
+      note: { en: 'Using AI to accelerate implementation while reviewing, testing, and understanding the resulting code', de: 'KI zur schnelleren Umsetzung nutzen und den erzeugten Code prüfen, testen und verstehen' },
     },
     {
-      name: 'SQL & Relational Databases',
+      name: 'Python',
       level: 'exploring',
       category: 'languages',
-      note: {
-        en: 'Basic SELECT queries, table relationships, and database schema concepts',
-        de: 'Einfache SELECT-Abfragen, Tabellenbeziehungen und Schema-Konzepte',
-      },
+      note: { en: 'Fundamentals, scripting, and small experiments', de: 'Grundlagen, Skripting und kleine Experimente' },
     },
   ],
 
