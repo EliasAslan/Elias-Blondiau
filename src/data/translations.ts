@@ -318,7 +318,8 @@ export const translations = {
         'This page is the non-CV version: what I do when I’m not at the keyboard, and the ideas I carry back to it.',
       eduBody:
         'I’m doing an Informatiker EFZ apprenticeship in platform development alongside the Berufsmaturität TALS. Both are in progress. The official programmes are:',
-      trainingTitle: 'Calisthenics: my other progression system',      trainingBody:
+      trainingTitle: 'Calisthenics: my other progression system',
+      trainingBody:
         'I train calisthenics regularly. It taught me to move up a progression only when I can do the current step properly. I use the same idea when building training features: I try them in a real workout and fix what gets in the way.',
       trainingGoals: 'Current focus: steady basics, honest form, showing up. Specific skills and goals get listed here once I write them down properly.',
       scoutsTitle: 'Scouts',
