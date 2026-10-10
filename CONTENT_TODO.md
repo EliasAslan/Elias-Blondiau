@@ -53,7 +53,7 @@ are project screenshots.
 - BEN.SUSTAIN fork setup steps are the upstream quick-start steps; fork-
   specific deviations still need verification (page says so openly).
 - Pfadi Siders: no public source repository exists; only the live site
-  can be reviewed. No usage metrics or testimonials exist — do not invent
+  can be reviewed. No usage metrics or testimonials exist. Do not invent
   any.
 
 ## Already verified (do not re-ask)
@@ -69,5 +69,5 @@ are project screenshots.
 ## Contact information
 
 - Email and GitHub URL verified. LinkedIn URL is pre-existing but could
-  never be verified (login wall) — confirm it still points to the right
+  never be verified (login wall). Confirm it still points to the right
   profile.
