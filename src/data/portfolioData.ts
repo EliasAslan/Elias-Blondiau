@@ -134,12 +134,12 @@ export const portfolioData: PortfolioData = {
       id: 'study-hub',
       title: { en: 'EMVS Study Hub', de: 'EMVS Study Hub' },
       description: {
-        en: 'A local-first study workspace for organizing learning objectives, resources, exams, and actual study sessions, with session history and review workflows.',
-        de: 'Ein Local-first-Lernbereich zum Organisieren von Lernzielen, Ressourcen, Prüfungen und echten Lerneinheiten – inklusive Verlauf und Wiederholungs-Workflows.',
+        en: 'A study workspace concept planned around organizing learning objectives, resources, exams, and real study sessions instead of relying on a static checklist.',
+        de: 'Das Konzept eines Lernbereichs zum Organisieren von Lernzielen, Ressourcen, Prüfungen und echten Lerneinheiten statt einer statischen Checkliste.',
       },
       longDescription: {
-        en: 'Built around the real learning process rather than a static checklist. The project includes session logging, objective history, resource usage derived from sessions, and ongoing work on account-based cloud sync.',
-        de: 'Entwickelt rund um den tatsächlichen Lernprozess statt einer statischen Checkliste. Enthält Sitzungsprotokolle, Lernziel-Verlauf und aus Sitzungen abgeleitete Ressourcennutzung; Cloud-Synchronisierung ist in Arbeit.',
+        en: 'I came up with the idea and planned the features. The implementation is an ongoing project, and the account-based cloud-sync flow is still being developed.',
+        de: 'Ich hatte die Idee und plante die Funktionen. Die Umsetzung läuft weiter; die kontobasierte Cloud-Synchronisierung befindet sich noch in Entwicklung.',
       },
       technologies: ['JavaScript', 'HTML', 'CSS', 'Supabase', 'Vercel'],
       status: 'in_progress',
@@ -152,8 +152,6 @@ export const portfolioData: PortfolioData = {
         de: ['Zeitgesteuerte oder manuelle Lerneinheiten protokollieren', 'Lernziel-Fortschritt über Zeit verfolgen', 'Cloud-Sync und Kontoabläufe in aktiver Entwicklung'],
       },
     },
-
-,
     {
       id: 'ben-sustain',
       title: { en: 'BEN.SUSTAIN — Personal Fitness App', de: 'BEN.SUSTAIN — Persönliche Fitness-App' },
@@ -176,8 +174,6 @@ export const portfolioData: PortfolioData = {
         de: ['Für eine konkrete Person und ihren Alltag gestaltet', 'Flexible Trainingsdauer und tägliche Check-ins', 'Iterative Bereitstellung und Fehlerbehebung'],
       },
     },
-,
-,
     {
       id: 'portfolio',
       title: { en: 'Personal Portfolio', de: 'Persönliches Portfolio' },
