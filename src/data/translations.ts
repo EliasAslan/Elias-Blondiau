@@ -96,7 +96,7 @@ export const translations = {
       ben: {
         status: 'Customized, not original',
         title: 'BEN.SUSTAIN',
-        body: "I started from an existing open-source app and adapted it for my own use. The original project isn't mine; the ideas for how it should differ are.",
+        body: "I adapted an existing open-source fitness app toward a more personal, single-user setup. The original project isn't mine; the direction for this version is.",
       },
     },
     detail: {
@@ -122,7 +122,7 @@ export const translations = {
       featuresT: 'What it does',
       inheritedT: 'Inherited from upstream',
       mineT: 'My modifications and ideas',
-      challengesT: 'Challenges and lessons',
+      challengesT: 'Challenges and what I learned',
       limitsT: 'Known limitations',
       sections: {
         pfadi: {
@@ -145,9 +145,9 @@ export const translations = {
             'Contact, error-reporting and legal pages (Impressum, Datenschutz), with a webmaster credit.',
           ],
           challenges: [
-            'Scope discipline: a group website can grow forever — I kept it to the pages the group actually needs.',
-            'Writing for two audiences at once: kids who want adventure, parents who want facts.',
-            'Comparing each layout against the real content caught mismatches before they became bigger structure problems.',
+            'Keeping the scope small was harder than it sounds. I focused on the pages the group needs.',
+            'Writing for kids and parents meant balancing the sense of adventure with practical details.',
+            'Checking each layout against real content caught problems before they spread.',
           ],
           limits: [
             'No public source repository — only the live site can be reviewed.',
@@ -163,25 +163,25 @@ export const translations = {
         cal: {
           tagline: 'A training app shaped by actual training.',
           why: [
-            'I train calisthenics regularly, and I wanted an app that fits exactly how I train — my exercises, my structure, my feel. Since nothing off the shelf matched, I specified and built my own.',
+            'I train calisthenics regularly and wanted an app that fits how I train. I couldn’t find one that matched, so I built my own version.',
             'The published demo is live under the name FORM — Calisthenics Training.',
           ],
           decisions: [
             'Started from my own workouts, not from a feature list: the app had to survive a real session.',
-            'Defined the behavior and feel myself, then guided the implementation with AI assistance.',
-            'Tested every version against my own training and fixed what fell short — the training log was the acceptance test.',
+            'I chose how it should behave and look, then used AI assistance to help implement it.',
+            'I tested each version during my own training and fixed what got in the way.',
           ],
           features: [
-            'Live demo verified: the app loads as FORM — Calisthenics Training.',
-            'Beyond that I describe only what I know from building it: workout routines structured around my training, refined version by version.',
-            'A detailed feature tour with screenshots will be added once I document the current interface.',
+            'The demo loads as FORM — Calisthenics Training.',
+            'The app is organized around my workout routines and gets refined as I use it.',
+            'I still need to document the current interface before I can give a more detailed feature list.',
           ],
           challenges: [
             'The hardest part was deciding what not to build: a personal tool has to stay fast and simple.',
             'Testing the app during my own workouts revealed usability problems a checklist would have missed.',
           ],
           limits: [
-            'The demo is a client-rendered app, so its interface could not be verified from the outside — details above come from my own build notes.',
+            'I haven’t documented every screen yet, so this page sticks to details I can confirm from my own notes.',
             'No public source repository — only the live demo can be reviewed.',
           ],
           stateBody:
@@ -211,9 +211,9 @@ export const translations = {
             'Settings with Supabase email/password sign-in, session restore and sign-out.',
           ],
           challenges: [
-            'Hardest lesson: authentication is not synchronization. Signing in changes nothing about the data — and saying so clearly in the README mattered more than the feature itself.',
+            'The tricky part was making clear that signing in does not sync study data. I made that limitation explicit in the README.',
             'Splitting the work into phases (local app first, auth foundation, sync later) kept an ambitious project shippable.',
-            'Lesson: writing down what a phase explicitly does not do prevents the most dangerous misunderstandings.',
+            'Writing down what a phase does not do helps prevent misunderstandings.',
           ],
           limits: [
             'No cloud sync: signing in does not upload, download, overwrite or delete study data — the README states this explicitly.',
@@ -238,7 +238,7 @@ export const translations = {
         ben: {
           tagline: 'One person. One pace. Keep going.',
           why: [
-            'I wanted a fitness tracker shaped around one person training at their own pace — my pace. Instead of building a tracker from zero, I forked openGym, a self-hosted gym and body-weight tracker, and started reshaping it into BEN.SUSTAIN.',
+            'I wanted a fitness tracker for one person to use at their own pace. Rather than start from zero, I forked openGym, an open-source gym and bodyweight tracker, and began adapting it into BEN.SUSTAIN.',
             'The brand idea is mine: “BEN.SUSTAIN — One person. One pace. Keep going.” The engine underneath is open-source work by others, and I present it as exactly that.',
           ],
           decisions: [
@@ -258,8 +258,8 @@ export const translations = {
             'Adaptation choices for my own use — the exact list of modifications is still being documented here.',
           ],
           challenges: [
-            'Lesson: forking a large, mature codebase is humbling — reading and understanding comes before changing.',
-            'Lesson: keeping the fork honest means naming what is inherited on every page that shows it.',
+            'Forking a mature codebase means understanding it before changing it.',
+            'Keeping the fork honest means clearly separating inherited features from my own changes.',
           ],
           limits: [
             'My specific code modifications are not yet documented on this page — that section is a placeholder until verified.',
@@ -490,7 +490,7 @@ export const translations = {
       ben: {
         status: 'Angepasst, nicht original',
         title: 'BEN.SUSTAIN',
-        body: 'Ausgangspunkt war eine bestehende Open-Source-App, die ich für meinen Gebrauch angepasst habe. Das Grundprojekt ist nicht meins; die Ideen, wie es anders sein soll, schon.',
+        body: 'Ich habe eine bestehende Open-Source-Fitness-App auf eine persönlichere Nutzung für eine einzelne Person ausgerichtet. Das Original stammt nicht von mir; die Richtung dieser Version schon.',
       },
     },
     detail: {
@@ -516,7 +516,7 @@ export const translations = {
       featuresT: 'Was es kann',
       inheritedT: 'Vom Ursprungsprojekt übernommen',
       mineT: 'Meine Anpassungen und Ideen',
-      challengesT: 'Herausforderungen und Lektionen',
+      challengesT: 'Herausforderungen und was ich gelernt habe',
       limitsT: 'Bekannte Einschränkungen',
       sections: {
         pfadi: {
@@ -539,9 +539,9 @@ export const translations = {
             'Kontakt-, Fehler-melden- und Rechtsseiten (Impressum, Datenschutz) mit Webmaster-Angabe.',
           ],
           challenges: [
-            'Umfangsdisziplin: Eine Gruppen-Website kann ewig wachsen — ich habe mich auf die Seiten beschränkt, die die Abteilung wirklich braucht.',
-            'Für zwei Publika gleichzeitig schreiben: Kinder wollen Abenteuer, Eltern wollen Fakten.',
-            'Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten aufgedeckt, bevor daraus grössere Strukturprobleme wurden.',
+            'Den Umfang klein zu halten war schwieriger, als es klingt. Ich habe mich auf die Seiten konzentriert, die die Abteilung braucht.',
+            'Für Kinder und Eltern zu schreiben bedeutete, Abenteuer und praktische Informationen auszubalancieren.',
+            'Layouts am echten Inhalt zu prüfen hat Probleme aufgedeckt, bevor sie sich weiterziehen konnten.',
           ],
           limits: [
             'Kein öffentliches Quell-Repository — nur die Live-Seite ist einsehbar.',
@@ -557,25 +557,25 @@ export const translations = {
         cal: {
           tagline: 'Eine Trainings-App, geformt vom echten Training.',
           why: [
-            'Ich trainiere regelmässig Calisthenics und wollte eine App, die genau zu meinem Training passt — meine Übungen, meine Struktur, meine Anmutung. Da nichts von der Stange passte, habe ich meine eigene spezifiziert und gebaut.',
+            'Ich trainiere regelmässig Calisthenics und wollte eine App, die zu meinem Training passt. Ich fand keine passende, also habe ich meine eigene Version gebaut.',
             'Die veröffentlichte Demo ist live unter dem Namen FORM — Calisthenics Training.',
           ],
           decisions: [
             'Ausgangspunkt waren meine eigenen Workouts, keine Feature-Liste: Die App musste eine echte Einheit überstehen.',
-            'Verhalten und Anmutung selbst festgelegt, dann die Umsetzung mit KI-Unterstützung gesteuert.',
-            'Jede Version am eigenen Training getestet und Schwachstellen behoben — das Trainingslog war der Abnahmetest.',
+            'Verhalten und Aussehen selbst festgelegt und KI bei der Umsetzung als Werkzeug genutzt.',
+            'Jede Version im eigenen Training getestet und verbessert, was dabei störte.',
           ],
           features: [
-            'Live-Demo verifiziert: Die App lädt als FORM — Calisthenics Training.',
-            'Darüber hinaus beschreibe ich nur, was ich vom Bauen weiss: Workout-Routinen rund um mein Training, Version für Version verfeinert.',
-            'Eine ausführliche Feature-Tour mit Screenshots folgt, sobald ich die aktuelle Oberfläche dokumentiert habe.',
+            'Die Demo lädt als FORM — Calisthenics Training.',
+            'Die App ist um meine Trainingsroutinen aufgebaut und wird beim Nutzen weiter verbessert.',
+            'Ich muss die aktuelle Oberfläche noch dokumentieren, bevor ich eine genauere Feature-Liste ergänzen kann.',
           ],
           challenges: [
             'Das Schwerste war zu entscheiden, was nicht gebaut wird: Ein persönliches Werkzeug muss schnell und einfach bleiben.',
             'Tests während meines eigenen Trainings haben Bedienprobleme gezeigt, die eine Checkliste übersehen hätte.',
           ],
           limits: [
-            'Die Demo ist eine clientseitig gerenderte App, ihre Oberfläche war von aussen nicht prüfbar — Details oben stammen aus meinen Bau-Notizen.',
+            'Ich habe noch nicht jeden Bildschirm dokumentiert und beschränke mich deshalb auf Details, die ich aus meinen Notizen bestätigen kann.',
             'Kein öffentliches Quell-Repository — nur die Live-Demo ist einsehbar.',
           ],
           stateBody:
@@ -605,9 +605,9 @@ export const translations = {
             'Einstellungen mit Supabase-E-Mail/Passwort-Login, Session-Wiederherstellung und Abmelden.',
           ],
           challenges: [
-            'Härteste Lektion: Anmeldung ist nicht Synchronisierung. Ein Login ändert nichts an den Daten — und das klar ins README zu schreiben war wichtiger als das Feature selbst.',
+            'Wichtig war klarzustellen, dass ein Login die Lerndaten nicht synchronisiert. Diese Einschränkung steht ausdrücklich im README.',
             'Die Arbeit in Phasen zu teilen (erst lokale App, dann Auth-Basis, später Sync) hat ein ehrgeiziges Projekt auslieferbar gehalten.',
-            'Lektion: Festzuhalten, was eine Phase ausdrücklich nicht tut, verhindert die gefährlichsten Missverständnisse.',
+            'Festzuhalten, was eine Phase nicht tut, hilft Missverständnisse zu vermeiden.',
           ],
           limits: [
             'Keine Cloud-Synchronisierung: Anmelden lädt, speichert, überschreibt oder löscht keine Lerndaten — das README sagt das ausdrücklich.',
@@ -632,7 +632,7 @@ export const translations = {
         ben: {
           tagline: 'One person. One pace. Keep going.',
           why: [
-            'Ich wollte einen Fitness-Tracker, der um eine einzelne Person in ihrem eigenen Tempo geformt ist — meinem Tempo. Statt einen Tracker bei null zu bauen, habe ich openGym geforkt, einen selbst-hostbaren Gym- und Bodyweight-Tracker, und forme ihn zu BEN.SUSTAIN um.',
+            'Ich wollte einen Fitness-Tracker, den eine Person im eigenen Tempo nutzen kann. Statt bei null anzufangen, habe ich openGym geforkt, einen selbst-hostbaren Open-Source-Tracker für Kraft- und Körpergewichtstraining, und passe ihn zu BEN.SUSTAIN an.',
             'Die Markenidee ist meine: „BEN.SUSTAIN — One person. One pace. Keep going.“ Die Engine darunter ist Open-Source-Arbeit anderer, und genau so stelle ich sie dar.',
           ],
           decisions: [
@@ -652,8 +652,8 @@ export const translations = {
             'Anpassungsentscheidungen für den eigenen Gebrauch — die genaue Änderungsliste wird hier noch dokumentiert.',
           ],
           challenges: [
-            'Lektion: Einen grossen, reifen Codebase zu forken demütigt — Lesen und Verstehen kommt vor dem Ändern.',
-            'Lektion: Den Fork ehrlich zu halten heisst, auf jeder Seite zu benennen, was übernommen ist.',
+            'Bei einer ausgereiften Codebasis kommt erst das Verstehen, dann das Ändern.',
+            'Damit der Fork transparent bleibt, trenne ich übernommene Funktionen klar von meinen Änderungen.',
           ],
           limits: [
             'Meine konkreten Code-Änderungen sind auf dieser Seite noch nicht dokumentiert — der Abschnitt ist ein Platzhalter bis zur Prüfung.',

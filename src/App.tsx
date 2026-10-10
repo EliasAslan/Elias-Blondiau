@@ -40,10 +40,8 @@ function EggKey() {
         e.ctrlKey ||
         e.altKey ||
         (target &&
-          (target.tagName === 'INPUT' ||
-            target.tagName === 'TEXTAREA' ||
-            target.tagName === 'SELECT' ||
-            target.isContentEditable))
+          (target.isContentEditable ||
+            ['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON', 'A'].includes(target.tagName)))
       ) {
         return;
       }
