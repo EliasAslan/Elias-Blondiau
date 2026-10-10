@@ -55,19 +55,6 @@ function SkillsSnapshot() {
     });
   };
 
-  const stepProps = (step: string, label: string) => ({
-    tabIndex: 0,
-    role: 'button' as const,
-    'aria-label': label,
-    onClick: () => tapStep(step),
-    onKeyDown: (e: React.KeyboardEvent) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        tapStep(step);
-      }
-    },
-  });
-
   return (
     <section id="skills" className="skills" aria-labelledby="skills-h">
       <div className="wrap">
@@ -76,7 +63,7 @@ function SkillsSnapshot() {
           <p>{t.skills.subtitle}</p>
         </div>
         <div className="stairs">
-          <div className="step step-learning" {...stepProps('learning', t.skills.learning)}>
+          <div className="step step-learning">
             <h3>{t.skills.learning}</h3>
             <p className="meaning">{t.skills.learningMeaning}</p>
             <ul className="skill-list">
@@ -85,8 +72,9 @@ function SkillsSnapshot() {
               <li>Git &amp; GitHub</li>
               <li>Python</li>
             </ul>
+            <button className="step-tap" type="button" onClick={() => tapStep('learning')} aria-label={`${t.skills.tapHint}: ${t.skills.learning}`}>{t.skills.tapHint}</button>
           </div>
-          <div className="step step-exploring" {...stepProps('exploring', t.skills.exploring)}>
+          <div className="step step-exploring">
             <h3>{t.skills.exploring}</h3>
             <p className="meaning">{t.skills.exploringMeaning}</p>
             <ul className="skill-list">
@@ -95,8 +83,9 @@ function SkillsSnapshot() {
               <li>React &amp; Vite</li>
               <li>SQL &amp; Supabase</li>
             </ul>
+            <button className="step-tap" type="button" onClick={() => tapStep('exploring')} aria-label={`${t.skills.tapHint}: ${t.skills.exploring}`}>{t.skills.tapHint}</button>
           </div>
-          <div className="step step-strong" {...stepProps('strong', t.skills.stronger)}>
+          <div className="step step-strong">
             <h3>{t.skills.stronger}</h3>
             <p className="meaning">{t.skills.strongerMeaning}</p>
             <ul className="skill-list">
@@ -107,6 +96,7 @@ function SkillsSnapshot() {
                 <li key={s}>{s}</li>
               ))}
             </ul>
+            <button className="step-tap" type="button" onClick={() => tapStep('strong')} aria-label={`${t.skills.tapHint}: ${t.skills.stronger}`}>{t.skills.tapHint}</button>
           </div>
           {unlocked && (
             <div className="step step-secret" aria-live="polite">
