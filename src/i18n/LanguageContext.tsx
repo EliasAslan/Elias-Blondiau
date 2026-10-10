@@ -34,7 +34,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem(LANG_STORAGE_KEY, l);
     } catch {
-      /* storage unavailable — language still applies for this visit */
+      /* storage unavailable. Language still applies for this visit */
     }
   };
 
