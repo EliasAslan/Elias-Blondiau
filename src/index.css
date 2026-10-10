@@ -74,6 +74,9 @@
   @media (max-width: 40rem) {
     html { scroll-padding-top: 9rem; }
   }
+  @media (max-width: 24rem) {
+    html { scroll-padding-top: 11rem; }
+  }
   /* Comfortable touch targets on touch devices */
   @media (pointer: coarse) {
     .site-nav a { padding: .7rem .8rem; }
