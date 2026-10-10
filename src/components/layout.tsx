@@ -239,10 +239,22 @@ export function MediaSlot({
   const { t } = useLanguage();
   const [missing, setMissing] = useState(true);
   useEffect(() => {
+    let active = true;
     setMissing(true);
     const img = new Image();
-    img.onload = () => setMissing(false);
+    img.onload = () => {
+      if (active) setMissing(false);
+    };
+    img.onerror = () => {
+      if (active) setMissing(true);
+    };
     img.src = `${import.meta.env.BASE_URL}${file}`;
+
+    return () => {
+      active = false;
+      img.onload = null;
+      img.onerror = null;
+    };
   }, [file]);
   if (missing) {
     return (
