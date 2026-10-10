@@ -147,7 +147,7 @@ export const translations = {
           challenges: [
             'Scope discipline: a group website can grow forever — I kept it to the pages the group actually needs.',
             'Writing for two audiences at once: kids who want adventure, parents who want facts.',
-            'Reviewing AI-generated layouts against the real content caught mismatches before they became bigger structure problems.',
+            'Comparing each layout against the real content caught mismatches before they became bigger structure problems.',
           ],
           limits: [
             'No public source repository — only the live site can be reviewed.',
@@ -319,7 +319,7 @@ export const translations = {
       eduBody:
         'I’m doing an Informatiker EFZ apprenticeship in platform development alongside the Berufsmaturität TALS. Both are in progress. The official programmes are:',
       trainingTitle: 'Calisthenics: my other progression system',      trainingBody:
-        'I train calisthenics regularly — it’s where I learned the mindset behind my skills section: you move up only when you’ve earned it. My own training is also the acceptance test for everything I build around it: if a workout feature doesn’t survive a real session, it doesn’t ship.',
+        'I train calisthenics regularly. It taught me to move up a progression only when I can do the current step properly. I use the same idea when building training features: I try them in a real workout and fix what gets in the way.',
       trainingGoals: 'Current focus: steady basics, honest form, showing up. Specific skills and goals get listed here once I write them down properly.',
       scoutsTitle: 'Scouts',
       scoutsBody:
@@ -540,7 +540,7 @@ export const translations = {
           challenges: [
             'Umfangsdisziplin: Eine Gruppen-Website kann ewig wachsen — ich habe mich auf die Seiten beschränkt, die die Abteilung wirklich braucht.',
             'Für zwei Publika gleichzeitig schreiben: Kinder wollen Abenteuer, Eltern wollen Fakten.',
-            'KI-generierte Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten aufgedeckt, bevor daraus grössere Strukturprobleme wurden.',
+            'Layouts am echten Inhalt zu prüfen hat Unstimmigkeiten aufgedeckt, bevor daraus grössere Strukturprobleme wurden.',
           ],
           limits: [
             'Kein öffentliches Quell-Repository — nur die Live-Seite ist einsehbar.',
@@ -713,7 +713,7 @@ export const translations = {
         'Ich mache eine Lehre als Informatiker EFZ in Plattformentwicklung und parallel die Berufsmaturität TALS. Beides läuft noch. Die offiziellen Programme sind:',
       trainingTitle: 'Calisthenics: mein anderes Progressionssystem',
       trainingBody:
-        'Ich trainiere regelmässig Calisthenics — dort habe ich die Haltung hinter meiner Skills-Sektion gelernt: Man steigt erst auf, wenn man es sich verdient hat. Mein eigenes Training ist auch der Abnahmetest für alles, was ich darum baue: Was eine echte Einheit nicht übersteht, wird nicht ausgeliefert.',
+        'Ich trainiere regelmässig Calisthenics. Dabei habe ich gelernt, erst dann zum nächsten Schritt zu wechseln, wenn der aktuelle sitzt. Beim Bauen von Trainingsfunktionen mache ich es ähnlich: Ich probiere sie im echten Training aus und verbessere, was stört.',
       trainingGoals: 'Aktueller Fokus: solide Basics, ehrliche Form, Dranbleiben. Konkrete Skills und Ziele liste ich hier, sobald ich sie sauber aufgeschrieben habe.',
       scoutsTitle: 'Pfadi',
       scoutsBody:
