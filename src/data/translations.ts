@@ -365,6 +365,7 @@ export const translations = {
       fourthTitle: 'Curiosity',
       fourthBody:
         'Already maxed out. No certificate needed.',
+      fourthHint: 'It knows a secret: type “sustain” anywhere.',
       footerButton: 'Show another footer note',
       notFoundTitle: 'Well, this is awkward.',
       notFoundBody: 'This page has either moved, vanished, or decided to take a rest day.',
