@@ -8,6 +8,7 @@ import {
   useParams,
 } from 'react-router-dom';
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext';
+import { PROJECT_SLUGS } from './data/site';
 import { getProjectEntry } from './data/projects';
 import { SiteFooter, SiteHeader } from './components/layout';
 import About from './pages/About';
@@ -92,13 +93,9 @@ function DetailTitle() {
   const { slug } = useParams<{ slug: string }>();
   const { lang, t } = useLanguage();
   useEffect(() => {
-    const entry =
-      slug === 'pfadi-siders' ||
-      slug === 'calisthenics-app' ||
-      slug === 'emvs-study-hub' ||
-      slug === 'ben-sustain'
-        ? getProjectEntry(t, slug)
-        : undefined;
+    const entry = (PROJECT_SLUGS as string[]).includes(slug ?? '')
+      ? getProjectEntry(t, slug as (typeof PROJECT_SLUGS)[number])
+      : undefined;
     if (entry) {
       document.title = `${entry.title} | Elias Blondiau`;
       setMetaDescription(`${entry.title} | ${t.meta.projectSuffix}. ${entry.body}`);

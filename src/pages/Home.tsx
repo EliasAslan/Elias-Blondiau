@@ -52,7 +52,7 @@ function SkillsSnapshot() {
     setVisitedSteps((prev) => (prev.includes(step) ? prev : [...prev, step]));
   };
 
-  const handleStepKeyDown = (event: KeyboardEvent<HTMLDivElement>, step: string) => {
+  const handleStepKeyDown = (event: KeyboardEvent<HTMLButtonElement>, step: string) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       tapStep(step);
@@ -67,7 +67,7 @@ function SkillsSnapshot() {
           <p>{t.skills.subtitle}</p>
         </div>
         <div className="stairs">
-          <div className="step step-learning step-discoverable" role="button" tabIndex={0} aria-label={t.skills.learning} onClick={() => tapStep('learning')} onKeyDown={(event) => handleStepKeyDown(event, 'learning')}>
+          <button type="button" className="step step-learning step-discoverable" aria-label={t.skills.learning} onClick={() => tapStep('learning')} onKeyDown={(event) => handleStepKeyDown(event, 'learning')}>
             <h3>{t.skills.learning}</h3>
             <p className="meaning">{t.skills.learningMeaning}</p>
             <ul className="skill-list">
@@ -76,8 +76,8 @@ function SkillsSnapshot() {
               <li>Git &amp; GitHub</li>
               <li>Python</li>
             </ul>
-          </div>
-          <div className="step step-exploring step-discoverable" role="button" tabIndex={0} aria-label={t.skills.exploring} onClick={() => tapStep('exploring')} onKeyDown={(event) => handleStepKeyDown(event, 'exploring')}>
+          </button>
+          <button type="button" className="step step-exploring step-discoverable" aria-label={t.skills.exploring} onClick={() => tapStep('exploring')} onKeyDown={(event) => handleStepKeyDown(event, 'exploring')}>
             <h3>{t.skills.exploring}</h3>
             <p className="meaning">{t.skills.exploringMeaning}</p>
             <ul className="skill-list">
@@ -86,8 +86,8 @@ function SkillsSnapshot() {
               <li>React &amp; Vite</li>
               <li>SQL &amp; Supabase</li>
             </ul>
-          </div>
-          <div className="step step-strong step-discoverable" role="button" tabIndex={0} aria-label={t.skills.stronger} onClick={() => tapStep('strong')} onKeyDown={(event) => handleStepKeyDown(event, 'strong')}>
+          </button>
+          <button type="button" className="step step-strong step-discoverable" aria-label={t.skills.stronger} onClick={() => tapStep('strong')} onKeyDown={(event) => handleStepKeyDown(event, 'strong')}>
             <h3>{t.skills.stronger}</h3>
             <p className="meaning">{t.skills.strongerMeaning}</p>
             <ul className="skill-list">
@@ -98,7 +98,7 @@ function SkillsSnapshot() {
                 <li key={s}>{s}</li>
               ))}
             </ul>
-          </div>
+          </button>
           {unlocked && (
             <div className="step step-secret" aria-live="polite">
               <h3>{t.eggs.fourthTitle}</h3>

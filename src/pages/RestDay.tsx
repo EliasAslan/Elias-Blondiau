@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -7,6 +7,11 @@ export default function RestDay() {
   const [done, setDone] = useState<boolean[]>(() =>
     t.eggs.restPlan.map(() => false),
   );
+  useEffect(() => {
+    setDone((prev) =>
+      t.eggs.restPlan.map((_, i) => prev[i] ?? false),
+    );
+  }, [t.eggs.restPlan]);
   const toggle = (i: number) =>
     setDone((prev) => prev.map((v, j) => (j === i ? !v : v)));
   const complete = done.length > 0 && done.every(Boolean);

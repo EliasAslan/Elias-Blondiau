@@ -39,7 +39,9 @@
   a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 2px; }
   a:hover { text-decoration-thickness: 4px; }
   :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-  h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1; margin: 0; letter-spacing: -.02em; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1; margin: 0; letter-spacing: -.02em; text-wrap: balance; }
+  a, button { touch-action: manipulation; }
+  body { -webkit-tap-highlight-color: rgba(43, 60, 255, .25); }
   p { margin: 0 0 1em; max-width: 62ch; }
   ul { margin: 0; padding: 0; list-style: none; }
   .wrap { width: min(100% - 2.5rem, 78rem); margin-inline: auto; }
@@ -236,6 +238,7 @@
   .step-secret .meaning { color: var(--on-marker); }
   .secret-hint { font-size: 1rem; margin-bottom: 0; }
   .step-discoverable { cursor: default; }
+  button.step-discoverable { font: inherit; color: inherit; text-align: start; width: 100%; cursor: pointer; }
   .step-discoverable:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
   .step-secret { animation: secret-arrive .24s ease-out both; }
   @keyframes secret-arrive { from { transform: translateY(8px); opacity: .4; } to { transform: translateY(0); opacity: 1; } }

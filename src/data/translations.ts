@@ -200,13 +200,13 @@ export const translations = {
           decisions: [
             'I kept the data in the browser so the app works without sign-up.',
             'I added views for today’s work, weak spots, quick capture, exams, weekly reviews and tools.',
-            'I added a command palette (⌘K) and undo to make common actions quicker and mistakes easier to fix.',
+            'I added a command palette (⌘ K) and undo to make common actions quicker and mistakes easier to fix.',
             'Added Supabase email and password sign-in. It does not connect to study data yet.',
           ],
           features: [
             'Module tracking with learning objectives, resources, sessions and exams.',
             'Views for Heute, Schwachstellen, Erfassen, Prüfungen, Review, Werkzeuge and Einstellungen.',
-            'Command palette (⌘K) and undo support.',
+            'Command palette (⌘ K) and undo support.',
             'Weekly reviews to look back and plan ahead.',
             'Settings with Supabase email/password sign-in, session restore and sign-out.',
           ],
@@ -597,13 +597,13 @@ export const translations = {
           decisions: [
             'Die Daten bleiben im Browser, damit die App ohne Anmeldung funktioniert.',
             'Ansichten für Heute, Schwachstellen, Erfassen, Prüfungen, Wochenrückblick und Werkzeuge hinzugefügt.',
-            'Befehlspalette (⌘K) und Rückgängig eingebaut, damit sich die App schneller bedienen lässt und Fehler nicht gleich zum Problem werden.',
+            'Befehlspalette (⌘ K) und Rückgängig eingebaut, damit sich die App schneller bedienen lässt und Fehler nicht gleich zum Problem werden.',
             'Supabase-Anmeldung mit E-Mail und Passwort hinzugefügt. Die Lerndaten sind noch nicht damit verbunden.',
           ],
           features: [
             'Modul-Tracking mit Lernzielen, Ressourcen, Sessions und Prüfungen.',
             'Ansichten für Heute, Schwachstellen, Erfassen, Prüfungen, Review, Werkzeuge und Einstellungen.',
-            'Befehlspalette (⌘K) und Rückgängig-Unterstützung.',
+            'Befehlspalette (⌘ K) und Rückgängig-Unterstützung.',
             'Wochenrückblicke zum Prüfen und Planen.',
             'Einstellungen mit Supabase-E-Mail/Passwort-Login, Session-Wiederherstellung und Abmelden.',
           ],

@@ -7,7 +7,7 @@ export default function NotFound() {
   const { pathname } = useLocation();
   return (
     <section aria-labelledby="nf-h">
-      <div className="wrap narrow nfound-message">
+      <div className="wrap narrow">
         <div className="sticker sticker-404" aria-hidden="true">
           404
         </div>

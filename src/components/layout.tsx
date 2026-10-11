@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { CONTACT, projectPath } from '../data/site';
 import { getProjectEntry } from '../data/projects';
@@ -82,12 +82,13 @@ export function FooterNotes() {
   const { t } = useLanguage();
   const [index, setIndex] = useState(0);
   const total = t.eggs.footerNotes.length + 1;
+  const safeIndex = index % total;
   const cycle = () => setIndex((i) => (i + 1) % total);
   return (
     <p className="foot-notes">
       <button
         type="button"
-        className={`foot-egg${index % 2 === 1 ? ' is-spun' : ''}`}
+        className={`foot-egg${safeIndex % 2 === 1 ? ' is-spun' : ''}`}
         onClick={cycle}
         aria-label={t.eggs.footerButton}
         title={t.eggs.footerButton}
@@ -95,8 +96,8 @@ export function FooterNotes() {
         ↻
       </button>{' '}
       <span aria-live="polite">
-        {index < t.eggs.footerNotes.length ? (
-          t.eggs.footerNotes[index]
+        {safeIndex < t.eggs.footerNotes.length ? (
+          t.eggs.footerNotes[safeIndex]
         ) : (
           <>
             {t.eggs.footerRestBefore}{' '}
@@ -112,6 +113,7 @@ export function FooterNotes() {
 export function RoutePalette() {
   const { t } = useLanguage();
   const [query, setQuery] = useState('');
+  const inputId = useId();
   const routes = [
     {
       to: '/',
@@ -132,11 +134,12 @@ export function RoutePalette() {
   return (
     <div className="palette">
       <p className="muted">{t.eggs.paletteHint}</p>
-      <label className="palette-label" htmlFor="route-palette">
+      <label className="palette-label" htmlFor={inputId}>
         {t.eggs.paletteLabel}
       </label>
       <input
-        id="route-palette"
+        id={inputId}
+        name="route"
         className="palette-input"
         type="text"
         value={query}
@@ -221,6 +224,17 @@ export function Placeholder({
  * Image slot that shows a user-supplied file from `public/` when it exists
  * and a labelled placeholder (with the expected filename) until then.
  */
+function ratioDimensions(ratio: string): { width: number; height: number } {
+  const [w, h] = ratio
+    .split('/')
+    .map((n) => Number(n.trim()))
+    .filter((n) => Number.isFinite(n) && n > 0);
+  if (w && h) {
+    const width = 1200;
+    return { width, height: Math.round((width * h) / w) };
+  }
+  return { width: 1200, height: 900 };
+}
 export function MediaSlot({
   file,
   alt,
@@ -239,6 +253,10 @@ export function MediaSlot({
   const { t } = useLanguage();
   const [missing, setMissing] = useState(true);
   useEffect(() => {
+    if (!file) {
+      setMissing(true);
+      return;
+    }
     let active = true;
     setMissing(true);
     const img = new Image();
@@ -267,11 +285,14 @@ export function MediaSlot({
       </div>
     );
   }
+  const { width, height } = ratioDimensions(ratio);
   return (
     <img
       src={`${import.meta.env.BASE_URL}${file}`}
       alt={alt}
       loading="lazy"
+      width={width}
+      height={height}
       style={{ aspectRatio: ratio }}
       className={`media-img${frameClass ? ` ${frameClass}` : ''}`}
     />
