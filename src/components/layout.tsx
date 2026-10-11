@@ -87,12 +87,12 @@ export function FooterNotes() {
     <p className="foot-notes">
       <button
         type="button"
-        className="foot-egg"
+        className={`foot-egg${index > 0 ? ' is-spun' : ''}`}
         onClick={cycle}
         aria-label={t.eggs.footerButton}
         title={t.eggs.footerButton}
       >
-        ⁂
+        ↻
       </button>{' '}
       <span aria-live="polite">
         {index < t.eggs.footerNotes.length ? (
