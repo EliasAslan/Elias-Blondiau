@@ -209,11 +209,18 @@
   .foot-links a { overflow-wrap: anywhere; }
   .foot-notes { margin: 0; max-width: none; display: flex; align-items: baseline; gap: .5rem; }
   .foot-egg {
-    background: none; border: 2px solid transparent; color: inherit;
-    font: inherit; cursor: pointer; padding: .1rem .4rem; flex: none;
-    min-width: 2.75rem; min-height: 2.75rem; display: inline-flex; align-items: center; justify-content: center;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 2.75rem; min-height: 2.75rem; margin: -.3rem 0;
+    background: var(--marker); border: 2px solid var(--on-marker); color: var(--on-marker);
+    font-family: var(--display); font-size: 1.55rem; line-height: 1;
+    cursor: pointer; padding: 0; flex: none;
+    box-shadow: 3px 3px 0 var(--edge);
+    transition: transform .18s ease, box-shadow .18s ease;
   }
-  .foot-egg:hover { border-color: var(--edge); }
+  .foot-egg:hover { transform: translate(3px, 3px) rotate(12deg); box-shadow: 0 0 0 var(--edge); }
+  .foot-egg.is-spun { transform: rotate(90deg); }
+  .foot-egg.is-spun:hover { transform: translate(3px, 3px) rotate(102deg); }
+  .foot-notes span { flex: 1 1 auto; min-width: 12rem; }
 
   /* Phase 4: quiet discoveries */
   .palette { margin-top: 2.5rem; border-top: 2px solid var(--edge); padding-top: 1.5rem; }
@@ -228,14 +235,14 @@
   .step-secret { background: var(--marker); color: var(--on-marker); border-color: var(--on-marker); }
   .step-secret .meaning { color: var(--on-marker); }
   .secret-hint { font-size: 1rem; margin-bottom: 0; }
-  .step[role="button"] { cursor: pointer; }
-  .step[role="button"]:hover { transform: translateY(-2px); }
-  @media (prefers-reduced-motion: reduce) {
-    .step[role="button"]:hover { transform: none; }
-  }
+  .step-discoverable { cursor: default; }
+  .step-discoverable:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+  .step-secret { animation: secret-arrive .24s ease-out both; }
+  @keyframes secret-arrive { from { transform: translateY(8px); opacity: .4; } to { transform: translateY(0); opacity: 1; } }
   .sticker-404 {
-    display: inline-block; font-size: clamp(2rem, 8vw, 3.5rem);
-    margin-bottom: 1.5rem; transform: rotate(3deg);
+    display: inline-block; font-size: clamp(2.5rem, 10vw, 5rem);
+    margin-bottom: 1.75rem; transform: rotate(3deg);
+    padding: .8rem 1.4rem; letter-spacing: -.06em;
   }
   .code-chip {
     font-family: ui-monospace, monospace; font-size: .95em;
@@ -317,7 +324,7 @@
   .story .card { margin-top: 2rem; }
   .plain-list { display: grid; gap: .7rem; margin-bottom: 1em; }
   .plain-list li { position: relative; padding-left: 1.4rem; }
-  .plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+  .plain-list li::before { content: "•"; position: absolute; left: 0; color: var(--muted); }
   .plain-list.ordered { list-style: decimal; padding-left: 1.5rem; }
   .plain-list.ordered li { padding-left: .25rem; }
   .plain-list.ordered li::before { content: none; }
@@ -403,5 +410,5 @@
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .btn { transition: none; }
+    .btn, .foot-egg, .step-secret { transition: none; animation: none; }
   }

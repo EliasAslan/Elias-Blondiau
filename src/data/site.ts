@@ -5,7 +5,7 @@ export const CONTACT = {
   linkedin: 'https://www.linkedin.com/in/elias-blondiau-172b6a442/',
 } as const;
 
-/** Verified live demos (checked Oct 2026 — all resolve). */
+/** Verified live demos (checked Oct 2026; all resolve). */
 export const DEMOS = {
   pfadi: 'https://pfadi-siders-updated.vercel.app/',
   calisthenics: 'https://refreshing-apex-form-flow.base44.app/',
@@ -14,9 +14,9 @@ export const DEMOS = {
 
 /** Verified public source repositories (github.com/EliasAslan). */
 export const REPOS = {
-  /** EMVS Study Hub source — public, JavaScript. */
+  /** EMVS Study Hub source. Public JavaScript repository. */
   emvs: 'https://github.com/EliasAslan/EMVs-studyHub',
-  /** BEN.SUSTAIN fork — public fork of upstream openGym. */
+  /** BEN.SUSTAIN fork. Public fork of openGym. */
   benFork: 'https://github.com/EliasAslan/benOpenGym',
 } as const;
 

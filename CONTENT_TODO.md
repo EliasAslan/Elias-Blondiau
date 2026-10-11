@@ -1,8 +1,8 @@
-# Content TODO — things only Elias can provide
+# Content TODO: things only Elias can provide
 
 The site is complete and every gap is a labelled placeholder. To fill one,
 save the file under `public/` with the exact filename below, then rebuild
-and deploy (`npm run build`, push to `main`). No code change needed —
+and deploy (`npm run build`, push to `main`). No code change needed;
 placeholders swap automatically. Keep each file under ~500 KB.
 
 Slot locations are defined in `src/data/media.ts`.
@@ -39,7 +39,7 @@ are project screenshots.
   general on purpose).
 - Books and ideas that influence Elias (About page has a labelled
   placeholder).
-- Any apprenticeship milestones worth mentioning — ongoing status only,
+- Any apprenticeship milestones worth mentioning. Ongoing status only,
   never present either qualification as completed.
 
 ## Project information still needing verification
@@ -53,7 +53,7 @@ are project screenshots.
 - BEN.SUSTAIN fork setup steps are the upstream quick-start steps; fork-
   specific deviations still need verification (page says so openly).
 - Pfadi Siders: no public source repository exists; only the live site
-  can be reviewed. No usage metrics or testimonials exist — do not invent
+  can be reviewed. No usage metrics or testimonials exist. Do not invent
   any.
 
 ## Already verified (do not re-ask)
@@ -69,5 +69,5 @@ are project screenshots.
 ## Contact information
 
 - Email and GitHub URL verified. LinkedIn URL is pre-existing but could
-  never be verified (login wall) — confirm it still points to the right
+  never be verified (login wall). Confirm it still points to the right
   profile.

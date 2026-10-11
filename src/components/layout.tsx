@@ -87,12 +87,12 @@ export function FooterNotes() {
     <p className="foot-notes">
       <button
         type="button"
-        className="foot-egg"
+        className={`foot-egg${index % 2 === 1 ? ' is-spun' : ''}`}
         onClick={cycle}
         aria-label={t.eggs.footerButton}
         title={t.eggs.footerButton}
       >
-        ⁂
+        ↻
       </button>{' '}
       <span aria-live="polite">
         {index < t.eggs.footerNotes.length ? (
@@ -202,7 +202,14 @@ export function SiteFooter() {
   );
 }
 
-export function Placeholder({ title, body }: { title: string; body: string }) {  return (
+export function Placeholder({
+  title,
+  body,
+}: {
+  title: string;
+  body: string;
+}) {
+  return (
     <div className="placeholder" role="note">
       <p className="placeholder-title">{title}</p>
       <p>{body}</p>
@@ -232,10 +239,22 @@ export function MediaSlot({
   const { t } = useLanguage();
   const [missing, setMissing] = useState(true);
   useEffect(() => {
+    let active = true;
     setMissing(true);
     const img = new Image();
-    img.onload = () => setMissing(false);
+    img.onload = () => {
+      if (active) setMissing(false);
+    };
+    img.onerror = () => {
+      if (active) setMissing(true);
+    };
     img.src = `${import.meta.env.BASE_URL}${file}`;
+
+    return () => {
+      active = false;
+      img.onload = null;
+      img.onerror = null;
+    };
   }, [file]);
   if (missing) {
     return (
@@ -301,20 +320,27 @@ export function CopyButton({ text }: { text: string }) {
   }, []);
 
   const copy = async () => {
+    let success = false;
     try {
       await navigator.clipboard.writeText(text);
+      success = true;
     } catch {
       const area = document.createElement('textarea');
       area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
       document.body.appendChild(area);
       area.select();
       try {
-        document.execCommand('copy');
+        success = document.execCommand('copy');
       } catch {
-        /* clipboard unavailable — label still describes the command */
+        success = false;
       }
       area.remove();
     }
+
+    if (!success) return;
     setCopied(true);
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(() => setCopied(false), 2000);

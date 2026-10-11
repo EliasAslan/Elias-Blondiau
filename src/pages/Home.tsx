@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type KeyboardEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { EDUCATION_LINKS, FEATURED_SLUGS } from '../data/site';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -45,28 +45,19 @@ const STEP_ORDER = ['learning', 'exploring', 'strong'] as const;
 
 function SkillsSnapshot() {
   const { t } = useLanguage();
-  const [taps, setTaps] = useState<string[]>([]);
-  const unlocked = taps.join(',') === STEP_ORDER.join(',');
+  const [visitedSteps, setVisitedSteps] = useState<string[]>([]);
+  const unlocked = STEP_ORDER.every((step) => visitedSteps.includes(step));
 
   const tapStep = (step: string) => {
-    setTaps((prev) => {
-      const next = [...prev, step].slice(-3);
-      return next;
-    });
+    setVisitedSteps((prev) => (prev.includes(step) ? prev : [...prev, step]));
   };
 
-  const stepProps = (step: string, label: string) => ({
-    tabIndex: 0,
-    role: 'button' as const,
-    'aria-label': label,
-    onClick: () => tapStep(step),
-    onKeyDown: (e: React.KeyboardEvent) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        tapStep(step);
-      }
-    },
-  });
+  const handleStepKeyDown = (event: KeyboardEvent<HTMLDivElement>, step: string) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      tapStep(step);
+    }
+  };
 
   return (
     <section id="skills" className="skills" aria-labelledby="skills-h">
@@ -76,7 +67,7 @@ function SkillsSnapshot() {
           <p>{t.skills.subtitle}</p>
         </div>
         <div className="stairs">
-          <div className="step step-learning" {...stepProps('learning', t.skills.learning)}>
+          <div className="step step-learning step-discoverable" role="button" tabIndex={0} aria-label={t.skills.learning} onClick={() => tapStep('learning')} onKeyDown={(event) => handleStepKeyDown(event, 'learning')}>
             <h3>{t.skills.learning}</h3>
             <p className="meaning">{t.skills.learningMeaning}</p>
             <ul className="skill-list">
@@ -86,7 +77,7 @@ function SkillsSnapshot() {
               <li>Python</li>
             </ul>
           </div>
-          <div className="step step-exploring" {...stepProps('exploring', t.skills.exploring)}>
+          <div className="step step-exploring step-discoverable" role="button" tabIndex={0} aria-label={t.skills.exploring} onClick={() => tapStep('exploring')} onKeyDown={(event) => handleStepKeyDown(event, 'exploring')}>
             <h3>{t.skills.exploring}</h3>
             <p className="meaning">{t.skills.exploringMeaning}</p>
             <ul className="skill-list">
@@ -96,11 +87,11 @@ function SkillsSnapshot() {
               <li>SQL &amp; Supabase</li>
             </ul>
           </div>
-          <div className="step step-strong" {...stepProps('strong', t.skills.stronger)}>
+          <div className="step step-strong step-discoverable" role="button" tabIndex={0} aria-label={t.skills.stronger} onClick={() => tapStep('strong')} onKeyDown={(event) => handleStepKeyDown(event, 'strong')}>
             <h3>{t.skills.stronger}</h3>
             <p className="meaning">{t.skills.strongerMeaning}</p>
             <ul className="skill-list">
-              <li>AI-assisted development</li>
+              <li>{t.skills.iterativeDevelopment}</li>
             </ul>
             <ul className="strengths">
               {t.skills.strengths.map((s) => (

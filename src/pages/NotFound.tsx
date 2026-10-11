@@ -7,12 +7,13 @@ export default function NotFound() {
   const { pathname } = useLocation();
   return (
     <section aria-labelledby="nf-h">
-      <div className="wrap narrow">
+      <div className="wrap narrow nfound-message">
         <div className="sticker sticker-404" aria-hidden="true">
           404
         </div>
-        <h1 id="nf-h">{t.detail.notFoundTitle}</h1>
-        <p>{t.detail.notFoundBody}</p>
+        <h1 id="nf-h">{t.eggs.notFoundTitle}</h1>
+        <p className="lead">{t.eggs.notFoundBody}</p>
+        <p className="muted">{t.eggs.notFoundAside}</p>
         <p className="muted">
           {t.eggs.notFoundAt} <code className="code-chip">{pathname}</code>
         </p>
