@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type KeyboardEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { EDUCATION_LINKS, FEATURED_SLUGS } from '../data/site';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -45,14 +45,18 @@ const STEP_ORDER = ['learning', 'exploring', 'strong'] as const;
 
 function SkillsSnapshot() {
   const { t } = useLanguage();
-  const [taps, setTaps] = useState<string[]>([]);
-  const unlocked = taps.join(',') === STEP_ORDER.join(',');
+  const [visitedSteps, setVisitedSteps] = useState<string[]>([]);
+  const unlocked = STEP_ORDER.every((step) => visitedSteps.includes(step));
 
   const tapStep = (step: string) => {
-    setTaps((prev) => {
-      const next = [...prev, step].slice(-3);
-      return next;
-    });
+    setVisitedSteps((prev) => (prev.includes(step) ? prev : [...prev, step]));
+  };
+
+  const handleStepKeyDown = (event: KeyboardEvent<HTMLDivElement>, step: string) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      tapStep(step);
+    }
   };
 
   return (
@@ -63,7 +67,7 @@ function SkillsSnapshot() {
           <p>{t.skills.subtitle}</p>
         </div>
         <div className="stairs">
-          <div className="step step-learning">
+          <div className="step step-learning step-discoverable" role="button" tabIndex={0} aria-label={t.skills.learning} onClick={() => tapStep('learning')} onKeyDown={(event) => handleStepKeyDown(event, 'learning')}>
             <h3>{t.skills.learning}</h3>
             <p className="meaning">{t.skills.learningMeaning}</p>
             <ul className="skill-list">
@@ -72,16 +76,8 @@ function SkillsSnapshot() {
               <li>Git &amp; GitHub</li>
               <li>Python</li>
             </ul>
-            <button
-              className="step-tap"
-              type="button"
-              onClick={() => tapStep('learning')}
-              aria-label={`${t.skills.tapHint}: ${t.skills.learning}`}
-            >
-              {t.skills.tapHint}
-            </button>
           </div>
-          <div className="step step-exploring">
+          <div className="step step-exploring step-discoverable" role="button" tabIndex={0} aria-label={t.skills.exploring} onClick={() => tapStep('exploring')} onKeyDown={(event) => handleStepKeyDown(event, 'exploring')}>
             <h3>{t.skills.exploring}</h3>
             <p className="meaning">{t.skills.exploringMeaning}</p>
             <ul className="skill-list">
@@ -90,16 +86,8 @@ function SkillsSnapshot() {
               <li>React &amp; Vite</li>
               <li>SQL &amp; Supabase</li>
             </ul>
-            <button
-              className="step-tap"
-              type="button"
-              onClick={() => tapStep('exploring')}
-              aria-label={`${t.skills.tapHint}: ${t.skills.exploring}`}
-            >
-              {t.skills.tapHint}
-            </button>
           </div>
-          <div className="step step-strong">
+          <div className="step step-strong step-discoverable" role="button" tabIndex={0} aria-label={t.skills.stronger} onClick={() => tapStep('strong')} onKeyDown={(event) => handleStepKeyDown(event, 'strong')}>
             <h3>{t.skills.stronger}</h3>
             <p className="meaning">{t.skills.strongerMeaning}</p>
             <ul className="skill-list">
@@ -110,14 +98,6 @@ function SkillsSnapshot() {
                 <li key={s}>{s}</li>
               ))}
             </ul>
-            <button
-              className="step-tap"
-              type="button"
-              onClick={() => tapStep('strong')}
-              aria-label={`${t.skills.tapHint}: ${t.skills.stronger}`}
-            >
-              {t.skills.tapHint}
-            </button>
           </div>
           {unlocked && (
             <div className="step step-secret" aria-live="polite">
