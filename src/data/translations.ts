@@ -299,7 +299,6 @@ export const translations = {
       stronger: 'How I work',
       strongerMeaning: 'From idea to a working result.',
       iterativeDevelopment: 'Build, test, improve',
-      tapHint: 'Tap to reveal',
       caption:
         'My current level in each skill, plus a few notes on how I work.',
       strengths: [
@@ -696,7 +695,6 @@ export const translations = {
       stronger: 'So arbeite ich',
       strongerMeaning: 'Von der Idee zum Ergebnis.',
       iterativeDevelopment: 'Bauen, testen, verbessern',
-      tapHint: 'Antippen zum Entdecken',
       caption:
         'Mein aktueller Stand und ein paar Dinge, die ich bei der Arbeit selbst mache.',
       strengths: [
