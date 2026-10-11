@@ -366,8 +366,10 @@ export const translations = {
       fourthTitle: 'Curiosity',
       fourthBody:
         'Already maxed out. No certificate needed.',
-      fourthHint: 'It knows a secret: type “sustain” anywhere.',
-      footerButton: 'Extra notes',
+      footerButton: 'Show another footer note',
+      notFoundTitle: 'Well, this is awkward.',
+      notFoundBody: 'This page has either moved, vanished, or decided to take a rest day.',
+      notFoundAside: 'We checked behind the sofa. No luck. Try one of the links below.',
       footerNotes: [
         'Still learning as I build.',
         'No cookies or trackers. Just a website.',
@@ -762,7 +764,10 @@ export const translations = {
       fourthBody:
         'Schon auf Maximum. Kein Zertifikat, nur Übung.',
       fourthHint: 'Sie kennt ein Geheimnis: Tippe irgendwo „sustain“.',
-      footerButton: 'Extra-Notizen',
+      footerButton: 'Nächste Fussnote anzeigen',
+      notFoundTitle: 'Tja. Das ist jetzt etwas unangenehm.',
+      notFoundBody: 'Diese Seite ist umgezogen, verschwunden oder macht gerade Ruhetag.',
+      notFoundAside: 'Wir haben hinter dem Sofa nachgesehen. Nichts. Probier einen der Links unten.',
       footerNotes: [
         'Offen gebaut, noch am Lernen.',
         'Keine Cookies und keine Tracker. Einfach eine Website.',
