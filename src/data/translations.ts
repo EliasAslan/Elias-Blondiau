@@ -156,8 +156,8 @@ export const translations = {
           stateBody:
             'The group uses the site. I update it when needed.',
           shots: [
-            'Homepage hero “Gipfelpause”, desktop, 1600×900',
-            'Age-group overview, mobile, 390×844',
+            'Homepage hero “Gemeinsam am Feuer”, desktop, 1600×900',
+            'Homepage hero “Abendstimmung im Lager”, desktop, 1600×900',
           ],
         },
         cal: {
@@ -553,8 +553,8 @@ export const translations = {
           stateBody:
             'Live und bei der Abteilung im Einsatz. Inhalte werden aktualisiert, wie die Abteilung sie braucht.',
           shots: [
-            'Startseiten-Hero „Gipfelpause“, Desktop, 1600×900',
-            'Stufenübersicht, Mobil, 390×844',
+            'Startseiten-Hero „Gemeinsam am Feuer“, Desktop, 1600×900',
+            'Startseiten-Hero „Abendstimmung im Lager“, Desktop, 1600×900',
           ],
         },
         cal: {

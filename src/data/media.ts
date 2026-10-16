@@ -20,7 +20,7 @@ export interface MediaSlotDef {
 export const SHOTS: Record<ProjectSlug, MediaSlotDef[]> = {
   'pfadi-siders': [
     { file: 'shots/pfadi-hero-desktop.png', ratio: '16 / 9' },
-    { file: 'shots/pfadi-stufen-mobile.png', ratio: '9 / 19' },
+    { file: 'shots/pfadi-lager-desktop.png', ratio: '16 / 9' },
   ],
   'calisthenics-app': [
     { file: 'shots/cal-session-desktop.png', ratio: '16 / 9' },
